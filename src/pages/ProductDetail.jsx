@@ -4,18 +4,8 @@ import PageWrapper from "../components/PageWrapper";
 import productService from "../services/ProductService";
 import { useCart } from "../context/CartContext";
 
-// Import product images
+// Import fallback product image
 import product1 from "../assets/products/1.png";
-import product2 from "../assets/products/2.png";
-import product3 from "../assets/products/3.png";
-import product4 from "../assets/products/4.png";
-
-const imageMap = {
-  "/src/assets/products/1.png": product1,
-  "/src/assets/products/2.png": product2,
-  "/src/assets/products/3.png": product3,
-  "/src/assets/products/4.png": product4,
-};
 
 export default function ProductDetail() {
   const navigate = useNavigate();
@@ -107,7 +97,10 @@ export default function ProductDetail() {
     );
   }
 
-  const productImages = product.images.map((img) => imageMap[img] || product1);
+  const imageArray = Array.isArray(product.images) && product.images.length > 0
+    ? product.images
+    : [product.image || product1];
+  const productImages = imageArray.map((img) => img || product1);
   const hasDiscount = product.discount > 0;
 
   // Calculate price: if length is selected (or typed), use pricePerUnit * chargeable units.

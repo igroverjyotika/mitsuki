@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useSearchParams, useNavigate, Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import productsData from "../data/Products.json";
-import productImage from "../assets/products/1.png";
+import { getCatalogProductMedia } from "../utils/productCatalog";
 
 export default function Shop() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -50,6 +50,11 @@ export default function Shop() {
       }
     }
 
+    const media = getCatalogProductMedia(product, {
+      part: productPart,
+      category: productCategory,
+    });
+
     const detailProduct = {
       id: product.partCode,
       name: product.partCode,
@@ -59,8 +64,8 @@ export default function Shop() {
       description: Object.entries(specs)
         .map(([key, value]) => `${key}: ${value}`)
         .join(", "),
-      image: productImage,
-      images: ["/src/assets/products/1.png"],
+      image: media.image,
+      images: media.images,
       inStock: true,
       category: productCategory?.categoryName || "Unknown",
       specifications: specs,
@@ -239,59 +244,71 @@ export default function Shop() {
 
                         {active && category.part?.length > 0 && (
                           <div className="mt-2 ml-3 space-y-2">
-                            {category.part.map((part) => {
-                              const partActive =
-                                selectedPart?.partName === part.partName;
-                              return (
-                                <button
-                                  key={part.partName}
-                                  type="button"
-                                  onClick={() => handlePartSelect(part)}
-                                  className={`block w-full text-left text-sm transition-colors ${
-                                    partActive
-                                      ? "font-semibold text-gray-900"
-                                      : "text-gray-600 hover:text-gray-900"
-                                  }`}
-                                >
-                                  {part.partName}
-                                </button>
-                              );
-                            })}
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+                            {filteredProducts.map((product) => {
+                                // Find the part this product belongs to for price calculation
+                                let productPart = selectedPart;
+                                let productCategory = selectedCategory;
+                                if (!productPart && selectedCategory) {
+                                  for (const part of selectedCategory.part) {
+                                    if (
+                                      part.products.some(
+                                        (p) => p.partCode === product.partCode,
+                                      )
+                                    ) {
+                                      productPart = part;
+                                      productCategory = selectedCategory;
+                                      break;
+                                    }
+                                  }
+                                } else if (!productPart) {
+                                  for (const category of categories) {
+                                    for (const part of category.part) {
+                                      if (
+                                        part.products.some(
+                                          (p) => p.partCode === product.partCode,
+                                        )
+                                      ) {
+                                        productPart = part;
+                                        productCategory = category;
+                                        break;
+                                      }
+                                    }
+                                    if (productPart) break;
+                                  }
+                                }
 
-              {/* Selections */}
-              {selectedPart &&
-                selectedPart.selectionProperties &&
-                selectedPart.selectionProperties.length > 0 && (
-                  <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
-                    <h3 className="text-base font-bold mb-4 text-gray-900">
-                      Selections
-                    </h3>
-                    <div className="space-y-4">
-                      {selectedPart.selectionProperties.map((prop) => (
-                        <div key={prop}>
-                          <label className="block text-sm font-medium text-gray-700 mb-2 capitalize">
-                            {prop}
-                          </label>
-                          <div className="space-y-2">
-                            <button
-                              type="button"
-                              onClick={() => handleSelectionChange(prop, null)}
-                              className={`w-full text-left px-4 py-2 rounded-lg transition-colors flex items-center justify-between ${
-                                !selections[prop]
-                                  ? "bg-gray-900 text-white"
-                                  : "hover:bg-gray-100 text-gray-700"
-                              }`}
-                            >
-                              <span>All</span>
-                              {!selections[prop] && (
-                                <span className="text-white">✓</span>
+                                const price = productPart
+                                  ? calculatePrice(product, productPart)
+                                  : parseFloat(product.price?.value || 0);
+                                const specs = product.specifications.reduce((acc, spec) => {
+                                  acc[spec.propertyName] = spec.value;
+                                  return acc;
+                                }, {});
+                                const media = getCatalogProductMedia(product, {
+                                  part: productPart,
+                                  category: productCategory,
+                                });
+                                const resolvedCategoryName =
+                                  productCategory?.categoryName ||
+                                  selectedCategory?.categoryName ||
+                                  "Unknown";
+
+                                const cartProduct = {
+                                  id: product.partCode,
+                                  name: product.partCode,
+                                  price: price,
+                                  sku: product.partCode,
+                                  brand: productPart?.partName || "Unknown",
+                                  description: Object.entries(specs)
+                                    .map(([key, value]) => `${key}: ${value}`)
+                                    .join(", "),
+                                  image: media.image,
+                                  images: media.images,
+                                  inStock: true,
+                                  category: resolvedCategoryName,
+                                  specifications: specs,
+                                  partCode: product.partCode,
+                                };
                               )}
                             </button>
                             {getUniqueValues(prop).map((value) => (
@@ -385,6 +402,7 @@ export default function Shop() {
                   filteredProducts.map((product) => {
                     // Find the part this product belongs to for price calculation
                     let productPart = selectedPart;
+                    let productCategory = selectedCategory;
                     if (!productPart && selectedCategory) {
                       for (const part of selectedCategory.part) {
                         if (
@@ -393,10 +411,12 @@ export default function Shop() {
                           )
                         ) {
                           productPart = part;
+                          productCategory = selectedCategory;
                           break;
                         }
                       }
-                    } else if (!productPart) {
+                    }
+                    if (!productPart) {
                       for (const category of categories) {
                         for (const part of category.part) {
                           if (
@@ -405,6 +425,7 @@ export default function Shop() {
                             )
                           ) {
                             productPart = part;
+                            productCategory = category;
                             break;
                           }
                         }
@@ -419,6 +440,14 @@ export default function Shop() {
                       acc[spec.propertyName] = spec.value;
                       return acc;
                     }, {});
+                    const media = getCatalogProductMedia(product, {
+                      part: productPart,
+                      category: productCategory,
+                    });
+                    const resolvedCategoryName =
+                      productCategory?.categoryName ||
+                      selectedCategory?.categoryName ||
+                      "Unknown";
 
                     const cartProduct = {
                       id: product.partCode,
@@ -429,9 +458,10 @@ export default function Shop() {
                       description: Object.entries(specs)
                         .map(([key, value]) => `${key}: ${value}`)
                         .join(", "),
-                      image: productImage,
+                      image: media.image,
+                      images: media.images,
                       inStock: true,
-                      category: selectedCategory?.categoryName || "Unknown",
+                      category: resolvedCategoryName,
                       specifications: specs,
                       partCode: product.partCode,
                     };
@@ -448,7 +478,7 @@ export default function Shop() {
                       >
                         <div className="w-full h-44 bg-white overflow-hidden relative flex items-center justify-center">
                           <img
-                            src={productImage}
+                            src={media.image}
                             alt={product.partCode}
                             className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                           />
@@ -562,43 +592,39 @@ export default function Shop() {
     // Find the part and category this product belongs to
     let productPart = selectedPart;
     let productCategory = selectedCategory;
+    const media = getCatalogProductMedia(product, {
+      part: productPart,
+      category: productCategory,
+    });
 
-      <div className="min-h-screen bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="w-full">
-            {/* Breadcrumb (match reference) */}
-            <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
+    const detailProduct = {
       id: product.partCode,
       name: product.partCode,
-                className="hover:text-gray-900 transition-colors flex items-center gap-1"
+      price: price,
       sku: product.partCode,
       brand: productPart?.partName || "Unknown",
       description: Object.entries(specs)
         .map(([key, value]) => `${key}: ${value}`)
         .join(", "),
-      image: productImage,
-      images: ["/src/assets/products/1.png"], // Array of image paths for ProductDetail
-                className="hover:text-gray-900 transition-colors font-medium"
+      image: media.image,
+      images: media.images,
       category: productCategory?.categoryName || "Unknown",
-                Products
-      discount: 0, // No discount by default
-      rating: 4.5, // Default rating
-      reviewCount: 0, // Default review count
-      reviews: 0, // Alias for reviewCount
-      featured: false, // Default featured status
-      stockQuantity: 100, // Default stock quantity
-                    className="hover:text-gray-900 transition-colors font-medium text-gray-900"
-      applications: [], // Empty array for applications
-      features: [], // Empty array for features
-      mutableProperties: productPart?.mutable_properties || [], // Add mutable properties
-      pricePerUnit: parseFloat(product.price.value), // Store the base price per unit
+      discount: 0,
+      rating: 4.5,
+      reviewCount: 0,
+      reviews: 0,
+      featured: false,
+      stockQuantity: 100,
+      applications: [],
+      features: [],
+      mutableProperties: productPart?.mutable_properties || [],
+      pricePerUnit: parseFloat(product.price.value),
     };
 
-    // Navigate to product detail page with the product data
-                  <span className="text-gray-400">/</span>
+    navigate(`/product/${product.partCode}`, {
       state: {
         product: detailProduct,
-                    className="hover:text-gray-900 transition-colors font-medium text-gray-900"
+        category: productCategory,
         part: productPart,
       },
     });
@@ -911,6 +937,7 @@ export default function Shop() {
                   filteredProducts.map((product) => {
                     // Find the part this product belongs to for price calculation
                     let productPart = selectedPart;
+                    let productCategory = selectedCategory;
                     if (!productPart && selectedCategory) {
                       // Find which part this product belongs to
                       for (const part of selectedCategory.part) {
@@ -920,19 +947,22 @@ export default function Shop() {
                           )
                         ) {
                           productPart = part;
-                            className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden group"
+                          productCategory = selectedCategory;
+                          break;
                         }
                       }
-                            <div className="w-full h-44 bg-white overflow-hidden relative flex items-center justify-center">
+                    }
+                    if (!productPart) {
                       // Find from all categories
                       for (const category of categories) {
                         for (const part of category.part) {
-                                className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+                          if (
                             part.products.some(
                               (p) => p.partCode === product.partCode,
                             )
                           ) {
                             productPart = part;
+                            productCategory = category;
                             break;
                           }
                         }
@@ -947,6 +977,14 @@ export default function Shop() {
                       acc[spec.propertyName] = spec.value;
                       return acc;
                     }, {});
+                    const media = getCatalogProductMedia(product, {
+                      part: productPart,
+                      category: productCategory,
+                    });
+                    const resolvedCategoryName =
+                      productCategory?.categoryName ||
+                      selectedCategory?.categoryName ||
+                      "Unknown";
 
                     const cartProduct = {
                       id: product.partCode,
@@ -957,9 +995,10 @@ export default function Shop() {
                       description: Object.entries(specs)
                         .map(([key, value]) => `${key}: ${value}`)
                         .join(", "),
-                      image: productImage,
+                      image: media.image,
+                      images: media.images,
                       inStock: true,
-                      category: selectedCategory?.categoryName || "Unknown",
+                      category: resolvedCategoryName,
                       specifications: specs,
                       partCode: product.partCode, // Add partCode for checkout
                     };
@@ -979,7 +1018,7 @@ export default function Shop() {
                         {/* Product Image */}
                         <div className="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 overflow-hidden relative">
                           <img
-                            src={productImage}
+                            src={media.image}
                             alt={product.partCode}
                             className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-300"
                           />

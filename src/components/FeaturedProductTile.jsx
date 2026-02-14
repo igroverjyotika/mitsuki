@@ -1,20 +1,10 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import Toast from "./Toast";
 
 import product1 from "../assets/products/1.png";
-import product2 from "../assets/products/2.png";
-import product3 from "../assets/products/3.png";
-import product4 from "../assets/products/4.png";
-
-const imageMap = {
-  "/src/assets/products/1.png": product1,
-  "/src/assets/products/2.png": product2,
-  "/src/assets/products/3.png": product3,
-  "/src/assets/products/4.png": product4,
-};
 
 function StarsRow({ count = 5 }) {
   return (
@@ -33,10 +23,7 @@ export default function FeaturedProductTile({ product }) {
   const { addToCart } = useCart();
   const [showToast, setShowToast] = useState(false);
 
-  const productImage = useMemo(
-    () => imageMap[product.image] || product1,
-    [product.image],
-  );
+  const productImage = product?.image || product1;
 
   const handleAdd = (e) => {
     e.preventDefault();

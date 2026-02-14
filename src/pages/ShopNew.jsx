@@ -1,10 +1,11 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import productsData from "../data/Products.json";
-import productImage from "../assets/products/1.png";
+import { getCatalogProductMedia } from "../utils/productCatalog";
 import { useCart } from "../context/CartContext";
 import Footer from "../components/Footer";
 import Toast from "../components/Toast";
+import { Search as SearchIcon, X } from "lucide-react";
 
 function safeParseJson(raw) {
   if (!raw) return {};
@@ -22,7 +23,9 @@ export default function ShopNew() {
   const { addToCart, cartItems, updateQuantity } = useCart();
   const [toast, setToast] = useState(null);
 
-  const query = (searchParams.get("query") || "").toLowerCase().trim();
+  const rawQuery = searchParams.get("query") || "";
+  const query = rawQuery.toLowerCase().trim();
+  const isSearchActive = Boolean(rawQuery.trim());
   const urlCategory = searchParams.get("category") || "";
   const urlPart = searchParams.get("part") || "";
 
@@ -101,6 +104,11 @@ export default function ShopNew() {
   const [selections, setSelections] = useState(() =>
     safeParseJson(searchParams.get("selections")),
   );
+  const [inlineSearchOpen, setInlineSearchOpen] = useState(() =>
+    Boolean(rawQuery.trim()),
+  );
+  const [searchInput, setSearchInput] = useState(rawQuery);
+  const searchInputRef = useRef(null);
 
   // Keep local state in sync if URL changes (back/forward)
   useEffect(() => {
@@ -108,10 +116,29 @@ export default function ShopNew() {
     setSelections(safeParseJson(searchParams.get("selections")));
   }, [searchParams]);
 
+  useEffect(() => {
+    setSearchInput(rawQuery);
+  }, [rawQuery]);
+
+  useEffect(() => {
+    if (inlineSearchOpen && searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
+  }, [inlineSearchOpen]);
+
+  useEffect(() => {
+    if (searchParams.get("searchOpen") === "1") {
+      setInlineSearchOpen(true);
+      const next = new URLSearchParams(searchParams);
+      next.delete("searchOpen");
+      setSearchParams(next, { replace: true, preventScrollReset: true });
+    }
+  }, [searchParams, setSearchParams]);
+
   const updateParams = (updater, { replace = false } = {}) => {
     const next = new URLSearchParams(searchParams);
     updater(next);
-    setSearchParams(next, { replace });
+    setSearchParams(next, { replace, preventScrollReset: true });
   };
 
   const clearFilterParams = () => {
@@ -125,20 +152,30 @@ export default function ShopNew() {
 
   const handleCategorySelect = (category) => {
     const firstPart = category?.part?.[0] || null;
-    clearFilterParams();
+    setFilters({});
+    setSelections({});
+    setSearchInput("");
     updateParams((p) => {
       p.set("category", category.categoryName);
       if (firstPart) p.set("part", firstPart.partName);
       else p.delete("part");
+      p.delete("filters");
+      p.delete("selections");
+      p.delete("query");
     });
   };
 
   const handlePartSelect = (part) => {
-    clearFilterParams();
+    setFilters({});
+    setSelections({});
+    setSearchInput("");
     updateParams((p) => {
       if (selectedCategory?.categoryName)
         p.set("category", selectedCategory.categoryName);
       p.set("part", part.partName);
+      p.delete("filters");
+      p.delete("selections");
+      p.delete("query");
     });
   };
 
@@ -172,6 +209,32 @@ export default function ShopNew() {
 
       return next;
     });
+  };
+
+  const handleInlineSearchSubmit = (event) => {
+    event.preventDefault();
+    const trimmed = searchInput.trim();
+    updateParams((p) => {
+      if (trimmed) {
+        p.set("query", trimmed);
+      } else {
+        p.delete("query");
+      }
+    });
+  };
+
+  const handleClearQuery = () => {
+    setSearchInput("");
+    updateParams((p) => {
+      p.delete("query");
+    });
+  };
+
+  const handleCollapseSearch = () => {
+    setInlineSearchOpen(false);
+    if (searchInputRef.current) {
+      searchInputRef.current.blur();
+    }
   };
 
   const calculatePrice = (product, part) => {
@@ -276,6 +339,10 @@ export default function ShopNew() {
   const handleProductClick = (product, price, specs, ctx) => {
     const productPart = selectedPart || ctx?.part || null;
     const productCategory = selectedCategory || ctx?.category || null;
+    const media = getCatalogProductMedia(product, {
+      part: productPart,
+      category: productCategory,
+    });
 
     const detailProduct = {
       id: product.partCode,
@@ -286,8 +353,8 @@ export default function ShopNew() {
       description: Object.entries(specs)
         .map(([key, value]) => `${key}: ${value}`)
         .join(", "),
-      image: productImage,
-      images: ["/src/assets/products/1.png"],
+      image: media.image,
+      images: media.images,
       inStock: true,
       category: productCategory?.categoryName || "Unknown",
       specifications: specs,
@@ -327,31 +394,89 @@ export default function ShopNew() {
             onClose={() => setToast(null)}
           />
         )}
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-600 mb-6">
-          <Link
-            to="/"
-            className="hover:text-gray-900 transition-colors flex items-center gap-1"
-          >
-            <span>🏠</span>
-            Home
-          </Link>
-          <span className="text-gray-400">›</span>
-          <Link
-            to="/shop"
-            className="hover:text-gray-900 transition-colors font-medium"
-          >
-            Products
-          </Link>
-          {selectedCategory && (
-            <>
-              <span className="text-gray-400">/</span>
-              <span className="font-medium text-gray-900">
-                {selectedCategory.categoryName}
-              </span>
-            </>
-          )}
-        </nav>
+        {/* Breadcrumb + inline search */}
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between mb-6">
+          <nav className="flex items-center gap-2 text-sm text-gray-600 flex-wrap">
+            <Link
+              to="/"
+              className="hover:text-gray-900 transition-colors flex items-center gap-1"
+            >
+              <span>🏠</span>
+              Home
+            </Link>
+            <span className="text-gray-400">›</span>
+            <Link
+              to="/shop"
+              className="hover:text-gray-900 transition-colors font-medium"
+            >
+              Products
+            </Link>
+            {selectedCategory && (
+              <>
+                <span className="text-gray-400">/</span>
+                <span className="font-medium text-gray-900">
+                  {selectedCategory.categoryName}
+                </span>
+              </>
+            )}
+          </nav>
+
+          <div className="flex w-full lg:w-auto justify-end">
+            {!inlineSearchOpen ? (
+              <button
+                type="button"
+                onClick={() => setInlineSearchOpen(true)}
+                className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 transition-colors"
+              >
+                <SearchIcon className="w-4 h-4" />
+                <span>Search catalog</span>
+                {isSearchActive && (
+                  <span className="ml-1 max-w-[140px] truncate rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-500">
+                    “{rawQuery}”
+                  </span>
+                )}
+              </button>
+            ) : (
+              <form
+                onSubmit={handleInlineSearchSubmit}
+                className="flex w-full lg:w-auto max-w-full items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm"
+              >
+                <SearchIcon className="w-4 h-4 text-gray-400" />
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  value={searchInput}
+                  onChange={(e) => setSearchInput(e.target.value)}
+                  placeholder="Search products, categories..."
+                  className="flex-1 min-w-0 bg-transparent text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none"
+                />
+                {searchInput && (
+                  <button
+                    type="button"
+                    onClick={handleClearQuery}
+                    className="text-xs font-semibold text-gray-500 hover:text-gray-900"
+                  >
+                    Clear
+                  </button>
+                )}
+                <button
+                  type="submit"
+                  className="rounded-full bg-gray-900 px-4 py-1.5 text-sm font-semibold text-white hover:bg-gray-800 transition-colors"
+                >
+                  Search
+                </button>
+                <button
+                  type="button"
+                  onClick={handleCollapseSearch}
+                  className="flex h-8 w-8 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100"
+                  aria-label="Collapse search"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </form>
+            )}
+          </div>
+        </div>
 
         {/* Title */}
         <div className="mb-6">
@@ -407,10 +532,15 @@ export default function ShopNew() {
                 <button
                   type="button"
                   onClick={() => {
-                    clearFilterParams();
+                    setFilters({});
+                    setSelections({});
+                    setSearchInput("");
                     updateParams((p) => {
                       p.delete("category");
                       p.delete("part");
+                      p.delete("filters");
+                      p.delete("selections");
+                      p.delete("query");
                     });
                   }}
                   className={`w-full text-left text-sm transition-colors ${
@@ -605,6 +735,10 @@ export default function ShopNew() {
                     product.partCode,
                     productPart?.partName,
                   );
+                  const media = getCatalogProductMedia(product, {
+                    part: productPart,
+                    category: productCategory,
+                  });
                   const cartProduct = {
                     id: product.partCode,
                     name: displayName,
@@ -617,7 +751,8 @@ export default function ShopNew() {
                     description: Object.entries(specs)
                       .map(([k, v]) => `${k}: ${v}`)
                       .join(", "),
-                    image: productImage,
+                    image: media.image,
+                    images: media.images,
                     inStock: true,
                     category: productCategory?.categoryName || "Unknown",
                     specifications: specs,
@@ -640,7 +775,7 @@ export default function ShopNew() {
                     >
                       <div className="w-full h-44 bg-white overflow-hidden relative flex items-center justify-center">
                         <img
-                          src={productImage}
+                          src={media.image}
                           alt={product.partCode}
                           className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
                         />

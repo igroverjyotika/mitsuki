@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Shop from "./pages/ShopNew";
@@ -11,7 +11,6 @@ import Policies from "./pages/Policies";
 import PolicyDetail from "./pages/PolicyDetail";
 import ProductDetail from "./pages/ProductDetail";
 import Contact from "./pages/Contact";
-import Quotes from "./pages/Quotes";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Orders from "./pages/Orders";
@@ -60,7 +59,7 @@ export default function App() {
             path="/quotes"
             element={
               <ProtectedRoute>
-                <Quotes />
+                <Navigate to="/orders?tab=quotes" replace />
               </ProtectedRoute>
             }
           />

@@ -142,12 +142,20 @@ export default function Home() {
                 Commitment.
               </p>
 
-              <Link
-                to="/shop"
-                className="bg-black text-white px-6 py-2 rounded"
-              >
-                Shop Now
-              </Link>
+              <div className="flex items-center gap-3">
+                <Link
+                  to="/shop"
+                  className="bg-black text-white px-6 py-2 rounded hover:bg-gray-900 transition-colors"
+                >
+                  Shop Now
+                </Link>
+                <Link
+                  to="/cart"
+                  className="border border-black text-black px-6 py-2 rounded bg-white hover:bg-black hover:text-white transition-colors"
+                >
+                  Get Quote
+                </Link>
+              </div>
             </div>
 
             <div className="relative w-full lg:w-[680px] flex items-center justify-center">

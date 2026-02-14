@@ -1,5 +1,8 @@
 import productsData from "../data/Products.json";
-import { flattenCatalogToProducts } from "../utils/productCatalog";
+import {
+  flattenCatalogToProducts,
+  getCatalogProductMedia,
+} from "../utils/productCatalog";
 
 // Simulate API delay
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -139,8 +142,10 @@ class ProductService {
         description: Object.entries(specs)
           .map(([key, value]) => `${key}: ${value}`)
           .join(", "),
-        image: "/src/assets/products/1.png",
-        images: ["/src/assets/products/1.png"], // Array of images
+        ...getCatalogProductMedia(foundProduct, {
+          part: foundPart,
+          category: foundCategory,
+        }),
         inStock: true,
         category: foundCategory.categoryName,
         specifications: specs,

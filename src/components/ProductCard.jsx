@@ -6,17 +6,6 @@ import Toast from "./Toast";
 
 // Import all product images
 import product1 from "../assets/products/1.png";
-import product2 from "../assets/products/2.png";
-import product3 from "../assets/products/3.png";
-import product4 from "../assets/products/4.png";
-
-// Map image paths to actual imports
-const imageMap = {
-  "/src/assets/products/1.png": product1,
-  "/src/assets/products/2.png": product2,
-  "/src/assets/products/3.png": product3,
-  "/src/assets/products/4.png": product4,
-};
 
 export default function ProductCard({ product }) {
   const { addToCart, cartItems, updateQuantity } = useCart();
@@ -24,7 +13,7 @@ export default function ProductCard({ product }) {
 
   const discountPercentage = product.discount || 0;
   const hasDiscount = discountPercentage > 0;
-  const productImage = imageMap[product.image] || product1;
+  const productImage = product?.image || product1;
 
   // Check if product is in cart and get quantity
   const cartItem = cartItems.find((item) => item.id === product.id);

@@ -1,4 +1,78 @@
 // Utilities for working with the nested product catalog in src/data/Products.json
+import defaultProductImage from "../assets/products/1.png";
+import linearMTK from "../assets/linear-motion/MTK.jpg";
+import linearLMUU from "../assets/linear-motion/LMUU.jpeg";
+import linearLMLUU from "../assets/linear-motion/LMLUU.jpg";
+import linearLMHUU from "../assets/linear-motion/LMHUU.avif";
+import linearLMHLUU from "../assets/linear-motion/LMHLUU.jpg";
+import linearLMFUU from "../assets/linear-motion/LMFUU.jpg";
+import linearLMFLUU from "../assets/linear-motion/LMFLUU.jpg";
+import linearLMKUU from "../assets/linear-motion/LMKUU.jpg";
+import linearLMKLUU from "../assets/linear-motion/LMKLUU.webp";
+
+function mediaPayload(imageUrl) {
+  const safeUrl = imageUrl || defaultProductImage;
+  return {
+    image: safeUrl,
+    images: [safeUrl],
+  };
+}
+
+const LINEAR_IMAGE_ALIAS = {
+  Linear_motion_pdf_image_1: linearMTK,
+};
+
+const LINEAR_RULES = [
+  { matcher: (code) => code.startsWith("MTK"), asset: linearMTK },
+  {
+    matcher: (code) => code.startsWith("LMK") && code.includes("LUU"),
+    asset: linearLMKLUU,
+  },
+  { matcher: (code) => code.startsWith("LMK"), asset: linearLMKUU },
+  {
+    matcher: (code) => code.startsWith("LMF") && code.includes("LUU"),
+    asset: linearLMFLUU,
+  },
+  { matcher: (code) => code.startsWith("LMF"), asset: linearLMFUU },
+  {
+    matcher: (code) => code.startsWith("LMH") && code.includes("LUU"),
+    asset: linearLMHLUU,
+  },
+  { matcher: (code) => code.startsWith("LMH"), asset: linearLMHUU },
+  {
+    matcher: (code) => code.startsWith("LM") && code.includes("LUU"),
+    asset: linearLMLUU,
+  },
+  { matcher: (code) => code.startsWith("LM"), asset: linearLMUU },
+];
+
+function resolveLinearMotionImage(partCode = "") {
+  const normalized = String(partCode).toUpperCase();
+  if (!normalized) return null;
+
+  for (const rule of LINEAR_RULES) {
+    if (rule.matcher(normalized)) {
+      return rule.asset;
+    }
+  }
+
+  return null;
+}
+
+export function getCatalogProductMedia(rawProduct = {}, context = {}) {
+  const imageKey = rawProduct?.image;
+  if (imageKey && LINEAR_IMAGE_ALIAS[imageKey]) {
+    return mediaPayload(LINEAR_IMAGE_ALIAS[imageKey]);
+  }
+
+  const categoryName = context?.category?.categoryName || "";
+  if (categoryName === "Linear Motion") {
+    const linearImage = resolveLinearMotionImage(rawProduct?.partCode);
+    if (linearImage) return mediaPayload(linearImage);
+  }
+
+  return mediaPayload();
+}
 
 export function buildSpecificationsMap(specifications = []) {
   return (specifications || []).reduce((acc, spec) => {
@@ -52,6 +126,7 @@ export function flattenCatalogToProducts(productsData) {
       for (const raw of rawProducts) {
         const specs = buildSpecificationsMap(raw?.specifications);
         const price = computeCatalogProductPrice({ product: raw, part });
+        const media = getCatalogProductMedia(raw, { part, category });
 
         const pricePerUnit =
           raw?.price?.static === "yes" ? null : parseFloat(raw?.price?.value ?? 0);
@@ -73,8 +148,8 @@ export function flattenCatalogToProducts(productsData) {
           description: Object.entries(specs)
             .map(([key, value]) => `${key}: ${value}`)
             .join(", "),
-          image: "/src/assets/products/1.png",
-          images: ["/src/assets/products/1.png"],
+          image: media.image,
+          images: media.images,
           inStock: true,
           category: category?.categoryName,
           specifications: specs,

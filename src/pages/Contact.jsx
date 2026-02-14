@@ -67,7 +67,7 @@ export default function Contact() {
                   className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 text-sm font-semibold hover:bg-white/15 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  Call Sudhir
+                  Call Mr. Sudhir Yadav
                 </a>
                 <a
                   href="mailto:sales@mitsukiindia.com"
@@ -114,13 +114,13 @@ export default function Contact() {
                         href="tel:+917988050802"
                         className="text-sm text-blue-600 hover:underline block"
                       >
-                        Sudhir: +91 7988050802
+                        Mr. Sudhir Yadav: +91 7988050802
                       </a>
                       <a
                         href="tel:+919999810210"
                         className="text-sm text-blue-600 hover:underline block"
                       >
-                        Vikas: +91 9999810210
+                        Mr. Vikas Dua: +91 9999810210
                       </a>
                     </div>
                   </div>

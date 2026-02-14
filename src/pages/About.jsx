@@ -477,7 +477,7 @@ export default function About() {
                       </div>
 
                       <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mt-6 mb-2">
-                        Vikas
+                        Vikas Dua
                       </h3>
                       <p className="text-emerald-600 dark:text-emerald-400 font-semibold text-xl mb-4">
                         Co-Founder
@@ -538,11 +538,11 @@ export default function About() {
                     <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                       Founded by industry veteran{" "}
                       <span className="font-semibold text-gray-900 dark:text-white">
-                        Mr. Sudhir
+                        Mr. Sudhir Yadav
                       </span>
                       , and co-founded by{" "}
                       <span className="font-semibold text-gray-900 dark:text-white">
-                        Mr. Vikas
+                        Mr. Vikas Dua
                       </span>
                       , with{" "}
                       <span className="font-bold text-blue-600 dark:text-blue-400">

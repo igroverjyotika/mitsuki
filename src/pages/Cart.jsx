@@ -7,18 +7,8 @@ import { useAuth } from "../context/AuthContext";
 import PageWrapper from "../components/PageWrapper";
 import { useCart } from "../context/CartContext";
 
-// Import product images
+// Import fallback product image
 import product1 from "../assets/products/1.png";
-import product2 from "../assets/products/2.png";
-import product3 from "../assets/products/3.png";
-import product4 from "../assets/products/4.png";
-
-const imageMap = {
-  "/src/assets/products/1.png": product1,
-  "/src/assets/products/2.png": product2,
-  "/src/assets/products/3.png": product3,
-  "/src/assets/products/4.png": product4,
-};
 
 export default function Cart() {
   const { cartItems, removeFromCart, updateQuantity, clearCart, getCartTotal } =
@@ -129,7 +119,64 @@ export default function Cart() {
         createdAt: new Date(),
       };
 
-      await addDoc(collection(db, "orders"), orderData);
+      const docRef = await addDoc(collection(db, "orders"), orderData);
+
+      try {
+        const jsPDFModule = await import("jspdf/dist/jspdf.umd.min.js");
+        const jsPDF = jsPDFModule.jsPDF || jsPDFModule.default;
+        const pdf = new jsPDF();
+
+        pdf.setFontSize(18);
+        pdf.text("Quotation", 14, 20);
+
+        pdf.setFontSize(11);
+        pdf.text(`Quote ID: ${docRef.id}`, 14, 30);
+        pdf.text(`Customer: ${currentUser.email || currentUser.uid}`, 14, 36);
+        const created = new Date(orderData.createdTime * 1000)
+          .toISOString()
+          .slice(0, 10);
+        pdf.text(`Date: ${created}`, 14, 42);
+
+        pdf.setFontSize(12);
+        let y = 54;
+        pdf.text("Items:", 14, y);
+        y += 6;
+
+        cartItems.forEach((item, index) => {
+          const line1 = `${index + 1}. ${item.name} (SKU: ${
+            item.sku || item.partCode || item.id
+          })`;
+          const line2 = `Qty: ${item.quantity}  Unit: ₹${item.price.toFixed(
+            2,
+          )}  Total: ₹${(item.price * item.quantity).toFixed(2)}`;
+
+          pdf.setFontSize(11);
+          pdf.text(line1, 14, y);
+          y += 5;
+          pdf.text(line2, 18, y);
+          y += 7;
+        });
+
+        if (y > 240) {
+          pdf.addPage();
+          y = 20;
+        }
+
+        pdf.setFontSize(12);
+        pdf.text("Summary:", 14, y);
+        y += 6;
+        pdf.setFontSize(11);
+        pdf.text(`Subtotal: ₹${subtotal.toFixed(2)}`, 18, y);
+        y += 5;
+        pdf.text(`Shipping: ₹${shipping.toFixed(2)}`, 18, y);
+        y += 5;
+        pdf.text(`Total: ₹${total.toFixed(2)}`, 18, y);
+
+        pdf.save(`mitsuki-quote-${docRef.id}.pdf`);
+      } catch (pdfError) {
+        console.error("Error generating PDF quote:", pdfError);
+      }
+
       clearCart();
       navigate("/orders");
     } catch (error) {
@@ -157,7 +204,7 @@ export default function Cart() {
           {/* Cart Items */}
           <div className="lg:col-span-2 space-y-4">
             {cartItems.map((item) => {
-              const itemImage = imageMap[item.image] || product1;
+              const itemImage = item?.image || product1;
 
               return (
                 <div

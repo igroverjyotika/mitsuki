@@ -79,19 +79,32 @@ export default function Quotes() {
     [orders],
   );
 
-  const handleStatusChange = async (orderId, nextStatus) => {
+  const handlePayNow = async (order) => {
+    // For now, simulate payment success like Orders page
+    alert(
+      "Demo: Payment successful! In production, this would open Razorpay gateway.",
+    );
+
     try {
-      setUpdatingId(orderId);
-      await updateDoc(doc(db, "orders", orderId), {
-        status: nextStatus,
+      setUpdatingId(order.id);
+      await updateDoc(doc(db, "orders", order.id), {
+        status: "PAID",
+        paymentMode: "DEMO_UPI",
+        transactionId: `DEMO_${Date.now()}`,
+        transactionTime: Math.floor(Date.now() / 1000),
         statusUpdatedAt: Math.floor(Date.now() / 1000),
       });
+
       setOrders((prev) =>
-        prev.map((o) => (o.id === orderId ? { ...o, status: nextStatus } : o)),
+        prev.map((o) =>
+          o.id === order.id
+            ? { ...o, status: "PAID", paymentMode: "DEMO_UPI" }
+            : o,
+        ),
       );
     } catch (error) {
-      console.error("Error updating status:", error);
-      alert("Error updating quote status.");
+      console.error("Error marking quote as paid:", error);
+      alert("Error converting quote to order.");
     } finally {
       setUpdatingId(null);
     }
@@ -110,7 +123,7 @@ export default function Quotes() {
   return (
     <PageWrapper>
       <div className="max-w-6xl mx-auto py-8 px-4">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Your Quotes</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">My Quotes</h1>
 
         {quotes.length === 0 ? (
           <div className="text-center py-12">
@@ -159,28 +172,18 @@ export default function Quotes() {
                   </div>
                 </div>
 
-                {/* Status dropdown */}
+                {/* Convert quote to paid order */}
                 <div className="mb-4 flex items-center gap-3">
-                  <label className="text-sm font-medium text-gray-900">
-                    Order State:
-                  </label>
-                  <select
-                    value={order.status}
+                  <button
+                    type="button"
+                    onClick={() => handlePayNow(order)}
                     disabled={updatingId === order.id}
-                    onChange={(e) =>
-                      handleStatusChange(order.id, e.target.value)
-                    }
-                    className="border rounded px-3 py-2 text-sm bg-white"
+                    className="inline-flex items-center px-4 py-2 rounded text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
                   >
-                    {STATUS_OPTIONS.map((s) => (
-                      <option key={s} value={s}>
-                        {s.replaceAll("_", " ")}
-                      </option>
-                    ))}
-                  </select>
-                  {updatingId === order.id && (
-                    <span className="text-sm text-gray-500">Updating…</span>
-                  )}
+                    {updatingId === order.id
+                      ? "Processing Payment..."
+                      : "Pay Now to Order"}
+                  </button>
                 </div>
 
                 <div className="border-t pt-4">

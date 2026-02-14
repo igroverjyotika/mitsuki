@@ -89,7 +89,7 @@ export default function Footer() {
                   >
                     <span>📞</span>
                     <span className="inline-flex items-center rounded-md bg-white/10 px-2 py-0.5 text-[11px] font-bold tracking-wide text-white whitespace-nowrap">
-                      Sudhir
+                      Mr. Sudhir Yadav
                     </span>
                     +91 7988050802
                   </a>
@@ -100,7 +100,7 @@ export default function Footer() {
                   >
                     <span>📞</span>
                     <span className="inline-flex items-center rounded-md bg-white/10 px-2 py-0.5 text-[11px] font-bold tracking-wide text-white whitespace-nowrap">
-                      Vikas
+                      Mr. Vikas Dua
                     </span>
                     +91 9999810210
                   </a>
