@@ -1,0 +1,3926 @@
+{
+  "categories" : [
+    {
+      "categoryName" : "Linear Motion",
+      "part": [
+        {
+          "partName": "Hard Chrome Linear Shaft",
+          "mutable_properties": [
+            {
+              "propertyName": "length",
+              "minimum": "10",
+              "maximum": "4000",
+              "multiplier": "1",
+              "default": "4000",
+              "unit": "mm",
+              "minimumPayableUnit": "100"
+            }
+          ],
+          "description": [
+            {
+              "key": "material",
+              "value": "GCr15/45C HRC58-64"
+            },
+            {
+              "key": "tolerance",
+              "value": "G6"
+            }
+          ],
+          "products": [
+            {
+              "partCode": "MTK6",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "value": "0.320",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK8",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "0.330",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK10",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "0.350",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK12",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "0.370",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK16",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "0.450",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK20",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "0.640",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK25",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "0.980",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK30",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "1.320",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK35",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "1.810",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK40",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "2.440",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK45",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "45",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "3.010",
+                "unit": "mm"
+              }
+            },
+            {
+              "partCode": "MTK50",
+              "image": "Linear_motion_pdf_image_1",
+              "specifications": [
+                {
+                  "propertyName": "outerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price" : {
+                "value" : "3.870",
+                "unit": "mm"
+              }
+            }
+          ],
+          "filterProperties": [
+            "outerDiameter"
+          ]
+        },
+        {
+          "partName": "Linear Bushings",
+          "description": [
+            {
+              "key": "Surface Treatment",
+              "value": "Surface Treatment of Electroless nickel plating"
+            },
+            {
+              "key": "Rust",
+              "value": "Rust Free"
+            }
+          ],
+          "products": [
+            {
+              "partCode": "LM6UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "90"
+              }
+            },
+            {
+              "partCode": "LM8UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "95"
+              }
+            },
+            {
+              "partCode": "LM10UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "105"
+              }
+            },
+            {
+              "partCode": "LM12UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "115"
+              }
+            },
+            {
+              "partCode": "LM16UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "150"
+              }
+            },
+            {
+              "partCode": "LM20UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "160"
+              }
+            },
+            {
+              "partCode": "LM25UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "290"
+              }
+            },
+            {
+              "partCode": "LM30UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LM35UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "530"
+              }
+            },
+            {
+              "partCode": "LM40UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "700"
+              }
+            },
+            {
+              "partCode": "LM50UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1900"
+              }
+            },
+            {
+              "partCode": "LM6LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "200"
+              }
+            },
+            {
+              "partCode": "LM8LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "200"
+              }
+            },
+            {
+              "partCode": "LM10LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "250"
+              }
+            },
+            {
+              "partCode": "LM12LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "250"
+              }
+            },
+            {
+              "partCode": "LM16LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "320"
+              }
+            },
+            {
+              "partCode": "LM20LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LM25LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "620"
+              }
+            },
+            {
+              "partCode": "LM30LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "700"
+              }
+            },
+            {
+              "partCode": "LM35LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1000"
+              }
+            },
+            {
+              "partCode": "LM40LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1400"
+              }
+            },
+            {
+              "partCode": "LM50LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "4200"
+              }
+            },
+            {
+              "partCode": "LMH6UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "220"
+              }
+            },
+            {
+              "partCode": "LMH8UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "220"
+              }
+            },
+            {
+              "partCode": "LMH10UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "280"
+              }
+            },
+            {
+              "partCode": "LMH12UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "280"
+              }
+            },
+            {
+              "partCode": "LMH16UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMH20UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMH25UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "650"
+              }
+            },
+            {
+              "partCode": "LMH30UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "750"
+              }
+            },
+            {
+              "partCode": "LMH35UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1150"
+              }
+            },
+            {
+              "partCode": "LMH40UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1300"
+              }
+            },
+            {
+              "partCode": "LMH50UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "3200"
+              }
+            },
+            {
+              "partCode": "LMH6LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMH8LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMH10LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "420"
+              }
+            },
+            {
+              "partCode": "LMH12LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "420"
+              }
+            },
+            {
+              "partCode": "LMH16LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "530"
+              }
+            },
+            {
+              "partCode": "LMH20LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "600"
+              }
+            },
+            {
+              "partCode": "LMH25LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1100"
+              }
+            },
+            {
+              "partCode": "LMH30LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1220"
+              }
+            },
+            {
+              "partCode": "LMH35LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1950"
+              }
+            },
+            {
+              "partCode": "LMH40LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "2050"
+              }
+            },
+            {
+              "partCode": "LMH50LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Compact",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "5100"
+              }
+            },
+            {
+              "partCode": "LMF6UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "200"
+              }
+            },
+            {
+              "partCode": "LMF8UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "200"
+              }
+            },
+            {
+              "partCode": "LMF10UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "250"
+              }
+            },
+            {
+              "partCode": "LMF12UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "250"
+              }
+            },
+            {
+              "partCode": "LMF16UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "300"
+              }
+            },
+            {
+              "partCode": "LMF20UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "320"
+              }
+            },
+            {
+              "partCode": "LMF25UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "500"
+              }
+            },
+            {
+              "partCode": "LMF30UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "600"
+              }
+            },
+            {
+              "partCode": "LMF35UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "900"
+              }
+            },
+            {
+              "partCode": "LMF40UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1100"
+              }
+            },
+            {
+              "partCode": "LMF50UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "3000"
+              }
+            },
+            {
+              "partCode": "LMF6LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "320"
+              }
+            },
+            {
+              "partCode": "LMF8LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "320"
+              }
+            },
+            {
+              "partCode": "LMF10LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "400"
+              }
+            },
+            {
+              "partCode": "LMF12LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "400"
+              }
+            },
+            {
+              "partCode": "LMF16LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "480"
+              }
+            },
+            {
+              "partCode": "LMF20LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "530"
+              }
+            },
+            {
+              "partCode": "LMF25LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "820"
+              }
+            },
+            {
+              "partCode": "LMF30LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1020"
+              }
+            },
+            {
+              "partCode": "LMF35LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1600"
+              }
+            },
+            {
+              "partCode": "LMF40LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1900"
+              }
+            },
+            {
+              "partCode": "LMF50LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Round",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "6000"
+              }
+            },
+            {
+              "partCode": "LMK6UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "220"
+              }
+            },
+            {
+              "partCode": "LMK8UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "220"
+              }
+            },
+            {
+              "partCode": "LMK10UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "280"
+              }
+            },
+            {
+              "partCode": "LMK12UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "280"
+              }
+            },
+            {
+              "partCode": "LMK16UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "320"
+              }
+            },
+            {
+              "partCode": "LMK20UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMK25UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "530"
+              }
+            },
+            {
+              "partCode": "LMK30UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "650"
+              }
+            },
+            {
+              "partCode": "LMK35UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "950"
+              }
+            },
+            {
+              "partCode": "LMK40UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1200"
+              }
+            },
+            {
+              "partCode": "LMK50UU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "3300"
+              }
+            },
+            {
+              "partCode": "LMK6LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMK8LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMK10LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "480"
+              }
+            },
+            {
+              "partCode": "LMK12LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "400"
+              }
+            },
+            {
+              "partCode": "LMK16LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "530"
+              }
+            },
+            {
+              "partCode": "LMK20LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "600"
+              }
+            },
+            {
+              "partCode": "LMK25LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "950"
+              }
+            },
+            {
+              "partCode": "LMK30LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1100"
+              }
+            },
+            {
+              "partCode": "LMK35LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1650"
+              }
+            },
+            {
+              "partCode": "LMK40LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "2050"
+              }
+            },
+            {
+              "partCode": "LMK50LUU",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "subType",
+                  "value": "Square",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "5600"
+              }
+            }
+
+
+
+
+
+
+
+          ],
+          "selectionProperties": [
+            "type",
+            "subType",
+            "size"
+          ],
+          "filterProperties": [
+            "innerDiameter",
+            "outerDiameter",
+            "length"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName" : "Caster Leveling Mount",
+      "part": [
+        {
+          "partName": "Metal Pad For Heavy Load",
+           "products": [
+             {
+               "partCode": "LMHL-M10-T100",
+               "specifications": [
+                 {
+                   "propertyName": "baseDiameter",
+                   "value": "80",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "size",
+                   "value": "M10",
+                   "unit": ""
+                 },
+                 {
+                   "propertyName": "threadLength",
+                   "value": "100",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "loadCapacity",
+                   "value": "600",
+                   "unit": "Kg"
+                 }
+               ],
+               "price": {
+                 "static": "yes",
+                 "value": "250"
+               }
+             },
+             {
+               "partCode": "LMHL-M12-T100",
+               "specifications": [
+                 {
+                   "propertyName": "baseDiameter",
+                   "value": "80",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "size",
+                   "value": "M12",
+                   "unit": ""
+                 },
+                 {
+                   "propertyName": "threadLength",
+                   "value": "100",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "loadCapacity",
+                   "value": "650",
+                   "unit": "Kg"
+                 }
+               ],
+               "price": {
+                 "static": "yes",
+                 "value": "300"
+               }
+             },
+             {
+               "partCode": "LMHL-M12-T150",
+               "specifications": [
+                 {
+                   "propertyName": "baseDiameter",
+                   "value": "80",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "size",
+                   "value": "M12",
+                   "unit": ""
+                 },
+                 {
+                   "propertyName": "threadLength",
+                   "value": "150",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "loadCapacity",
+                   "value": "650",
+                   "unit": "Kg"
+                 }
+               ],
+               "price": {
+                 "static": "yes",
+                 "value": "350"
+               }
+             },
+             {
+               "partCode": "LMHL-M16-T100",
+               "specifications": [
+                 {
+                   "propertyName": "baseDiameter",
+                   "value": "80",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "size",
+                   "value": "M16",
+                   "unit": ""
+                 },
+                 {
+                   "propertyName": "threadLength",
+                   "value": "100",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "loadCapacity",
+                   "value": "700",
+                   "unit": "Kg"
+                 }
+               ],
+               "price": {
+                 "static": "yes",
+                 "value": "350"
+               }
+             },
+
+             {
+               "partCode": "LMHL-M16-T150",
+               "specifications": [
+                 {
+                   "propertyName": "baseDiameter",
+                   "value": "80",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "size",
+                   "value": "M16",
+                   "unit": ""
+                 },
+                 {
+                   "propertyName": "threadLength",
+                   "value": "150",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "loadCapacity",
+                   "value": "700",
+                   "unit": "Kg"
+                 }
+               ],
+               "price": {
+                 "static": "yes",
+                 "value": "450"
+               }
+             },
+
+             {
+               "partCode": "LMHL-M20-T100",
+               "specifications": [
+                 {
+                   "propertyName": "baseDiameter",
+                   "value": "80",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "size",
+                   "value": "M20",
+                   "unit": ""
+                 },
+                 {
+                   "propertyName": "threadLength",
+                   "value": "100",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "loadCapacity",
+                   "value": "800",
+                   "unit": "Kg"
+                 }
+               ],
+               "price": {
+                 "static": "yes",
+                 "value": "400"
+               }
+             },
+             {
+               "partCode": "LMHL-M20-T150",
+               "specifications": [
+                 {
+                   "propertyName": "baseDiameter",
+                   "value": "80",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "size",
+                   "value": "M20",
+                   "unit": ""
+                 },
+                 {
+                   "propertyName": "threadLength",
+                   "value": "150",
+                   "unit": "mm"
+                 },
+                 {
+                   "propertyName": "loadCapacity",
+                   "value": "800",
+                   "unit": "Kg"
+                 }
+               ],
+               "price": {
+                 "static": "yes",
+                 "value": "450"
+               }
+             }
+           ],
+          "filterProperties": [
+            "baseDiameter",
+            "size",
+            "threadLength"
+          ]
+        },
+        {
+          "partName": "Anti vibration Rubber",
+          "products": [
+            {
+              "partCode": "LMAV-M10-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M10",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "100",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "150"
+              }
+            },
+            {
+              "partCode": "LMAV-M12-T120",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M12",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "120",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "130",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "180"
+              }
+            },
+            {
+              "partCode": "LMAV-M16-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M16",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "200",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "280"
+              }
+            }
+          ],
+          "filterProperties": [
+            "baseDiameter",
+            "size",
+            "threadLength"
+          ]
+        },
+        {
+          "partName": "Floor Mount Pads/ Adjustment Pads/ Fixed Pads",
+          "products": [
+            {
+              "partCode": "LMFM-M10-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M10",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "430",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "180"
+              }
+            },
+            {
+              "partCode": "LMFM-M12-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M12",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "490",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "200"
+              }
+            },
+            {
+              "partCode": "LMFM-M12-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M12",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "490",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "235"
+              }
+            },
+            {
+              "partCode": "LMFM-M16-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M16",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "590",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "235"
+              }
+            },
+
+            {
+              "partCode": "LMFM-M16-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M16",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "590",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "340"
+              }
+            },
+
+            {
+              "partCode": "LMFM-M20-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M20",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "880",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "380"
+              }
+            },
+            {
+              "partCode": "LMFM-M20-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M20",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "880",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "420"
+              }
+            }
+          ],
+          "filterProperties": [
+            "baseDiameter",
+            "size",
+            "threadLength"
+          ]
+        },
+        {
+          "partName": "Anti vibration Pad",
+          "products": [
+            {
+              "partCode": "LMAVP-M10-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M10",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "400",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "200"
+              }
+            },
+            {
+              "partCode": "LMAVP-M12-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M12",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "500",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "235"
+              }
+            },
+            {
+              "partCode": "LMAVP-M12-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M12",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "500",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "290"
+              }
+            },
+            {
+              "partCode": "LMAVP-M16-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M16",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "600",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "320"
+              }
+            },
+
+            {
+              "partCode": "LMAVP-M16-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M16",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "600",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "390"
+              }
+            },
+
+            {
+              "partCode": "LMAVP-M20-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M20",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "650",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "430"
+              }
+            },
+            {
+              "partCode": "LMAVP-M20-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M20",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "650",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "500"
+              }
+            }
+          ],
+          "filterProperties": [
+            "baseDiameter",
+            "size",
+            "threadLength"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName" : "Caster Wheel",
+      "part": [
+        {
+          "partName": "With Levelling Mount",
+          "products": [
+            {
+              "partCode": "GD-40",
+              "specifications": [
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "50",
+                  "unit": "kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "450"
+              }
+            },
+            {
+              "partCode": "GD-60",
+              "specifications": [
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "250",
+                  "unit": "kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "690"
+              }
+            },
+            {
+              "partCode": "GD-80",
+              "specifications": [
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "500",
+                  "unit": "kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1100"
+              }
+            },
+            {
+              "partCode": "GD-100",
+              "specifications": [
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "750",
+                  "unit": "kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1500"
+              }
+            },
+            {
+              "partCode": "GD-120",
+              "specifications": [
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "1000",
+                  "unit": "kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1650"
+              }
+            }
+          ],
+          "filterProperties": [
+            "loadCapacity"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName" : "Door Hardware",
+      "part": [
+        {
+          "partName": "Aluminium handles round bar",
+          "products": [
+            {
+              "partCode": "DH-AH-L110-H38",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "110",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "height",
+                  "value": "38",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "190"
+              }
+            },
+            {
+              "partCode": "DH-AH-L160-H51",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "160",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "height",
+                  "value": "51",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "320"
+              }
+            },
+            {
+              "partCode": "DH-AH-L210-H51",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "210",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "height",
+                  "value": "51",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "470"
+              }
+            }
+          ],
+          "filterProperties": [
+            "length",
+            "height"
+          ]
+        },
+        {
+          "partName": "Plastic handles",
+          "products": [
+            {
+              "partCode": "DH-PH-L140-H40",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "140",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "height",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "47"
+              }
+            },
+            {
+              "partCode": "DH-PH-L170-H45",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "170",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "height",
+                  "value": "45",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "93"
+              }
+            },
+            {
+              "partCode": "DH-PH-L200-H51",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "200",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "height",
+                  "value": "51",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "100"
+              }
+            }
+          ],
+          "filterProperties": [
+            "length",
+            "height"
+          ]
+        },
+        {
+          "partName": "Zinc Alloy Hinge",
+          "products": [
+            {
+              "partCode": "DH-AHI-L30-B38",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "30",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "38",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "80"
+              }
+            },
+            {
+              "partCode": "DH-AHI-L50-B50",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "50",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "50",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "150"
+              }
+            }
+          ,
+            {
+              "partCode": "DH-AHI-L30-B40",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "30",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "40",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030 & 4040",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "185"
+              }
+            }
+          ,
+            {
+              "partCode": "DH-AHI-L50-B62",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "50",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "62",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "170"
+              }
+            }
+          ,
+            {
+              "partCode": "DH-AHI-L50-B68",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "50",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "68",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4545",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "170"
+              }
+            }
+          ],
+          "filterProperties": [
+            "length",
+            "breadth",
+            "profile"
+          ]
+        },
+        {
+          "partName": "Plastic Hinge",
+          "products": [
+            {
+              "partCode": "DH-PHI-L30-B38",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "30",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "38",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "33"
+              }
+            },
+            {
+              "partCode": "DH-PHI-L50-B50",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "50",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "50",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "44"
+              }
+            }
+          ,
+            {
+              "partCode": "DH-PHI-L30-B40",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "30",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "40",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030 & 4040",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "73"
+              }
+            }
+          ,
+            {
+              "partCode": "DH-PHI-L50-B62",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "50",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "62",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "73"
+              }
+            }
+          ,
+            {
+              "partCode": "DH-PHI-L50-B68",
+              "specifications": [
+                {
+                  "propertyName": "length",
+                  "value": "50",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "breadth",
+                  "value": "68",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4545",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "105"
+              }
+            }
+          ],
+          "filterProperties": [
+            "length",
+            "breadth",
+            "profile"
+          ]
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep UI snappy: avoid global transitions (theme toggle removed). */
+
+/* Custom animations for About page */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin 25s linear infinite reverse;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Fade blink animation for bulk orders */
+@keyframes fade-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-fade-blink {
+  animation: fade-blink 2s ease-in-out infinite;
+}
+
+/* Slow bounce for phone icon */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Expand animation for underline */
+@keyframes expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 5rem;
+  }
+}
+
+.animate-expand {
+  animation: expand 1s ease-out forwards;
+  animation-delay: 2s;
+  width: 0;
+}
+
+/* Toast animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Home hero image: subtle zoom-in on load */
+@keyframes heroZoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-heroZoomIn {
+  animation: heroZoomIn 2200ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-heroZoomIn {
+    animation: none;
+  }
+}
