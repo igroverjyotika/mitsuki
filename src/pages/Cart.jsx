@@ -38,7 +38,7 @@ export default function Cart() {
               Add some products to get started!
             </p>
             <Link
-              to={continueShoppingTo}
+              to="/shop"
               className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               Browse Products
