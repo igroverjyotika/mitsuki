@@ -77,38 +77,38 @@ export default function FeaturedParts({
         </div>
 
         <div className="mt-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
             {visible.map((part) => (
               <Link
                 key={part.name}
                 to="/shop"
-                className="group rounded-2xl border border-gray-200 bg-white p-5 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900/15"
+                className="group rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900/15"
                 title={part.name}
               >
-                <div className="mx-auto w-full max-w-[200px] aspect-square rounded-2xl bg-white shadow-md ring-1 ring-gray-100 flex items-center justify-center transition-all duration-300 group-hover:shadow-lg group-hover:ring-gray-200">
+                <div className="mx-auto w-full max-w-[160px] aspect-[4/3] rounded-xl bg-white shadow-sm ring-1 ring-gray-100 flex items-center justify-center transition-all duration-300 group-hover:shadow-md group-hover:ring-gray-200">
                   <img
                     src={pickTileImage(part.name)}
                     alt=""
-                    className="h-32 w-32 object-contain transition-transform duration-300 group-hover:scale-[1.08]"
+                    className="h-24 w-24 object-contain transition-transform duration-300 group-hover:scale-[1.05]"
                     loading="lazy"
                   />
                 </div>
 
-                <div className="mt-4 text-[17px] font-semibold text-gray-900">
+                <div className="mt-3 text-[15px] md:text-[16px] font-semibold text-gray-900 line-clamp-2 min-h-[3rem]">
                   {part.name}
                 </div>
 
-                <div className="mt-2 text-sm font-semibold text-blue-600">
+                <div className="mt-1.5 text-xs md:text-sm font-semibold text-blue-600">
                   {Math.max(0, part.productCount)} SKUs
                 </div>
               </Link>
             ))}
           </div>
 
-          <div className="mt-10 flex items-center justify-center">
+          <div className="mt-8 flex items-center justify-center">
             <Link
               to="/shop"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900/20"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900/20"
             >
               View All Featured Products <ChevronRight className="w-4 h-4" />
             </Link>

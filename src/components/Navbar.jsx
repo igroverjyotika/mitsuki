@@ -308,16 +308,26 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-      <div className="bg-gray-100 border-b border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
-        <PageWrapper className="py-2.5 text-left text-sm">
-          <div className="flex items-center gap-8 text-gray-700">
+      <div className="bg-gray-50 border-b border-gray-200/80 shadow-sm relative z-40">
+        <PageWrapper className="py-2.5 text-left text-xs sm:text-sm">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-gray-700">
             <span className="inline-flex items-center gap-2">
-              <IndianRupee className="w-4 h-4" />
-              Low Price Guarantee
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-[11px] font-semibold text-white">
+                ₹
+              </span>
+              <span>
+                <span className="font-semibold">Low Price Guarantee</span>
+                <span className="hidden sm:inline text-gray-500"> · Best value on industrial components</span>
+              </span>
             </span>
             <span className="inline-flex items-center gap-2">
-              <Truck className="w-4 h-4" />
-              Standard Shipping
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-[11px] font-semibold text-white">
+                <Truck className="w-3 h-3" />
+              </span>
+              <span>
+                <span className="font-semibold">Standard Shipping</span>
+                <span className="hidden sm:inline text-gray-500"> · Reliable delivery across India</span>
+              </span>
             </span>
           </div>
         </PageWrapper>

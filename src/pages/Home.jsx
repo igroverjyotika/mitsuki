@@ -10,12 +10,18 @@ import certificateImage from "../assets/certificate.png";
 
 import heroBg from "../assets/flow-bg.svg";
 import mixLaptop from "../assets/grey-laptop.png";
+import screen1 from "../assets/linear-motion/MTK.jpg";
+import screen2 from "../assets/linear-motion/HGH.jpg";
+import screen3 from "../assets/linear-motion/SK.jpg";
 
 export default function Home() {
   const { currentUser } = useAuth();
   const [currentProductPage, setCurrentProductPage] = useState(0);
+   const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
   const [showCertificateModal, setShowCertificateModal] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const heroScreens = [screen1, screen2, screen3];
 
   const stats = [
     { number: "10,000+", label: "Products" },
@@ -58,6 +64,15 @@ export default function Home() {
     }, 4000);
     return () => clearInterval(interval);
   }, []);
+
+  // Auto-rotate images shown on the laptop "screen"
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentScreenIndex((prev) => (prev + 1) % heroScreens.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [heroScreens.length]);
 
   const nextProductPage = () => {
     setCurrentProductPage((prev) => (prev + 1) % productRanges.length);
@@ -126,44 +141,61 @@ export default function Home() {
       >
         <PageWrapper className="min-h-[calc(100vh-140px)] pt-10 pb-10 flex items-start">
           <div className="relative z-10 w-full flex flex-col lg:flex-row justify-between gap-10">
-            <div className="max-w-[380px]">
-              <h1 className="text-4xl font-bold mb-4">
-                The Innovation Behind <br /> Our Product
+            {/* Hero copy */}
+            <div className="max-w-xl pt-4 lg:pt-10 animate-fadeIn">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 text-gray-900">
+                The Innovation Behind
+                <span className="block bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-amber-300 to-white">
+                  Our Product
+                </span>
               </h1>
 
-              <p className="text-gray-700 mb-4">
-                <b>Mitsuki India</b>, We Don't Just Provide Components ; We
-                Engineer Solutions. Mitsuki India Has Become synonymous With
-                Excellence In Factory Automation and Motion Control Technology.
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-3">
+                At <span className="font-semibold">Mitsuki India</span>, we don&apos;t just
+                provide components; we engineer complete solutions. Mitsuki India has
+                become synonymous with excellence in factory automation and motion
+                control technology.
               </p>
 
-              <p className="font-semibold mb-6">
-                "On Time Delivery" Is More Than a Tag line for Us - It's
-                Commitment.
+              <p className="text-gray-900 font-semibold text-base sm:text-lg mb-6">
+                
+"On Time Delivery" is more than a tagline for us – it&apos;s a commitment.
               </p>
 
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <Link
                   to="/shop"
-                  className="bg-black text-white px-6 py-2 rounded hover:bg-gray-900 transition-colors"
+                  className="inline-flex items-center justify-center px-7 py-2.5 rounded-full bg-yellow-400 text-black text-sm sm:text-base font-semibold shadow-md hover:bg-yellow-300 hover:shadow-lg transition-all"
                 >
                   Shop Now
                 </Link>
                 <Link
                   to="/cart"
-                  className="border border-black text-black px-6 py-2 rounded bg-white hover:bg-black hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center px-7 py-2.5 rounded-full border border-gray-900 text-gray-900 text-sm sm:text-base font-semibold bg-white/90 hover:bg-gray-900 hover:text-white transition-all"
                 >
                   Get Quote
                 </Link>
               </div>
             </div>
 
-            <div className="relative w-full lg:w-[680px] flex items-center justify-center">
+            {/* Hero visual */}
+            <div className="relative w-full lg:w-[680px] flex items-center justify-center animate-heroZoomIn">
+              <div className="absolute -inset-y-10 -right-10 lg:-right-20 w-[420px] lg:w-[520px] bg-gradient-to-tr from-yellow-300/25 via-blue-400/15 to-purple-500/20 blur-3xl rounded-full pointer-events-none" />
+              {/* Laptop base image, no outer shadow so it blends with white */}
               <img
                 src={mixLaptop}
-                alt="Industrial components"
-                className="w-full max-w-[720px] h-auto object-contain animate-heroZoomIn drop-shadow-[0_28px_42px_rgba(0,0,0,0.22)]"
+                alt="Industrial components on Mitsuki platform"
+                className="relative w-full max-w-[720px] h-auto object-contain"
               />
+
+              {/* Rotating "screen" content overlay - clean white background, no visible border */}
+              <div className="absolute top-[16%] left-1/2 -translate-x-1/2 w-[63%] aspect-[16/10] rounded-2xl overflow-hidden bg-white">
+                <img
+                  src={heroScreens[currentScreenIndex]}
+                  alt="Highlighted Mitsuki product"
+                  className="w-full h-full object-contain bg-white transition-opacity duration-700"
+                />
+              </div>
             </div>
           </div>
         </PageWrapper>

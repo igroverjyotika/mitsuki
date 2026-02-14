@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Navbar />
-      <main className="w-full py-8">
+      <main className="w-full">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />

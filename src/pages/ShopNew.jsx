@@ -429,7 +429,8 @@ export default function ShopNew() {
                 className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 transition-colors"
               >
                 <SearchIcon className="w-4 h-4" />
-                <span>Search catalog</span>
+                <span className="hidden sm:inline">Search products, categories…</span>
+                <span className="sm:hidden">Search</span>
                 {isSearchActive && (
                   <span className="ml-1 max-w-[140px] truncate rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-500">
                     “{rawQuery}”
@@ -439,29 +440,29 @@ export default function ShopNew() {
             ) : (
               <form
                 onSubmit={handleInlineSearchSubmit}
-                className="flex w-full lg:w-auto max-w-full items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm"
+                className="flex w-full lg:w-auto max-w-full items-center gap-1.5 rounded-full border border-gray-300 bg-white px-3 py-1.5 shadow-sm focus-within:ring-2 focus-within:ring-gray-900/15"
               >
-                <SearchIcon className="w-4 h-4 text-gray-400" />
+                <SearchIcon className="w-4 h-4 text-gray-400 flex-none" />
                 <input
                   ref={searchInputRef}
                   type="text"
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
-                  placeholder="Search products, categories..."
+                  placeholder="Search products, categories, part codes…"
                   className="flex-1 min-w-0 bg-transparent text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none"
                 />
                 {searchInput && (
                   <button
                     type="button"
                     onClick={handleClearQuery}
-                    className="text-xs font-semibold text-gray-500 hover:text-gray-900"
+                    className="text-xs font-semibold text-gray-500 hover:text-gray-900 whitespace-nowrap"
                   >
                     Clear
                   </button>
                 )}
                 <button
                   type="submit"
-                  className="rounded-full bg-gray-900 px-4 py-1.5 text-sm font-semibold text-white hover:bg-gray-800 transition-colors"
+                  className="hidden sm:inline-flex rounded-full bg-gray-900 px-4 py-1.5 text-sm font-semibold text-white hover:bg-gray-800 transition-colors whitespace-nowrap"
                 >
                   Search
                 </button>
