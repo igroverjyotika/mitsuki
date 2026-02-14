@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import productsData from "../data/Products.json";
 import PageWrapper from "./PageWrapper";
+import { getCatalogProductMedia } from "../utils/productCatalog";
 
 import product1 from "../assets/products/1.png";
 import product2 from "../assets/products/2.png";
@@ -43,12 +44,23 @@ function extractParts(data) {
         byName.set(name, {
           name,
           productCount,
+          part,
+          category,
         });
       }
     }
   }
 
   return Array.from(byName.values());
+}
+
+function pickRealImage(part, category, fallbackName) {
+  const firstProduct = part?.products?.[0];
+  if (firstProduct) {
+    const media = getCatalogProductMedia(firstProduct, { part, category });
+    if (media?.image) return media.image;
+  }
+  return pickTileImage(fallbackName || part?.partName || "Product");
 }
 
 export default function FeaturedParts({
@@ -87,8 +99,8 @@ export default function FeaturedParts({
               >
                 <div className="mx-auto w-full max-w-[160px] aspect-[4/3] rounded-xl bg-white shadow-sm ring-1 ring-gray-100 flex items-center justify-center transition-all duration-300 group-hover:shadow-md group-hover:ring-gray-200">
                   <img
-                    src={pickTileImage(part.name)}
-                    alt=""
+                    src={pickRealImage(part.part, part.category, part.name)}
+                    alt={part.name}
                     className="h-24 w-24 object-contain transition-transform duration-300 group-hover:scale-[1.05]"
                     loading="lazy"
                   />

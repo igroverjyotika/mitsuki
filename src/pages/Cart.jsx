@@ -187,11 +187,11 @@ export default function Cart() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-12">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-6 sm:py-10">
       <PageWrapper>
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
             Shopping Cart
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
@@ -200,7 +200,7 @@ export default function Cart() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Cart Items */}
           <div className="lg:col-span-2 space-y-4">
             {cartItems.map((item) => {
@@ -209,13 +209,13 @@ export default function Cart() {
               return (
                 <div
                   key={item.id}
-                  className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-md border border-gray-200 dark:border-gray-800"
+                  className="bg-white dark:bg-gray-900 rounded-xl p-4 sm:p-6 shadow-md border border-gray-200 dark:border-gray-800"
                 >
-                  <div className="flex gap-6">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                     {/* Product Image */}
                     <Link
                       to={`/product/${item.id}`}
-                      className="flex-shrink-0 w-24 h-24 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden"
+                      className="flex-shrink-0 w-full sm:w-24 h-40 sm:h-24 bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden"
                     >
                       <img
                         src={itemImage}
@@ -226,7 +226,7 @@ export default function Cart() {
 
                     {/* Product Info */}
                     <div className="flex-1 min-w-0">
-                      <div className="flex justify-between gap-4 mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-2">
                         <div>
                           <Link
                             to={`/product/${item.id}`}
@@ -246,7 +246,7 @@ export default function Cart() {
                         </div>
                         <button
                           onClick={() => removeFromCart(item.id)}
-                          className="text-red-500 hover:text-red-600 transition-colors flex-shrink-0"
+                          className="text-red-500 hover:text-red-600 transition-colors flex-shrink-0 self-start"
                           title="Remove item"
                         >
                           <svg
@@ -265,7 +265,7 @@ export default function Cart() {
                         </button>
                       </div>
 
-                      <div className="flex items-center justify-between mt-4">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4">
                         {/* Quantity Controls */}
                         <div className="flex items-center gap-3">
                           <span className="text-sm text-gray-600 dark:text-gray-400">
@@ -295,8 +295,8 @@ export default function Cart() {
                         </div>
 
                         {/* Price */}
-                        <div className="text-right">
-                          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                        <div className="text-left sm:text-right">
+                          <div className="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400">
                             ₹{(item.price * item.quantity).toFixed(2)}
                           </div>
                           <div className="text-sm text-gray-600 dark:text-gray-400">
@@ -321,7 +321,7 @@ export default function Cart() {
 
           {/* Order Summary */}
           <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-800 sticky top-24">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-5 sm:p-6 shadow-lg border border-gray-200 dark:border-gray-800 lg:sticky lg:top-24">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Order Summary
               </h2>
@@ -352,19 +352,19 @@ export default function Cart() {
                 <button
                   onClick={handleGenerateQuote}
                   disabled={generatingQuote}
-                  className="block w-full px-6 py-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 disabled:from-gray-400 disabled:to-gray-500 text-white text-center rounded-lg font-bold shadow-lg transform hover:scale-105 disabled:hover:scale-100 transition-all duration-300"
+                  className="block w-full px-6 py-3 sm:py-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 disabled:from-gray-400 disabled:to-gray-500 text-white text-center rounded-lg font-bold shadow-lg transform hover:scale-105 disabled:hover:scale-100 transition-all duration-300"
                 >
                   {generatingQuote ? "Generating Quote..." : "Generate Quote"}
                 </button>
                 <Link
                   to="/checkout"
-                  className="block w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-center rounded-lg font-bold shadow-lg transform hover:scale-105 transition-all duration-300"
+                  className="block w-full px-6 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-center rounded-lg font-bold shadow-lg transform hover:scale-105 transition-all duration-300"
                 >
                   Proceed to Payment
                 </Link>
                 <Link
                   to="/shop"
-                  className="block w-full px-6 py-4 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white text-center rounded-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                  className="block w-full px-6 py-3 sm:py-4 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white text-center rounded-lg font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                 >
                   Continue Shopping
                 </Link>

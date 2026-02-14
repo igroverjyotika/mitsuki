@@ -42,7 +42,7 @@ export default function FeaturedProductTile({ product }) {
         />
       )}
 
-      <div className="bg-gray-100 rounded-2xl p-5 flex items-center gap-5">
+      <div className="bg-gray-100 rounded-2xl p-5 flex items-center gap-5 min-h-[148px] h-full">
         <Link to={`/product/${product.id}`} className="flex-shrink-0">
           <div className="w-28 h-20 bg-white/70 rounded-xl flex items-center justify-center overflow-hidden">
             <img
@@ -57,7 +57,7 @@ export default function FeaturedProductTile({ product }) {
         <div className="min-w-0 flex-1">
           <Link
             to={`/product/${product.id}`}
-            className="block font-semibold text-gray-900 leading-snug line-clamp-2"
+            className="block font-semibold text-gray-900 leading-snug line-clamp-2 min-h-[2.75rem]"
           >
             {product.name}
           </Link>

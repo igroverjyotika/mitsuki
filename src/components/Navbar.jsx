@@ -80,37 +80,36 @@ const Navbar = () => {
         className={`sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-black to-gray-900 text-white transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
           }`}
       >
-        <PageWrapper className="py-6">
-          <div className="flex items-center gap-3">
+        <PageWrapper className="py-4 lg:py-6">
+          <div className="flex items-center justify-between gap-3">
             {/* Logo */}
-           {/* Logo */}
-<div className="flex items-center gap-4 flex-none">
-  <NavLink
-    to="/"
-    className="flex items-center gap-2 select-none"
-    aria-label="Mitsuki Home"
-  >
-    {/* Logo Icon */}
-    <div className="w-9 h-9 border border-white/60 text-white font-bold text-xl flex items-center justify-center tracking-tight">
-      M
-    </div>
+            <div className="flex items-center gap-4 flex-none">
+              <NavLink
+                to="/"
+                className="flex items-center gap-2 select-none"
+                aria-label="Mitsuki Home"
+              >
+                {/* Logo Icon */}
+                <div className="w-8 h-8 sm:w-9 sm:h-9 border border-white/60 text-white font-bold text-lg sm:text-xl flex items-center justify-center tracking-tight">
+                  M
+                </div>
 
-    {/* Logo Text */}
-    <span className="font-semibold text-3xl md:text-4xl tracking-tight text-white">
-      Mi<span className="text-yellow-400">TSU</span>Ki
-    </span>
-  </NavLink>
+                {/* Logo Text */}
+                <span className="font-semibold text-2xl sm:text-3xl md:text-4xl tracking-tight text-white">
+                  Mi<span className="text-yellow-400">TSU</span>Ki
+                </span>
+              </NavLink>
 
-  {/* Tagline */}
-  <div className="hidden md:flex flex-col pl-4 border-l border-white/20 leading-tight">
-    <span className="text-[10px] uppercase tracking-[0.3em] text-white/60">
-      Your vision
-    </span>
-    <span className="text-[10px] uppercase tracking-[0.3em] text-white/60">
-      Our priority
-    </span>
-  </div>
-</div>
+              {/* Tagline */}
+              <div className="hidden md:flex flex-col pl-4 border-l border-white/20 leading-tight">
+                <span className="text-[10px] uppercase tracking-[0.3em] text-white/60">
+                  Your vision
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.3em] text-white/60">
+                  Our priority
+                </span>
+              </div>
+            </div>
 
 
 
@@ -134,7 +133,7 @@ const Navbar = () => {
             </ul>
 
             {/* Right actions */}
-            <div className="flex items-center gap-3 md:gap-4 flex-none justify-end">
+            <div className="flex items-center gap-2 sm:gap-3 md:gap-4 flex-none justify-end">
               {/* Search icon to open overlay */}
               <button
                 onClick={handleSearchCTA}
@@ -149,11 +148,11 @@ const Navbar = () => {
                 <div className="relative">
                   <button
                     onClick={() => setUserMenuOpen((v) => !v)}
-                    className="bg-gray-800 rounded-full px-3 py-2 flex items-center gap-2 hover:bg-gray-700 transition-colors"
+                    className="bg-gray-800 rounded-full p-2 sm:px-3 sm:py-2 flex items-center gap-2 hover:bg-gray-700 transition-colors"
                     aria-label="Account"
                   >
                     <User size={18} />
-                    <span className="text-[17px] max-w-[160px] truncate">
+                    <span className="hidden sm:block text-sm md:text-[17px] max-w-[100px] md:max-w-[160px] truncate">
                       {currentUser.name || currentUser.email}
                     </span>
                   </button>
@@ -191,10 +190,10 @@ const Navbar = () => {
               ) : (
                 <NavLink
                   to="/login"
-                  className="bg-gray-800 rounded-full px-3 py-2 flex items-center gap-2 hover:bg-gray-700 transition-colors"
+                  className="bg-gray-800 rounded-full p-2 sm:px-3 sm:py-2 flex items-center gap-2 hover:bg-gray-700 transition-colors"
                 >
                   <User size={18} />
-                  <span className="text-[17px]">Sign in</span>
+                  <span className="hidden sm:inline text-sm md:text-[17px] whitespace-nowrap">Sign in</span>
                 </NavLink>
               )}
 
@@ -238,8 +237,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden border-t border-gray-800 bg-black max-h-[calc(100vh-80px)] overflow-y-auto">
-            <PageWrapper className="py-6 space-y-2">
+          <div className="lg:hidden border-t border-gray-800 bg-black max-h-[calc(100vh-70px)] overflow-y-auto shadow-2xl">
+            <PageWrapper className="py-4 space-y-2">
               {menuItems.map((item) => (
                 <NavLink
                   key={item.name}
@@ -309,10 +308,10 @@ const Navbar = () => {
         )}
       </nav>
       <div className="bg-gray-50 border-b border-gray-200/80 shadow-sm relative z-40">
-        <PageWrapper className="py-2.5 text-left text-xs sm:text-sm">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-gray-700">
+        <PageWrapper className="py-2 sm:py-2.5 text-left text-xs sm:text-sm">
+          <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-2 text-gray-700">
             <span className="inline-flex items-center gap-2">
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-[11px] font-semibold text-white">
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-[11px] font-semibold text-white flex-none">
                 ₹
               </span>
               <span>
@@ -321,7 +320,7 @@ const Navbar = () => {
               </span>
             </span>
             <span className="inline-flex items-center gap-2">
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-[11px] font-semibold text-white">
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-[11px] font-semibold text-white flex-none">
                 <Truck className="w-3 h-3" />
               </span>
               <span>

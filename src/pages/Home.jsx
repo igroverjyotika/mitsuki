@@ -139,10 +139,10 @@ export default function Home() {
           backgroundSize: "cover",
         }}
       >
-        <PageWrapper className="min-h-[calc(100vh-140px)] pt-10 pb-10 flex items-start">
+        <PageWrapper className="min-h-[calc(100vh-120px)] sm:min-h-[calc(100vh-140px)] pt-8 sm:pt-10 pb-10 flex items-start">
           <div className="relative z-10 w-full flex flex-col lg:flex-row justify-between gap-10">
             {/* Hero copy */}
-            <div className="max-w-xl pt-4 lg:pt-10 animate-fadeIn">
+            <div className="max-w-xl pt-4 lg:pt-10 animate-fadeIn text-center lg:text-left mx-auto lg:mx-0">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 text-gray-900">
                 The Innovation Behind
                 <span className="block bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-amber-300 to-white">
@@ -162,16 +162,16 @@ export default function Home() {
 "On Time Delivery" is more than a tagline for us – it&apos;s a commitment.
               </p>
 
-              <div className="flex flex-wrap items-center gap-3">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                 <Link
                   to="/shop"
-                  className="inline-flex items-center justify-center px-7 py-2.5 rounded-full bg-yellow-400 text-black text-sm sm:text-base font-semibold shadow-md hover:bg-yellow-300 hover:shadow-lg transition-all"
+                  className="inline-flex w-full sm:w-auto items-center justify-center px-7 py-2.5 rounded-full bg-yellow-400 text-black text-sm sm:text-base font-semibold shadow-md hover:bg-yellow-300 hover:shadow-lg transition-all"
                 >
                   Shop Now
                 </Link>
                 <Link
                   to="/cart"
-                  className="inline-flex items-center justify-center px-7 py-2.5 rounded-full border border-gray-900 text-gray-900 text-sm sm:text-base font-semibold bg-white/90 hover:bg-gray-900 hover:text-white transition-all"
+                  className="inline-flex w-full sm:w-auto items-center justify-center px-7 py-2.5 rounded-full border border-gray-900 text-gray-900 text-sm sm:text-base font-semibold bg-white/90 hover:bg-gray-900 hover:text-white transition-all"
                 >
                   Get Quote
                 </Link>
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
 
             {/* Hero visual */}
-            <div className="relative w-full lg:w-[680px] flex items-center justify-center animate-heroZoomIn">
+            <div className="relative w-full lg:w-[680px] flex items-center justify-center animate-heroZoomIn mt-4 lg:mt-0">
               <div className="absolute -inset-y-10 -right-10 lg:-right-20 w-[420px] lg:w-[520px] bg-gradient-to-tr from-yellow-300/25 via-blue-400/15 to-purple-500/20 blur-3xl rounded-full pointer-events-none" />
               {/* Laptop base image, no outer shadow so it blends with white */}
               <img
@@ -189,7 +189,7 @@ export default function Home() {
               />
 
               {/* Rotating "screen" content overlay - clean white background, no visible border */}
-              <div className="absolute top-[16%] left-1/2 -translate-x-1/2 w-[63%] aspect-[16/10] rounded-2xl overflow-hidden bg-white">
+              <div className="absolute top-[14%] sm:top-[16%] left-1/2 -translate-x-1/2 w-[78%] sm:w-[66%] lg:w-[63%] aspect-[16/10] rounded-2xl overflow-hidden bg-white">
                 <img
                   src={heroScreens[currentScreenIndex]}
                   alt="Highlighted Mitsuki product"
@@ -212,15 +212,17 @@ export default function Home() {
       />
 
       {/* Stats Section */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <PageWrapper>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">
+                <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">
                   {stat.number}
                 </div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-sm sm:text-base text-gray-600">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -228,19 +230,19 @@ export default function Home() {
       </section>
 
       {/* Partnerships + Certificate */}
-      <section className="py-14 bg-gray-50 border-y border-gray-100">
+      <section className="py-12 sm:py-14 bg-gray-50 border-y border-gray-100">
         <PageWrapper>
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Trusted Partnerships
             </h2>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-sm sm:text-base text-gray-600">
               Authorized brands, genuine products, and expert support.
             </p>
           </div>
 
           {/* Partnership Cards */}
-          <div className="mt-10 grid md:grid-cols-3 gap-4 md:gap-6">
+          <div className="mt-8 sm:mt-10 grid md:grid-cols-3 gap-4 md:gap-6">
             {[
               {
                 name: "YIHEDA",
@@ -263,7 +265,7 @@ export default function Home() {
             ].map((partner, index) => (
               <div
                 key={index}
-                className="group rounded-2xl bg-white p-6 shadow-sm border border-gray-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300"
+                className="group rounded-2xl bg-white p-5 sm:p-6 shadow-sm border border-gray-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300"
               >
                 <div className="flex items-center gap-3">
                   <div
@@ -272,7 +274,7 @@ export default function Home() {
                     {partner.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900">
+                    <h3 className="text-base sm:text-lg font-bold text-gray-900">
                       {partner.name}
                     </h3>
                     <div className="mt-0.5 text-xs font-semibold text-blue-600">
@@ -280,7 +282,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <p className="mt-3 text-sm text-gray-600 leading-relaxed">
+                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
                   {partner.description}
                 </p>
               </div>
@@ -292,7 +294,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-0">
               <button
                 type="button"
-                className="group relative aspect-[4/3] md:aspect-auto md:min-h-[360px] bg-gradient-to-br from-gray-100 to-gray-200 cursor-zoom-in"
+                className="group relative aspect-[4/3] md:aspect-auto md:min-h-[320px] bg-gradient-to-br from-gray-100 to-gray-200 cursor-zoom-in"
                 onClick={() => setShowCertificateModal(true)}
                 aria-label="View partnership certificate"
               >
@@ -312,16 +314,16 @@ export default function Home() {
                 </div>
               </button>
 
-              <div className="p-8 md:p-10">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+              <div className="p-6 sm:p-8 md:p-10">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
                   Where Innovation Meets Performance
                 </h3>
-                <p className="mt-3 text-gray-600">
+                <p className="mt-3 text-sm sm:text-base text-gray-600">
                   We work closely with global leaders to ensure reliability,
                   authenticity, and strong technical support.
                 </p>
 
-                <div className="mt-6 space-y-3 text-gray-700">
+                <div className="mt-5 sm:mt-6 space-y-3 text-gray-700">
                   {[
                     "Authorized distributor of premium international brands",
                     "100% genuine products with manufacturer warranty",
@@ -332,16 +334,16 @@ export default function Home() {
                       <span className="text-green-600 text-lg leading-none mt-0.5">
                         ✓
                       </span>
-                      <span className="text-sm md:text-base">{text}</span>
+                      <span className="text-sm sm:text-base">{text}</span>
                     </p>
                   ))}
                 </div>
 
-                <div className="mt-8">
+                <div className="mt-6 sm:mt-8">
                   <button
                     type="button"
                     onClick={() => setShowCertificateModal(true)}
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900/20"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900/20"
                   >
                     View Certificate <span aria-hidden>→</span>
                   </button>
@@ -353,10 +355,10 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-12 sm:py-16">
         <PageWrapper>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Frequently Asked Questions
             </h2>
           </div>
@@ -368,10 +370,10 @@ export default function Home() {
                   onClick={() =>
                     setOpenFaqIndex(openFaqIndex === index ? null : index)
                   }
-                  className="w-full text-left p-6 focus:outline-none"
+                  className="w-full text-left p-4 sm:p-6 focus:outline-none"
                 >
                   <div className="flex justify-between items-center">
-                    <h3 className="font-semibold text-gray-900">
+                    <h3 className="text-sm sm:text-base font-semibold text-gray-900">
                       {faq.question}
                     </h3>
                     <span className="text-gray-400">
@@ -380,8 +382,10 @@ export default function Home() {
                   </div>
                 </button>
                 {openFaqIndex === index && (
-                  <div className="px-6 pb-6">
-                    <p className="text-gray-600">{faq.answer}</p>
+                  <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                    <p className="text-sm sm:text-base text-gray-600">
+                      {faq.answer}
+                    </p>
                   </div>
                 )}
               </div>
@@ -391,7 +395,7 @@ export default function Home() {
       </section>
 
       {/* Bulk Orders Banner - Compact Left-Right Layout */}
-      <section className="py-10 bg-gradient-to-r from-rose-700 via-red-800 to-amber-700 dark:from-rose-900 dark:via-red-950 dark:to-amber-900 relative overflow-hidden">
+      <section className="py-10 sm:py-12 bg-gradient-to-r from-rose-700 via-red-800 to-amber-700 dark:from-rose-900 dark:via-red-950 dark:to-amber-900 relative overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse"></div>
@@ -404,26 +408,26 @@ export default function Home() {
         <PageWrapper>
           <div className="relative flex flex-col lg:flex-row gap-6 items-center">
             {/* Left - Text Content (70%) */}
-            <div className="flex-1 lg:w-[70%] text-white space-y-4">
+            <div className="flex-1 lg:w-[70%] text-white space-y-4 text-center lg:text-left">
               {/* Badge */}
-              <div className="inline-block bg-white/20 backdrop-blur-sm px-5 py-2 rounded-full text-sm md:text-base font-semibold animate-pulse">
+              <div className="inline-block bg-white/20 backdrop-blur-sm px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm md:text-base font-semibold animate-pulse">
                 🏢 For Bulk Orders
               </div>
 
               {/* Main heading */}
-              <h2 className="text-2xl md:text-4xl font-bold animate-fade-blink leading-tight">
+              <h2 className="text-xl sm:text-2xl md:text-4xl font-bold animate-fade-blink leading-tight">
                 50,000+ Companies Trust Mitsuki India
               </h2>
 
-              <p className="text-base md:text-lg text-red-50 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-red-50 leading-relaxed">
                 To supply their bearing needs. Join us and make your operations
                 run smoother with our bearings.
               </p>
             </div>
 
             {/* Right - Compact Contact Box (30%) */}
-            <div className="w-full lg:w-[30%] bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-2xl">
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
+            <div className="w-full lg:w-[30%] bg-white dark:bg-gray-900 rounded-2xl p-5 sm:p-6 shadow-2xl">
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-4">
                 What you will get:
               </h3>
 
@@ -434,7 +438,7 @@ export default function Home() {
                   { icon: "⚡", text: "Fast & reliable support" },
                   { icon: "📋", text: "Complete bearing catalog" },
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-sm">
+                  <div key={idx} className="flex items-center gap-2 text-xs sm:text-sm">
                     <span className="text-green-500 text-lg font-bold">
                       {item.icon}
                     </span>

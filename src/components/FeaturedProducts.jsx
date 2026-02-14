@@ -100,7 +100,7 @@ export default function FeaturedProducts({
           </Link>
         </div>
 
-        <div className="relative mt-10">
+        <div className="relative mt-10 min-h-[440px] sm:min-h-[380px]">
           <button
             type="button"
             onClick={prev}
@@ -110,7 +110,7 @@ export default function FeaturedProducts({
             <ChevronLeft className="w-5 h-5 text-white" />
           </button>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
             {visible.map((p) => (
               <FeaturedProductTile key={p.id} product={p} />
             ))}

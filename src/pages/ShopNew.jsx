@@ -384,7 +384,7 @@ export default function ShopNew() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
         {toast && (
           <Toast
             message={toast.message}
@@ -481,12 +481,12 @@ export default function ShopNew() {
 
         {/* Title */}
         <div className="mb-6">
-          <h1 className="text-4xl font-bold text-gray-900">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
             {selectedCategory?.categoryName || "All Products"}
           </h1>
 
           {showPartsTabs && (
-            <div className="mt-5 flex items-center gap-3 overflow-x-auto pb-2">
+            <div className="mt-4 flex flex-wrap items-center gap-2 overflow-x-auto pb-2">
               {(selectedCategory.part || []).map((part) => {
                 const active = selectedPart?.partName === part.partName;
                 return (
@@ -494,7 +494,7 @@ export default function ShopNew() {
                     key={part.partName}
                     type="button"
                     onClick={() => handlePartSelect(part)}
-                    className={`whitespace-nowrap rounded-lg px-6 py-2 text-sm font-semibold transition-colors border ${
+                    className={`whitespace-nowrap rounded-lg px-4 py-2 text-sm font-semibold transition-colors border ${
                       active
                         ? "bg-white text-gray-900 border-gray-900"
                         : "bg-gray-100 text-gray-700 border-gray-100 hover:bg-gray-200"
@@ -505,11 +505,11 @@ export default function ShopNew() {
                 );
               })}
 
-              <div className="ml-auto flex items-center gap-3">
+              <div className="ml-0 sm:ml-auto flex items-center gap-3 w-full sm:w-auto">
                 <button
                   type="button"
                   onClick={clearFilterParams}
-                  className="whitespace-nowrap rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+                  className="w-full sm:w-auto whitespace-nowrap rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50"
                 >
                   Clear Filters
                 </button>
@@ -518,10 +518,10 @@ export default function ShopNew() {
           )}
         </div>
 
-        <div className="grid lg:grid-cols-4 xl:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-8">
           {/* Sidebar */}
           <aside className="lg:col-span-1">
-            <div className="rounded-xl border border-gray-200 bg-white shadow-sm p-6">
+            <div className="rounded-xl border border-gray-200 bg-white shadow-sm p-4 sm:p-6">
               <div className="flex items-center justify-between">
                 <h3 className="text-base font-bold text-gray-900">
                   Categories
@@ -529,7 +529,7 @@ export default function ShopNew() {
                 <span className="text-gray-400">^</span>
               </div>
 
-              <div className="mt-4 space-y-2 max-h-[65vh] overflow-auto pr-1">
+              <div className="mt-4 space-y-2 max-h-[45vh] sm:max-h-[65vh] overflow-auto pr-1">
                 <button
                   type="button"
                   onClick={() => {
@@ -600,7 +600,7 @@ export default function ShopNew() {
 
             {/* Selections */}
             {selectedPart?.selectionProperties?.length > 0 && (
-              <div className="mt-6 rounded-xl border border-gray-200 bg-white shadow-sm p-6">
+              <div className="mt-6 rounded-xl border border-gray-200 bg-white shadow-sm p-4 sm:p-6">
                 <h3 className="text-base font-bold mb-4 text-gray-900">
                   Selections
                 </h3>
@@ -654,7 +654,7 @@ export default function ShopNew() {
           {/* Main */}
           <main className="lg:col-span-3 xl:col-span-4">
             {selectedPart?.filterProperties?.length > 0 && (
-              <div className="rounded-xl border border-gray-200 bg-white shadow-sm p-6 mb-6">
+              <div className="rounded-xl border border-gray-200 bg-white shadow-sm p-4 sm:p-6 mb-6">
                 <h3 className="text-base font-bold mb-4 text-gray-900">
                   Filters
                 </h3>
@@ -684,7 +684,7 @@ export default function ShopNew() {
               </div>
             )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
               {filteredProducts.length === 0 ? (
                 <div className="col-span-full text-center py-16 bg-white rounded-xl shadow-sm border border-gray-200">
                   <div className="text-7xl mb-6">🔍</div>
@@ -772,32 +772,32 @@ export default function ShopNew() {
                       onClick={() =>
                         handleProductClick(product, price, specs, ctx)
                       }
-                      className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden group"
+                      className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden group"
                     >
-                      <div className="w-full h-44 bg-white overflow-hidden relative flex items-center justify-center">
+                        <div className="w-full h-36 sm:h-44 bg-white overflow-hidden relative flex items-center justify-center">
                         <img
                           src={media.image}
                           alt={product.partCode}
-                          className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+                            className="w-full h-full object-contain p-4 sm:p-6 group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>
 
-                      <div className="p-4">
-                        <h3 className="text-base font-bold text-gray-900 mb-1 line-clamp-2">
+                        <div className="p-3 sm:p-4">
+                          <h3 className="text-sm sm:text-base font-bold text-gray-900 mb-1 line-clamp-2">
                           {productPart?.partName || product.partCode}
                         </h3>
-                        <p className="text-xs text-gray-600 mb-2">
+                          <p className="text-[11px] sm:text-xs text-gray-600 mb-2">
                           Part Code:{" "}
                           <span className="font-semibold">
                             {product.partCode}
                           </span>
                         </p>
 
-                        <div className="text-xl font-bold text-gray-900">
+                          <div className="text-lg sm:text-xl font-bold text-gray-900">
                           ₹{price.toFixed(2)}
                         </div>
                         {priceInfo.perUnit && (
-                          <div className="text-xs text-gray-600 mt-1">
+                            <div className="text-[11px] sm:text-xs text-gray-600 mt-1">
                             ₹{priceInfo.perUnit}
                             {priceInfo.defaultLength != null && (
                               <span className="ml-2">
