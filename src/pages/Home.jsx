@@ -129,17 +129,21 @@ export default function Home() {
 
   return (
     <div className="bg-white">
-      {/* Hero Section (new dark-header theme) */}
-      <section
-        className="relative overflow-hidden"
-        style={{
-          backgroundImage: `url(${heroBg})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "right top",
-          backgroundSize: "cover",
-        }}
-      >
-        <PageWrapper className="min-h-[calc(100vh-120px)] sm:min-h-[calc(100vh-140px)] pt-8 sm:pt-10 pb-10 flex items-start">
+      {/* Hero Section (Abstract Background) */}
+      <section className="relative overflow-hidden bg-white">
+        {/* Abstract Background Elements */}
+        <div className="absolute inset-0 w-full h-full bg-[#f8fafc]">
+          <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-purple-200/40 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+          <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-blue-200/40 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-32 left-20 w-[600px] h-[600px] rounded-full bg-pink-200/40 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="absolute bottom-[-20%] right-[10%] w-[400px] h-[400px] rounded-full bg-amber-100/60 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-6000"></div>
+          
+          {/* Subtle Grid Pattern Overlay */}
+          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        </div>
+
+        <PageWrapper className="min-h-[calc(100vh-120px)] sm:min-h-[calc(100vh-140px)] pt-8 sm:pt-10 pb-10 flex items-start relative z-10">
           <div className="relative z-10 w-full flex flex-col lg:flex-row justify-between gap-10">
             {/* Hero copy */}
             <div className="max-w-xl pt-4 lg:pt-10 animate-fadeIn text-center lg:text-left mx-auto lg:mx-0">
@@ -179,13 +183,13 @@ export default function Home() {
             </div>
 
             {/* Hero visual - Image Slider */}
-            <div className="relative w-full lg:w-[600px] xl:w-[700px] flex items-center justify-center animate-heroZoomIn mt-8 lg:mt-0">
-              <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-white group">
-                {/* Images */}
+            <div className="relative w-full lg:w-[600px] xl:w-[750px] flex items-center justify-center mt-8 lg:mt-0">
+              <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-gray-900 group border-4 border-white">
+                {/* Images (Standard Fade) */}
                 {bannerImages.map((img, idx) => (
                   <div
                     key={idx}
-                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
                       idx === currentBannerIndex ? "opacity-100 z-10" : "opacity-0 z-0"
                     }`}
                   >
@@ -194,28 +198,45 @@ export default function Home() {
                       alt={`Banner ${idx + 1}`}
                       className="w-full h-full object-cover"
                     />
+                    {/* Gradient Overlay for text contrast if needed later */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
                   </div>
                 ))}
                 
-                {/* Dots Navigation */}
-                <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2">
+                {/* Modern Navigation Indicators */}
+                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
                   {bannerImages.map((_, idx) => (
                     <button
                       key={idx}
                       onClick={() => setCurrentBannerIndex(idx)}
-                      className={`h-2.5 rounded-full transition-all duration-300 ${
+                      className={`h-1.5 rounded-full transition-all duration-500 ease-out cursor-pointer hover:bg-white ${
                         idx === currentBannerIndex 
-                          ? "w-8 bg-white" 
-                          : "w-2.5 bg-white/50 hover:bg-white/80"
+                          ? "w-10 bg-white shadow-[0_0_10px_rgba(255,255,255,0.7)]" 
+                          : "w-2 bg-white/40 hover:w-4"
                       }`}
                       aria-label={`Go to slide ${idx + 1}`}
                     />
                   ))}
                 </div>
+
+                {/* Arrows for manual navigation */}
+                <button 
+                  onClick={() => setCurrentBannerIndex((prev) => (prev - 1 + bannerImages.length) % bannerImages.length)}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/20 text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/40"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button 
+                  onClick={() => setCurrentBannerIndex((prev) => (prev + 1) % bannerImages.length)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/20 text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/40"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
               </div>
 
               {/* Decorative glow behind */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-3xl -z-10 rounded-[3rem]" />
+              <div className="absolute top-10 -right-10 w-72 h-72 bg-purple-500/30 blur-[100px] rounded-full -z-10 animate-pulse" />
+              <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-500/30 blur-[100px] rounded-full -z-10 animate-pulse delay-700" />
             </div>
           </div>
         </PageWrapper>
