@@ -50,7 +50,7 @@ export default function Cart() {
   }
 
   const subtotal = getCartTotal();
-  const shipping = 100;
+  const shipping = 0;
   const total = subtotal + shipping;
 
   const handleGenerateQuote = async () => {
@@ -178,7 +178,8 @@ export default function Cart() {
       }
 
       clearCart();
-      navigate("/orders");
+      // Redirect to My Quotes tab
+      navigate("/orders?tab=quotes");
     } catch (error) {
       console.error("Error generating quote:", error);
       alert(`Failed to generate quote: ${error.message}`);
@@ -331,11 +332,6 @@ export default function Cart() {
                   <span>Subtotal</span>
                   <span className="font-semibold">₹{subtotal.toFixed(2)}</span>
                 </div>
-                <div className="flex justify-between text-gray-600 dark:text-gray-400">
-                  <span>Shipping</span>
-                  <span className="font-semibold">₹{shipping.toFixed(2)}</span>
-                </div>
-
                 <div className="border-t border-gray-200 dark:border-gray-800 pt-4">
                   <div className="flex justify-between text-xl font-bold text-gray-900 dark:text-white">
                     <span>Total</span>

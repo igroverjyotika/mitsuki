@@ -236,25 +236,10 @@ export default function ProductDetail() {
                 {product.name}
               </h1>
 
-              {/* SKU & Rating */}
+              {/* SKU Only */}
               <div className="flex items-center gap-6">
                 <div className="text-sm text-gray-600 dark:text-gray-400">
                   SKU: <span className="font-semibold">{product.sku}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <span
-                        key={i}
-                        className={`text-lg ${i < Math.floor(product.rating) ? "text-yellow-400" : "text-gray-300 dark:text-gray-600"}`}
-                      >
-                        ★
-                      </span>
-                    ))}
-                  </div>
-                  <span className="text-sm text-gray-600 dark:text-gray-400">
-                    {product.rating} ({product.reviews} reviews)
-                  </span>
                 </div>
               </div>
 
@@ -545,42 +530,53 @@ export default function ProductDetail() {
               {activeTab === "description" && (
                 <div className="space-y-4 max-w-3xl">
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                    {product.description}
+                    {product.description || "No description available."}
                   </p>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-6 mb-3">
-                    Applications
-                  </h3>
-                  <ul className="grid md:grid-cols-2 gap-3">
-                    {product.applications.map((app, idx) => (
-                      <li
-                        key={idx}
-                        className="flex items-center gap-2 text-gray-700 dark:text-gray-300"
-                      >
-                        <span className="text-green-500">✓</span>
-                        {app}
-                      </li>
-                    ))}
-                  </ul>
+                  {product.applications && product.applications.length > 0 && (
+                    <>
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-6 mb-3">
+                        Applications
+                      </h3>
+                      <ul className="grid md:grid-cols-2 gap-3">
+                        {product.applications.map((app, idx) => (
+                          <li
+                            key={idx}
+                            className="flex items-center gap-2 text-gray-700 dark:text-gray-300"
+                          >
+                            <span className="text-green-500">✓</span>
+                            {app}
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
                 </div>
               )}
 
               {activeTab === "specifications" && (
                 <div className="max-w-2xl">
                   <div className="grid gap-3">
-                    {Object.entries(product.specifications).map(
-                      ([key, value]) => (
-                        <div
-                          key={key}
-                          className="grid grid-cols-2 gap-4 bg-gray-50 dark:bg-gray-900 p-4 rounded-lg"
-                        >
-                          <span className="font-semibold text-gray-900 dark:text-white capitalize">
-                            {key.replace(/([A-Z])/g, " $1").trim()}
-                          </span>
-                          <span className="text-gray-700 dark:text-gray-300">
-                            {value}
-                          </span>
-                        </div>
-                      ),
+                    {product.specifications &&
+                    Object.keys(product.specifications).length > 0 ? (
+                      Object.entries(product.specifications).map(
+                        ([key, value]) => (
+                          <div
+                            key={key}
+                            className="grid grid-cols-2 gap-4 bg-gray-50 dark:bg-gray-900 p-4 rounded-lg"
+                          >
+                            <span className="font-semibold text-gray-900 dark:text-white capitalize">
+                              {key.replace(/([A-Z])/g, " $1").trim()}
+                            </span>
+                            <span className="text-gray-700 dark:text-gray-300">
+                              {value}
+                            </span>
+                          </div>
+                        ),
+                      )
+                    ) : (
+                      <p className="text-gray-500">
+                        No specifications available.
+                      </p>
                     )}
                   </div>
                 </div>
@@ -588,19 +584,23 @@ export default function ProductDetail() {
 
               {activeTab === "features" && (
                 <div className="grid md:grid-cols-2 gap-4 max-w-3xl">
-                  {product.features.map((feature, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-start gap-3 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg"
-                    >
-                      <span className="text-blue-600 dark:text-blue-400 text-xl">
-                        ✓
-                      </span>
-                      <span className="text-gray-700 dark:text-gray-300">
-                        {feature}
-                      </span>
-                    </div>
-                  ))}
+                  {product.features && product.features.length > 0 ? (
+                    product.features.map((feature, idx) => (
+                      <div
+                        key={idx}
+                        className="flex items-start gap-3 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg"
+                      >
+                        <span className="text-blue-600 dark:text-blue-400 text-xl">
+                          ✓
+                        </span>
+                        <span className="text-gray-700 dark:text-gray-300">
+                          {feature}
+                        </span>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="text-gray-500">No features listed.</p>
+                  )}
                 </div>
               )}
             </div>

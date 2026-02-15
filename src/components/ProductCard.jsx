@@ -94,14 +94,6 @@ export default function ProductCard({ product }) {
                 </span>
               )}
             </div>
-
-            {/* Compact Rating */}
-            <div className="flex items-center gap-1 text-xs">
-              <span className="text-yellow-400">★</span>
-              <span className="font-semibold text-gray-700 dark:text-gray-300">
-                {product.rating}
-              </span>
-            </div>
           </div>
 
           {/* Action Buttons - Side by Side */}

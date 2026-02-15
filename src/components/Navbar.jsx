@@ -30,6 +30,19 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (userMenuOpen && !event.target.closest(".user-menu-container")) {
+        setUserMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [userMenuOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
       if (currentY < 50) {
@@ -145,7 +158,7 @@ const Navbar = () => {
 
               {/* User */}
               {currentUser ? (
-                <div className="relative">
+                <div className="relative user-menu-container">
                   <button
                     onClick={() => setUserMenuOpen((v) => !v)}
                     className="bg-gray-800 rounded-full p-2 sm:px-3 sm:py-2 flex items-center gap-2 hover:bg-gray-700 transition-colors"
@@ -317,15 +330,6 @@ const Navbar = () => {
               <span>
                 <span className="font-semibold">Low Price Guarantee</span>
                 <span className="hidden sm:inline text-gray-500"> · Best value on industrial components</span>
-              </span>
-            </span>
-            <span className="inline-flex items-center gap-2">
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-[11px] font-semibold text-white flex-none">
-                <Truck className="w-3 h-3" />
-              </span>
-              <span>
-                <span className="font-semibold">Standard Shipping</span>
-                <span className="hidden sm:inline text-gray-500"> · Reliable delivery across India</span>
               </span>
             </span>
           </div>

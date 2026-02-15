@@ -19,7 +19,7 @@ export default function Checkout() {
   }
 
   const subtotal = getCartTotal();
-  const shipping = 100;
+  const shipping = 0;
   const total = subtotal + shipping;
 
   const handleGenerateQuote = async () => {
@@ -112,10 +112,6 @@ export default function Checkout() {
                 <div className="flex justify-between">
                   <span>Subtotal</span>
                   <span>₹{subtotal.toFixed(2)}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Shipping</span>
-                  <span>₹{shipping.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between font-bold text-lg">
                   <span>Total</span>

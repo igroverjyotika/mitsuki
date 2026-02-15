@@ -62,10 +62,6 @@ export default function FeaturedProductTile({ product }) {
             {product.name}
           </Link>
 
-          <div className="mt-2">
-            <StarsRow />
-          </div>
-
           <div className="mt-3 font-bold text-gray-900">₹ {product.price}</div>
         </div>
 

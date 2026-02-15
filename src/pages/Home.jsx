@@ -9,23 +9,23 @@ import { useAuth } from "../context/AuthContext";
 import certificateImage from "../assets/certificate.png";
 
 import heroBg from "../assets/flow-bg.svg";
-import mixLaptop from "../assets/grey-laptop.png";
-import screen1 from "../assets/linear-motion/MTK.jpg";
-import screen2 from "../assets/linear-motion/HGH.jpg";
-import screen3 from "../assets/linear-motion/SK.jpg";
+import banner1 from "../assets/banner/banner1.png";
+import banner2 from "../assets/banner/banner2.png";
+import banner3 from "../assets/banner/banner3.png";
+import banner4 from "../assets/banner/banner4.png";
+import banner5 from "../assets/banner/banner5.png";
 
 export default function Home() {
   const { currentUser } = useAuth();
   const [currentProductPage, setCurrentProductPage] = useState(0);
-   const [currentScreenIndex, setCurrentScreenIndex] = useState(0);
+   const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
   const [showCertificateModal, setShowCertificateModal] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  const heroScreens = [screen1, screen2, screen3];
+  const bannerImages = [banner1, banner2, banner3, banner4, banner5];
 
   const stats = [
     { number: "10,000+", label: "Products" },
-    { number: "500+", label: "Brands" },
     { number: "5,000+", label: "Happy Clients" },
     { number: "24/7", label: "Support" },
   ];
@@ -57,7 +57,7 @@ export default function Home() {
     ],
   ];
 
-  // Auto-scroll for product ranges
+  // Auto-rotate product ranges
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentProductPage((prev) => (prev + 1) % productRanges.length);
@@ -65,14 +65,14 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  // Auto-rotate images shown on the laptop "screen"
+  // Auto-rotate hero banner images
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentScreenIndex((prev) => (prev + 1) % heroScreens.length);
-    }, 4000);
+      setCurrentBannerIndex((prev) => (prev + 1) % bannerImages.length);
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [heroScreens.length]);
+  }, [bannerImages.length]);
 
   const nextProductPage = () => {
     setCurrentProductPage((prev) => (prev + 1) % productRanges.length);
@@ -178,24 +178,44 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Hero visual */}
-            <div className="relative w-full lg:w-[680px] flex items-center justify-center animate-heroZoomIn mt-4 lg:mt-0">
-              <div className="absolute -inset-y-10 -right-10 lg:-right-20 w-[420px] lg:w-[520px] bg-gradient-to-tr from-yellow-300/25 via-blue-400/15 to-purple-500/20 blur-3xl rounded-full pointer-events-none" />
-              {/* Laptop base image, no outer shadow so it blends with white */}
-              <img
-                src={mixLaptop}
-                alt="Industrial components on Mitsuki platform"
-                className="relative w-full max-w-[720px] h-auto object-contain"
-              />
-
-              {/* Rotating "screen" content overlay - clean white background, no visible border */}
-              <div className="absolute top-[14%] sm:top-[16%] left-1/2 -translate-x-1/2 w-[78%] sm:w-[66%] lg:w-[63%] aspect-[16/10] rounded-2xl overflow-hidden bg-white">
-                <img
-                  src={heroScreens[currentScreenIndex]}
-                  alt="Highlighted Mitsuki product"
-                  className="w-full h-full object-contain bg-white transition-opacity duration-700"
-                />
+            {/* Hero visual - Image Slider */}
+            <div className="relative w-full lg:w-[600px] xl:w-[700px] flex items-center justify-center animate-heroZoomIn mt-8 lg:mt-0">
+              <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-white group">
+                {/* Images */}
+                {bannerImages.map((img, idx) => (
+                  <div
+                    key={idx}
+                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                      idx === currentBannerIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+                    }`}
+                  >
+                    <img
+                      src={img}
+                      alt={`Banner ${idx + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+                
+                {/* Dots Navigation */}
+                <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2">
+                  {bannerImages.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentBannerIndex(idx)}
+                      className={`h-2.5 rounded-full transition-all duration-300 ${
+                        idx === currentBannerIndex 
+                          ? "w-8 bg-white" 
+                          : "w-2.5 bg-white/50 hover:bg-white/80"
+                      }`}
+                      aria-label={`Go to slide ${idx + 1}`}
+                    />
+                  ))}
+                </div>
               </div>
+
+              {/* Decorative glow behind */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-3xl -z-10 rounded-[3rem]" />
             </div>
           </div>
         </PageWrapper>
@@ -214,7 +234,7 @@ export default function Home() {
       {/* Stats Section */}
       <section className="py-12 sm:py-16">
         <PageWrapper>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">
