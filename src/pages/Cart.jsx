@@ -126,51 +126,140 @@ export default function Cart() {
         const jsPDF = jsPDFModule.jsPDF || jsPDFModule.default;
         const pdf = new jsPDF();
 
-        pdf.setFontSize(18);
-        pdf.text("Quotation", 14, 20);
+        // --- Header Section ---
+        // Company Name
+        pdf.setFontSize(22);
+        pdf.setTextColor(40, 40, 40);
+        pdf.setFont("helvetica", "bold");
+        pdf.text("Mitsuki India", 14, 20);
 
+        // Company Details (Left)
+        pdf.setFontSize(10);
+        pdf.setFont("helvetica", "normal");
+        pdf.setTextColor(100, 100, 100);
+        pdf.text("Email: sales@mitsukiindia.com", 14, 26);
+        pdf.text("Phone: +91 7988050802 / +91 9999810210", 14, 31);
+
+        // Quote Details (Right)
+        pdf.setFontSize(22);
+        pdf.setTextColor(40, 40, 40);
+        pdf.setFont("helvetica", "bold");
+        const quoteTextWidth = pdf.getTextWidth("QUOTATION");
+        pdf.text("QUOTATION", 196 - quoteTextWidth, 20);
+
+        pdf.setFontSize(10);
+        pdf.setFont("helvetica", "normal");
+        pdf.setTextColor(100, 100, 100);
+        
+        const quoteIdText = `Ref # : ${docRef.id.substring(0, 8).toUpperCase()}`;
+        const dateText = `Date  : ${new Date().toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })}`;
+        
+        pdf.text(quoteIdText, 196 - pdf.getTextWidth(quoteIdText), 26);
+        pdf.text(dateText, 196 - pdf.getTextWidth(dateText), 31);
+
+        // Divider Line
+        pdf.setDrawColor(220, 220, 220);
+        pdf.line(14, 38, 196, 38);
+
+        // --- Customer Section ---
         pdf.setFontSize(11);
-        pdf.text(`Quote ID: ${docRef.id}`, 14, 30);
-        pdf.text(`Customer: ${currentUser.email || currentUser.uid}`, 14, 36);
-        const created = new Date(orderData.createdTime * 1000)
-          .toISOString()
-          .slice(0, 10);
-        pdf.text(`Date: ${created}`, 14, 42);
+        pdf.setTextColor(40, 40, 40);
+        pdf.setFont("helvetica", "bold");
+        pdf.text("Bill To:", 14, 48);
+        
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(10);
+        pdf.setTextColor(80, 80, 80);
+        pdf.text(currentUser.name || currentUser.email || "Valued Customer", 14, 54);
+        if (currentUser.email) pdf.text(currentUser.email, 14, 59);
 
-        pdf.setFontSize(12);
-        let y = 54;
-        pdf.text("Items:", 14, y);
-        y += 6;
+        // --- Table Header ---
+        let y = 70;
+        const col1 = 14;  // Item
+        const col2 = 120; // Qty
+        const col3 = 145; // Unit Price
+        const col4 = 175; // Total
+
+        // Header Background
+        pdf.setFillColor(245, 245, 245);
+        pdf.rect(14, y - 5, 182, 8, 'F');
+
+        // Header Text
+        pdf.setFont("helvetica", "bold");
+        pdf.setFontSize(9);
+        pdf.setTextColor(40, 40, 40);
+        pdf.text("ITEM DESCRIPTION", col1 + 2, y);
+        pdf.text("QTY", col2, y);
+        pdf.text("UNIT PRICE", col3, y);
+        pdf.text("TOTAL", col4, y);
+
+        // --- Table Body ---
+        y += 8;
+        pdf.setFont("helvetica", "normal");
+        pdf.setTextColor(60, 60, 60);
 
         cartItems.forEach((item, index) => {
-          const line1 = `${index + 1}. ${item.name} (SKU: ${
-            item.sku || item.partCode || item.id
-          })`;
-          const line2 = `Qty: ${item.quantity}  Unit: ₹${item.price.toFixed(
-            2,
-          )}  Total: ₹${(item.price * item.quantity).toFixed(2)}`;
+            const itemName = item.name.length > 45 ? item.name.substring(0, 45) + "..." : item.name;
+            const itemSku = item.sku || item.partCode || item.id;
+            const unitPrice = item.price.toFixed(2);
+            const lineTotal = (item.price * item.quantity).toFixed(2);
 
-          pdf.setFontSize(11);
-          pdf.text(line1, 14, y);
-          y += 5;
-          pdf.text(line2, 18, y);
-          y += 7;
+            pdf.text(itemName, col1 + 2, y);
+            pdf.setFontSize(8);
+            pdf.setTextColor(120, 120, 120);
+            pdf.text(`SKU: ${itemSku}`, col1 + 2, y + 4);
+            
+            pdf.setFontSize(9);
+            pdf.setTextColor(60, 60, 60);
+            pdf.text(String(item.quantity), col2, y);
+            pdf.text(`Rs. ${unitPrice}`, col3, y);
+            pdf.text(`Rs. ${lineTotal}`, col4, y);
+
+            y += 10;
+            
+            // Add visual separator for non-last items
+            if (index < cartItems.length - 1) {
+                pdf.setDrawColor(240, 240, 240);
+                pdf.line(14, y - 4, 196, y - 4);
+            }
+
+            // New page check
+            if (y > 270) {
+                pdf.addPage();
+                y = 20;
+            }
         });
 
-        if (y > 240) {
-          pdf.addPage();
-          y = 20;
-        }
+        // --- Totals Section ---
+        y += 5;
+        pdf.setDrawColor(200, 200, 200);
+        pdf.line(14, y, 196, y);
+        y += 8;
 
-        pdf.setFontSize(12);
-        pdf.text("Summary:", 14, y);
+        const rightAlignX = 175; // Align with total column
+        
+        pdf.setFont("helvetica", "normal");
+        pdf.text("Subtotal:", 140, y);
+        pdf.text(`Rs. ${subtotal.toFixed(2)}`, rightAlignX, y);
+        
         y += 6;
+        pdf.text("Shipping:", 140, y);
+        pdf.text(`Rs. ${shipping.toFixed(2)}`, rightAlignX, y);
+        
+        y += 8;
+        pdf.setFont("helvetica", "bold");
         pdf.setFontSize(11);
-        pdf.text(`Subtotal: ₹${subtotal.toFixed(2)}`, 18, y);
-        y += 5;
-        pdf.text(`Shipping: ₹${shipping.toFixed(2)}`, 18, y);
-        y += 5;
-        pdf.text(`Total: ₹${total.toFixed(2)}`, 18, y);
+        pdf.setTextColor(0, 0, 0);
+        pdf.text("Total:", 140, y);
+        pdf.text(`Rs. ${total.toFixed(2)}`, rightAlignX, y);
+
+        // --- Footer ---
+        const pageHeight = pdf.internal.pageSize.height;
+        pdf.setFont("helvetica", "normal");
+        pdf.setFontSize(8);
+        pdf.setTextColor(150, 150, 150);
+        pdf.text("Thank you for your business!", 105, pageHeight - 15, { align: "center" });
+        pdf.text("Generated by Mitsuki India Online Store", 105, pageHeight - 10, { align: "center" });
 
         pdf.save(`mitsuki-quote-${docRef.id}.pdf`);
       } catch (pdfError) {
