@@ -129,114 +129,145 @@ export default function Home() {
 
   return (
     <div className="bg-white">
-      {/* Hero Section (Abstract Background) */}
-      <section className="relative overflow-hidden bg-white">
-        {/* Abstract Background Elements */}
-        <div className="absolute inset-0 w-full h-full bg-[#f8fafc]">
-          <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-purple-200/40 mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-          <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] rounded-full bg-blue-200/40 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute -bottom-32 left-20 w-[600px] h-[600px] rounded-full bg-pink-200/40 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
-          <div className="absolute bottom-[-20%] right-[10%] w-[400px] h-[400px] rounded-full bg-amber-100/60 mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-6000"></div>
-          
-          {/* Subtle Grid Pattern Overlay */}
-          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-        </div>
+      {/* Industrial Hero Section - Technical & Clean */}
+      <section className="relative bg-slate-50 border-b border-gray-200 overflow-hidden">
+        {/* Technical Grid Background */}
+        <div className="absolute inset-0 z-0 opacity-[0.05]" style={{ backgroundImage: 'linear-gradient(#0f172a 1px, transparent 1px), linear-gradient(to right, #0f172a 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-50/80 pointer-events-none"></div>
 
-        <PageWrapper className="min-h-[calc(100vh-120px)] sm:min-h-[calc(100vh-140px)] pt-8 sm:pt-10 pb-10 flex items-start relative z-10">
-          <div className="relative z-10 w-full flex flex-col lg:flex-row justify-between gap-10">
-            {/* Hero copy */}
-            <div className="max-w-xl pt-4 lg:pt-10 animate-fadeIn text-center lg:text-left mx-auto lg:mx-0">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 text-gray-900">
-                The Innovation Behind
-                <span className="block bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-amber-300 to-white">
-                  Our Product
+        <PageWrapper className="relative z-10 pt-8 pb-12 lg:pt-8 lg:pb-20">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            {/* Left Content Column (5 cols) */}
+            <div className="lg:col-span-5 space-y-8 text-center lg:text-left">
+              
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-slate-200 shadow-sm rounded-full mx-auto lg:mx-0">
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                 </span>
-              </h1>
+                <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">Authorized Distributor</span>
+              </div>
 
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-3">
-                At <span className="font-semibold">Mitsuki India</span>, we don&apos;t just
-                provide components; we engineer complete solutions. Mitsuki India has
-                become synonymous with excellence in factory automation and motion
-                control technology.
-              </p>
+              {/* Headlines */}
+              <div className="space-y-4">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+                  India&apos;s Premier Partner for <br />
+                  Industrial <span className="text-blue-600">Spares</span>
+                </h1>
+                <p className="text-lg text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                  We engineer reliability. Your premier source for linear motion systems, bearings, and complete factory automation hardware.
+                </p>
+              </div>
 
-              <p className="text-gray-900 font-semibold text-base sm:text-lg mb-6">
-                
-"On Time Delivery" is more than a tagline for us – it&apos;s a commitment.
-              </p>
-
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+              {/* Action Buttons - Industrial Style */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   to="/shop"
-                  className="inline-flex w-full sm:w-auto items-center justify-center px-7 py-2.5 rounded-full bg-yellow-400 text-black text-sm sm:text-base font-semibold shadow-md hover:bg-yellow-300 hover:shadow-lg transition-all"
+                  className="inline-flex items-center justify-center px-8 py-3.5 bg-slate-900 text-white font-bold tracking-wide rounded hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                 >
-                  Shop Now
+                  <span className="mr-2">Explore Catalog</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </Link>
                 <Link
-                  to="/cart"
-                  className="inline-flex w-full sm:w-auto items-center justify-center px-7 py-2.5 rounded-full border border-gray-900 text-gray-900 text-sm sm:text-base font-semibold bg-white/90 hover:bg-gray-900 hover:text-white transition-all"
+                  to="/contact"
+                  className="inline-flex items-center justify-center px-8 py-3.5 bg-white border border-slate-300 text-slate-700 font-bold tracking-wide rounded hover:bg-slate-50 hover:border-slate-400 transition-all shadow-sm"
                 >
-                  Get Quote
+                  Request Quote
                 </Link>
+              </div>
+
+              {/* Trust Metrics */}
+              <div className="pt-8 border-t border-slate-200 grid grid-cols-3 gap-4 text-center lg:text-left">
+                <div>
+                  <div className="text-2xl font-black text-slate-900">500+</div>
+                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Global Brands</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-black text-slate-900">24/7</div>
+                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Support Team</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-black text-slate-900">ISO</div>
+                  <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Certified</div>
+                </div>
               </div>
             </div>
 
-            {/* Hero visual - Image Slider */}
-            <div className="relative w-full lg:w-[600px] xl:w-[750px] flex items-center justify-center mt-8 lg:mt-0">
-              <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl bg-gray-900 group border-4 border-white">
-                {/* Images (Standard Fade) */}
-                {bannerImages.map((img, idx) => (
-                  <div
-                    key={idx}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                      idx === currentBannerIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-                    }`}
-                  >
-                    <img
-                      src={img}
-                      alt={`Banner ${idx + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                    {/* Gradient Overlay for text contrast if needed later */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
-                  </div>
-                ))}
-                
-                {/* Modern Navigation Indicators */}
-                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-                  {bannerImages.map((_, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setCurrentBannerIndex(idx)}
-                      className={`h-1.5 rounded-full transition-all duration-500 ease-out cursor-pointer hover:bg-white ${
-                        idx === currentBannerIndex 
-                          ? "w-10 bg-white shadow-[0_0_10px_rgba(255,255,255,0.7)]" 
-                          : "w-2 bg-white/40 hover:w-4"
-                      }`}
-                      aria-label={`Go to slide ${idx + 1}`}
-                    />
-                  ))}
-                </div>
+            {/* Right Visual Column (7 cols) */}
+            <div className="lg:col-span-7 relative">
+              {/* Backing Elements */}
+              <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+              <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
 
-                {/* Arrows for manual navigation */}
-                <button 
-                  onClick={() => setCurrentBannerIndex((prev) => (prev - 1 + bannerImages.length) % bannerImages.length)}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/20 text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/40"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                </button>
-                <button 
-                  onClick={() => setCurrentBannerIndex((prev) => (prev + 1) % bannerImages.length)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/20 text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/40"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                </button>
+              {/* Main Slider Container - Technical Look */}
+              <div className="relative z-10">
+                 {/* Top Label Bar */}
+                 <div className="flex justify-end items-center mb-2 px-1">
+                    <div className="flex gap-1">
+                        {bannerImages.map((_, idx) => (
+                           <div key={idx} className={`h-1 w-4 rounded-full transition-colors ${idx === currentBannerIndex ? 'bg-blue-600' : 'bg-slate-300'}`}></div>
+                        ))}
+                    </div>
+                 </div>
+
+                 {/* Image Frame */}
+                 <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl border border-slate-200 bg-white group">
+                    {bannerImages.map((img, idx) => (
+                      <div
+                        key={idx}
+                        className={`absolute inset-0 transition-opacity duration-500 ${
+                          idx === currentBannerIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+                        }`}
+                      >
+                        <img
+                          src={img}
+                          alt={`Industrial Component ${idx + 1}`}
+                          className="w-full h-full object-cover"
+                        />
+                        {/* Technical Overlay Lines */}
+                        <div className="absolute inset-0 border-[0.5px] border-white/10 pointer-events-none"></div>
+                        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
+                      </div>
+                    ))}
+
+                    {/* Navigation Arrows (Industrial square buttons) */}
+                    <button 
+                      onClick={() => setCurrentBannerIndex((prev) => (prev - 1 + bannerImages.length) % bannerImages.length)}
+                      className="absolute left-0 top-0 bottom-0 w-12 flex items-center justify-center z-20 hover:bg-black/10 transition-colors group/btn"
+                    >
+                       <div className="w-8 h-8 flex items-center justify-center bg-white/90 backdrop-blur text-slate-800 rounded shadow-sm group-hover/btn:scale-110 transition-transform">
+                          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" /></svg>
+                       </div>
+                    </button>
+                    <button 
+                      onClick={() => setCurrentBannerIndex((prev) => (prev + 1) % bannerImages.length)}
+                      className="absolute right-0 top-0 bottom-0 w-12 flex items-center justify-center z-20 hover:bg-black/10 transition-colors group/btn"
+                    >
+                       <div className="w-8 h-8 flex items-center justify-center bg-white/90 backdrop-blur text-slate-800 rounded shadow-sm group-hover/btn:scale-110 transition-transform">
+                          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
+                       </div>
+                    </button>
+                 </div>
+
+                 {/* Bottom Technical Specs Mockup */}
+                 <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    {[
+                      { label: 'Bearing Series', link: '/shop?category=Linear%20Motion&part=Linear%20Bushings' },
+                      { label: 'Shaft Ø12-50mm', link: '/shop?category=Linear%20Motion&part=Hard%20Chrome%20Linear%20Shaft' },
+                      { label: 'Hardness HRC62', link: '/shop?category=Linear%20Motion&part=Hard%20Chrome%20Linear%20Shaft' },
+                      { label: 'Precision g6', link: '/shop?category=Linear%20Motion&part=Hard%20Chrome%20Linear%20Shaft' }
+                    ].map((spec, i) => (
+                        <Link 
+                          key={i} 
+                          to={spec.link} 
+                          className="bg-white border border-slate-200 rounded p-3 text-center shadow-sm hover:border-blue-500 hover:shadow-md hover:-translate-y-0.5 transition-all cursor-pointer block group/spec flex items-center justify-center h-full"
+                        >
+                            <div className="text-sm font-bold text-slate-700 group-hover/spec:text-blue-700 transition-colors">{spec.label}</div>
+                        </Link>
+                    ))}
+                 </div>
               </div>
-
-              {/* Decorative glow behind */}
-              <div className="absolute top-10 -right-10 w-72 h-72 bg-purple-500/30 blur-[100px] rounded-full -z-10 animate-pulse" />
-              <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-500/30 blur-[100px] rounded-full -z-10 animate-pulse delay-700" />
             </div>
           </div>
         </PageWrapper>

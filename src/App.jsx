@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import WhatsAppWidget from "./components/WhatsAppWidget";
 import Home from "./pages/Home";
 import Shop from "./pages/ShopNew";
 import About from "./pages/About";
@@ -69,6 +70,7 @@ export default function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
+      <WhatsAppWidget />
     </div>
   );
 }

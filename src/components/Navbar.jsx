@@ -25,14 +25,30 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
+  
+  // Search State
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const searchInputRef = React.useRef(null);
 
   const navigate = useNavigate();
   const location = useLocation();
+  
+  // Focus input when search opens
+  useEffect(() => {
+    if (searchOpen && searchInputRef.current) {
+        searchInputRef.current.focus();
+    }
+  }, [searchOpen]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (userMenuOpen && !event.target.closest(".user-menu-container")) {
         setUserMenuOpen(false);
+      }
+      // Close search if clicking outside
+      if (searchOpen && !event.target.closest(".search-container")) {
+        setSearchOpen(false);
       }
     };
 
@@ -40,7 +56,7 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [userMenuOpen]);
+  }, [userMenuOpen, searchOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,18 +80,13 @@ const Navbar = () => {
     navigate("/");
   };
 
-  const handleSearchCTA = () => {
-    const params =
-      location.pathname === "/shop"
-        ? new URLSearchParams(location.search)
-        : new URLSearchParams();
-    params.set("searchOpen", "1");
-    navigate({
-      pathname: "/shop",
-      search: params.toString(),
-    });
-    setMenuOpen(false);
-    setUserMenuOpen(false);
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+        navigate(`/shop?query=${encodeURIComponent(searchQuery.trim())}`);
+        setSearchOpen(false);
+        setSearchQuery("");
+    }
   };
 
   const menuItems = [
@@ -93,7 +104,7 @@ const Navbar = () => {
         className={`sticky top-0 left-0 w-full z-50 bg-gradient-to-r from-black to-gray-900 text-white transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"
           }`}
       >
-        <PageWrapper className="py-4 lg:py-6">
+        <PageWrapper className="py-5 lg:py-7">
           <div className="flex items-center justify-between gap-3">
             {/* Logo */}
             <div className="flex items-center gap-4 flex-none">
@@ -126,17 +137,14 @@ const Navbar = () => {
 
 
 
-            {/* Desktop Menu */}
-            <ul className="hidden lg:flex gap-6 xl:gap-8 text-[17px] flex-1 justify-center flex-nowrap">
+            {/* Desktop Menu - Compact */}
+            <ul className="hidden xl:flex gap-8 text-[17px] font-medium text-white/80">
               {menuItems.map((item) => (
                 <li key={item.name} className="whitespace-nowrap">
                   <NavLink
                     to={item.path}
                     className={({ isActive }) =>
-                      `transition-opacity ${isActive
-                        ? "opacity-100 font-semibold"
-                        : "opacity-80 hover:opacity-100"
-                      }`
+                      `hover:text-white transition-colors ${isActive ? "text-white font-bold" : ""}`
                     }
                   >
                     {item.name}
@@ -145,15 +153,46 @@ const Navbar = () => {
               ))}
             </ul>
 
+            {/* Search Input (Expandable - Desktop) */}
+            <div className="hidden lg:flex justify-end flex-initial search-container">
+               <div className={`relative flex items-center transition-all duration-300 ease-in-out ${searchOpen ? 'w-64' : 'w-10'}`}>
+                  {searchOpen ? (
+                    <form onSubmit={handleSearchSubmit} className="w-full">
+                        <input
+                            ref={searchInputRef}
+                            type="text"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            placeholder="Search..."
+                            className="w-full bg-gray-800 border border-gray-600 rounded-full py-2 pl-4 pr-10 text-sm text-white focus:outline-none focus:border-yellow-500 placeholder-gray-400"
+                        />
+                        <button 
+                            type="submit" 
+                            className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 text-gray-400 hover:text-yellow-400 rounded-full hover:bg-gray-700 transition-colors"
+                        >
+                            <Search size={16} />
+                        </button>
+                    </form>
+                  ) : (
+                    <button
+                        onClick={() => setSearchOpen(true)}
+                        className="w-10 h-10 flex items-center justify-center rounded-full text-gray-300 hover:bg-gray-800 hover:text-white transition-all"
+                        aria-label="Open search"
+                    >
+                        <Search size={22} />
+                    </button>
+                  )}
+               </div>
+            </div>
+
             {/* Right actions */}
             <div className="flex items-center gap-2 sm:gap-3 md:gap-4 flex-none justify-end">
-              {/* Search icon to open overlay */}
+              {/* Mobile Search Icon - Toggles Search Bar */}
               <button
-                onClick={handleSearchCTA}
-                className="bg-gray-800 rounded-full p-2 hover:bg-gray-700 transition-colors flex items-center justify-center"
-                aria-label="Shop search"
+                onClick={() => setSearchOpen(!searchOpen)}
+                className="lg:hidden bg-gray-800 rounded-full p-2 hover:bg-gray-700 transition-colors flex items-center justify-center"
               >
-                <Search size={18} />
+                <Search size={22} />
               </button>
 
               {/* User */}
@@ -161,11 +200,11 @@ const Navbar = () => {
                 <div className="relative user-menu-container">
                   <button
                     onClick={() => setUserMenuOpen((v) => !v)}
-                    className="bg-gray-800 rounded-full p-2 sm:px-3 sm:py-2 flex items-center gap-2 hover:bg-gray-700 transition-colors"
+                    className="bg-gray-800 rounded-full p-2.5 sm:px-4 sm:py-2.5 flex items-center gap-2 hover:bg-gray-700 transition-colors"
                     aria-label="Account"
                   >
-                    <User size={18} />
-                    <span className="hidden sm:block text-sm md:text-[17px] max-w-[100px] md:max-w-[160px] truncate">
+                    <User size={20} />
+                    <span className="hidden sm:block text-base md:text-[17px] max-w-[100px] md:max-w-[160px] truncate">
                       {currentUser.name || currentUser.email}
                     </span>
                   </button>
@@ -203,10 +242,10 @@ const Navbar = () => {
               ) : (
                 <NavLink
                   to="/login"
-                  className="bg-gray-800 rounded-full p-2 sm:px-3 sm:py-2 flex items-center gap-2 hover:bg-gray-700 transition-colors"
+                  className="bg-gray-800 rounded-full p-2.5 sm:px-4 sm:py-2.5 flex items-center gap-2 hover:bg-gray-700 transition-colors"
                 >
-                  <User size={18} />
-                  <span className="hidden sm:inline text-sm md:text-[17px] whitespace-nowrap">Sign in</span>
+                  <User size={20} />
+                  <span className="hidden sm:inline text-base md:text-[17px] whitespace-nowrap">Sign in</span>
                 </NavLink>
               )}
 
@@ -214,10 +253,10 @@ const Navbar = () => {
               <Link
                 to="/cart"
                 state={{ returnTo: location.pathname + location.search }}
-                className="relative bg-gray-800 rounded-full p-2 hover:bg-gray-700 transition-colors"
+                className="relative bg-gray-800 rounded-full p-2.5 hover:bg-gray-700 transition-colors"
                 aria-label="Cart"
               >
-                <ShoppingCart size={18} />
+                <ShoppingCart size={20} />
                 {cartCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
                     {cartCount}
@@ -225,22 +264,16 @@ const Navbar = () => {
                 )}
               </Link>
 
-              {/* Language (UI only) */}
-              <div className="hidden md:flex items-center gap-2 bg-gray-800 rounded-full px-3 py-2 hover:bg-gray-700 transition-colors cursor-default">
-                <span className="text-[17px]">English (IN)</span>
-                <ChevronDown className="w-4 h-4 opacity-80" />
-              </div>
-
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="lg:hidden bg-gray-800 rounded-full p-2 hover:bg-gray-700 transition-colors"
+                className="xl:hidden bg-gray-800 rounded-full p-2.5 hover:bg-gray-700 transition-colors"
                 aria-label="Menu"
               >
                 {menuOpen ? (
-                  <X className="w-5 h-5" />
+                  <X className="w-6 h-6" />
                 ) : (
-                  <Menu className="w-5 h-5" />
+                  <Menu className="w-6 h-6" />
                 )}
               </button>
             </div>
@@ -250,7 +283,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden border-t border-gray-800 bg-black max-h-[calc(100vh-70px)] overflow-y-auto shadow-2xl">
+          <div className="xl:hidden border-t border-gray-800 bg-black max-h-[calc(100vh-70px)] overflow-y-auto shadow-2xl">
             <PageWrapper className="py-4 space-y-2">
               {menuItems.map((item) => (
                 <NavLink
@@ -320,6 +353,28 @@ const Navbar = () => {
           </div>
         )}
       </nav>
+      
+      {/* Mobile Search Overlay */}
+      {searchOpen && (
+        <div className="lg:hidden fixed top-[72px] left-0 w-full bg-black/95 backdrop-blur-sm p-4 border-b border-gray-800 z-40 animate-fadeIn">
+            <form onSubmit={handleSearchSubmit} className="relative w-full max-w-lg mx-auto">
+                <input
+                    autoFocus
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search products, categories..."
+                    className="w-full bg-gray-900 border border-gray-700 rounded-full py-3.5 pl-5 pr-12 text-white text-base focus:outline-none focus:border-yellow-500 placeholder-gray-500"
+                />
+                <button type="submit" className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 p-2">
+                    <Search size={20} />
+                </button>
+            </form>
+            {/* Overlay background to close */}
+            <div className="fixed inset-0 -z-10" onClick={() => setSearchOpen(false)}></div>
+        </div>
+      )}
+
       <div className="bg-gray-50 border-b border-gray-200/80 shadow-sm relative z-40">
         <PageWrapper className="py-2 sm:py-2.5 text-left text-xs sm:text-sm">
           <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-2 text-gray-700">
