@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 const POLICY_CONTENT = {
   "return-and-cancellation-policy": {
     title: "Return & Cancellation Policy",
-    body: "Our returns and cancellations policy: Items can be returned within 7 days of delivery if unused and in original packaging. Contact sales@mitsuki.in for support.",
+    body: "Our returns and cancellations policy: Items can be returned within 7 days of delivery if unused and in original packaging. Contact sales@mitsukiindia.com or sales@mitsuki.in for support.",
   },
   "privacy-policy": {
     title: "Privacy Policy",

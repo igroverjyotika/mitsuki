@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Orders from "./pages/Orders";
+import Profile from "./pages/Profile";
 import SearchRedirect from "./pages/Search";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -53,6 +54,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Orders />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <Profile />
               </ProtectedRoute>
             }
           />

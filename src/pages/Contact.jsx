@@ -11,7 +11,7 @@ export default function Contact() {
   const [error, setError] = useState("");
 
   const mailtoHref = useMemo(() => {
-    const to = "sales@mitsukiindia.com";
+    const to = "sales@mitsukiindia.com,sales@mitsuki.in";
     const safeSubject = subject?.trim() || "Contact request";
     const safeName = name?.trim() || "(not provided)";
     const safeEmail = email?.trim() || "(not provided)";
@@ -70,7 +70,7 @@ export default function Contact() {
                   Call Mr. Sudhir Yadav
                 </a>
                 <a
-                  href="mailto:sales@mitsukiindia.com"
+                  href="mailto:sales@mitsukiindia.com,sales@mitsuki.in"
                   className="inline-flex items-center gap-2 rounded-xl bg-blue-500 px-4 py-2 text-sm font-semibold hover:bg-blue-600 transition-colors"
                 >
                   <Mail className="w-4 h-4" />
@@ -96,10 +96,10 @@ export default function Contact() {
                     <div>
                       <p className="text-sm font-medium text-gray-900">Email</p>
                       <a
-                        href="mailto:sales@mitsukiindia.com"
+                        href="mailto:sales@mitsukiindia.com,sales@mitsuki.in"
                         className="text-sm text-blue-600 hover:underline"
                       >
-                        sales@mitsukiindia.com
+                        sales@mitsukiindia.com, sales@mitsuki.in
                       </a>
                     </div>
                   </div>

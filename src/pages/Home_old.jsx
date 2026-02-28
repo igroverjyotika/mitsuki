@@ -1142,11 +1142,11 @@ export default function Home() {
                   <div>
                     <p className="text-xs text-gray-500 mb-1">Contact Us</p>
                     <a
-                      href="mailto:sales@mitsuki.in"
+                      href="mailto:sales@mitsukiindia.com,sales@mitsuki.in"
                       className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2 text-sm"
                     >
                       <span>📧</span>
-                      sales@mitsuki.in
+                      sales@mitsukiindia.com, sales@mitsuki.in
                     </a>
                   </div>
                   <div>

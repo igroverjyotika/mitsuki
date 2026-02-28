@@ -118,9 +118,18 @@ const Navbar = () => {
                   M
                 </div>
 
-                {/* Logo Text */}
-                <span className="font-semibold text-2xl sm:text-3xl md:text-4xl tracking-tight text-white">
-                  Mi<span className="text-yellow-400">TSU</span>Ki
+                {/* Logo Text: full white, clean sans font, small-caps for both 'i' letters */}
+                <span
+                  className="font-semibold text-2xl sm:text-3xl md:text-4xl tracking-tight text-white"
+                  style={{
+                    fontFamily:
+                      "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+                  }}
+                >
+                  M
+                  <span style={{ fontVariantCaps: "small-caps" }}>i</span>
+                  TSUK
+                  <span style={{ fontVariantCaps: "small-caps" }}>i</span>
                 </span>
               </NavLink>
 
@@ -219,6 +228,14 @@ const Navbar = () => {
                         <span className="text-sm">My Orders</span>
                       </NavLink>
                       <NavLink
+                        to="/profile"
+                        onClick={() => setUserMenuOpen(false)}
+                        className="flex items-center gap-3 px-4 py-3 hover:bg-gray-800 transition-colors"
+                      >
+                        <User className="w-5 h-5" />
+                        <span className="text-sm">My Profile</span>
+                      </NavLink>
+                      <NavLink
                         to="/orders?tab=quotes"
                         onClick={() => setUserMenuOpen(false)}
                         className="flex items-center gap-3 px-4 py-3 hover:bg-gray-800 transition-colors"
@@ -314,6 +331,13 @@ const Navbar = () => {
                   >
                     My Orders
                   </NavLink>
+                      <NavLink
+                        to="/profile"
+                        onClick={() => setMenuOpen(false)}
+                        className="block px-4 py-3 rounded-xl font-semibold text-gray-200 hover:bg-gray-900 transition-colors"
+                      >
+                        My Profile
+                      </NavLink>
                   <NavLink
                     to="/orders?tab=quotes"
                     onClick={() => setMenuOpen(false)}

@@ -13,6 +13,7 @@ import {
 import { db } from "../firebase";
 import { useAuth } from "../context/AuthContext";
 import PageWrapper from "../components/PageWrapper";
+import logoSvg from "../assets/logo.svg";
 
 const PAID_ORDER_STATUSES = [
   "PAID",
@@ -38,6 +39,7 @@ export default function Orders() {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("orders");
   const [updatingId, setUpdatingId] = useState(null);
+  const [downloadingId, setDownloadingId] = useState(null);
   const { currentUser } = useAuth();
   const location = useLocation();
 
@@ -107,6 +109,250 @@ export default function Orders() {
       alert("Error converting quote to order.");
     } finally {
       setUpdatingId(null);
+    }
+  };
+
+  const downloadQuote = async (order) => {
+    try {
+      setDownloadingId(order.id);
+      const jsPDFModule = await import("jspdf/dist/jspdf.umd.min.js");
+      const jsPDF = jsPDFModule.jsPDF || jsPDFModule.default;
+      const pdf = new jsPDF();
+
+      // Header logo
+      try {
+        const resp = await fetch(logoSvg);
+        const svgText = await resp.text();
+        const svgDataUrl = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgText);
+        const img = new Image();
+        img.src = svgDataUrl;
+        await new Promise((res, rej) => {
+          img.onload = res;
+          img.onerror = rej;
+        });
+        const intrinsicW = img.width || 60;
+        const intrinsicH = img.height || 60;
+        const scale = 3;
+        const canvas = document.createElement("canvas");
+        canvas.width = intrinsicW * scale;
+        canvas.height = intrinsicH * scale;
+        const ctx = canvas.getContext("2d");
+        ctx.scale(scale, scale);
+        ctx.drawImage(img, 0, 0, intrinsicW, intrinsicH);
+        const pngDataUrl = canvas.toDataURL("image/png");
+        pdf.addImage(pngDataUrl, "PNG", 14, 10, 40, 16);
+      } catch (err) {
+        console.warn("Failed to load logo for PDF:", err);
+      }
+
+      // Company contacts (left, just below logo)
+      pdf.setFontSize(10);
+      pdf.setFont("helvetica", "normal");
+      pdf.setTextColor(100, 100, 100);
+      const contactsX = 14;
+      const contactsEmailY = 28;
+      const contactsEmailY2 = contactsEmailY + 6;
+      const contactsPhoneY = contactsEmailY2 + 6;
+      pdf.text("sales@mitsukiindia.com", contactsX, contactsEmailY);
+      pdf.text("sales@mitsuki.in", contactsX, contactsEmailY2);
+      pdf.text("+91 7988050803 / +91 9999810210", contactsX, contactsPhoneY);
+
+      // Quote title and meta
+      pdf.setFontSize(22);
+      pdf.setTextColor(40, 40, 40);
+      pdf.setFont("helvetica", "bold");
+      const quoteTextWidth = pdf.getTextWidth("QUOTATION");
+      pdf.text("QUOTATION", 196 - quoteTextWidth, 20);
+
+      pdf.setFontSize(10);
+      pdf.setFont("helvetica", "normal");
+      pdf.setTextColor(100, 100, 100);
+      const quoteIdText = `Ref # : ${order.id.substring(0, 8).toUpperCase()}`;
+      const dateText = `Date  : ${order.createdAt ? new Date(order.createdAt).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }) : ''}`;
+      pdf.text(quoteIdText, 196 - pdf.getTextWidth(quoteIdText), 26);
+      pdf.text(dateText, 196 - pdf.getTextWidth(dateText), 31);
+
+      // Divider - position below contact block
+      pdf.setDrawColor(220, 220, 220);
+      // keep divider above the customer blocks; clamp so it doesn't overlap
+      const dividerY = Math.min(44, contactsPhoneY + 2);
+      pdf.line(14, dividerY, 196, dividerY);
+
+      // Customer blocks
+      pdf.setFontSize(11);
+      pdf.setTextColor(40, 40, 40);
+      pdf.setFont("helvetica", "bold");
+      pdf.text("Bill To:", 14, 48);
+
+      const bill = order.billing || {};
+      const ship = order.shippingDetails || order.shipping || {};
+      const customerName = bill.name || order.customerName || order.userId || "Valued Customer";
+      const customerEmail = bill.email || order.email || "";
+
+      const labelX = 14;
+      const valueX = labelX + 28;
+      const shipToX = 110;
+      const shipValueX = shipToX + 28;
+
+      let leftY = 54;
+      pdf.setFont("helvetica", "bold");
+      pdf.setFontSize(10);
+      pdf.text("Name:", labelX, leftY);
+      pdf.setFont("helvetica", "normal");
+      pdf.text(customerName, valueX, leftY);
+
+      leftY += 6;
+      pdf.setFont("helvetica", "bold");
+      pdf.text("Address:", labelX, leftY);
+      pdf.setFont("helvetica", "normal");
+      const addrLinesLeft = (bill.address) ? pdf.splitTextToSize(bill.address, 70) : [];
+      let lineHeight = 5;
+      if (typeof pdf.getTextDimensions === "function") {
+        const dim = pdf.getTextDimensions("M");
+        if (dim && dim.h) lineHeight = dim.h;
+      } else if (typeof pdf.getFontSize === "function") {
+        lineHeight = pdf.getFontSize() * 0.5;
+      }
+
+      if (addrLinesLeft.length > 0) {
+        pdf.text(addrLinesLeft, valueX, leftY);
+        leftY = leftY + Math.max(0, addrLinesLeft.length - 1) * lineHeight + 6;
+      } else {
+        leftY += 6;
+      }
+      pdf.setFont("helvetica", "bold");
+      pdf.text("Email:", labelX, leftY);
+      pdf.setFont("helvetica", "normal");
+      if (customerEmail) pdf.text(customerEmail, valueX, leftY);
+
+      leftY += 6;
+      pdf.setFont("helvetica", "bold");
+      pdf.text("Phone:", labelX, leftY);
+      pdf.setFont("helvetica", "normal");
+      if (bill.phone) pdf.text(bill.phone, valueX, leftY);
+
+      // Ship To
+      let rightY = 54;
+      pdf.setFont("helvetica", "bold");
+      pdf.text("Ship To:", shipToX, 48);
+
+      pdf.text("Name:", shipToX, rightY);
+      pdf.setFont("helvetica", "normal");
+      pdf.text(ship.name || customerName, shipValueX, rightY);
+
+      rightY += 6;
+      pdf.setFont("helvetica", "bold");
+      pdf.text("Address:", shipToX, rightY);
+      pdf.setFont("helvetica", "normal");
+      const addrLinesRight = (ship.address) ? pdf.splitTextToSize(ship.address, 70) : [];
+      if (addrLinesRight.length > 0) {
+        pdf.text(addrLinesRight, shipValueX, rightY);
+        rightY = rightY + Math.max(0, addrLinesRight.length - 1) * lineHeight + 6;
+      } else {
+        rightY += 6;
+      }
+      pdf.setFont("helvetica", "bold");
+      pdf.text("Email:", shipToX, rightY);
+      pdf.setFont("helvetica", "normal");
+      if (ship.email) pdf.text(ship.email, shipValueX, rightY);
+
+      rightY += 6;
+      pdf.setFont("helvetica", "bold");
+      pdf.text("Phone:", shipToX, rightY);
+      pdf.setFont("helvetica", "normal");
+      if (ship.phone) pdf.text(ship.phone, shipValueX, rightY);
+
+      pdf.setDrawColor(220, 220, 220);
+      pdf.setLineWidth(0.5);
+      pdf.line(labelX, leftY + 8, shipToX - 8, leftY + 8);
+      pdf.line(shipToX, rightY + 8, 196, rightY + 8);
+
+      const blockEndY = Math.max(leftY, rightY);
+      let y = Math.max(70, blockEndY + 12);
+
+      // Table Header
+      const col1 = 14;
+      const col2 = 120;
+      const col3 = 145;
+      const col4 = 175;
+
+      pdf.setFillColor(245, 245, 245);
+      pdf.rect(14, y - 5, 182, 8, "F");
+
+      pdf.setFont("helvetica", "bold");
+      pdf.setFontSize(9);
+      pdf.setTextColor(40, 40, 40);
+      pdf.text("ITEM DESCRIPTION", col1 + 2, y);
+      pdf.text("QTY", col2, y);
+      pdf.text("UNIT PRICE", col3, y);
+      pdf.text("TOTAL", col4, y);
+
+      y += 8;
+      pdf.setFont("helvetica", "normal");
+      pdf.setTextColor(60, 60, 60);
+
+      const details = order.orderDetails || [];
+      details.forEach((detail, index) => {
+        const itemName = detail.partCode || "Item";
+        const itemQty = detail.items && detail.items[0] ? detail.items[0].units : "1";
+        const unitPrice = detail.items && detail.items[0] ? Number(detail.items[0].amount) / Number(itemQty) : 0;
+        const lineTotal = detail.items && detail.items[0] ? detail.items[0].amount : (unitPrice * itemQty).toFixed(2);
+
+        pdf.text(itemName, col1 + 2, y);
+        pdf.setFontSize(8);
+        pdf.setTextColor(120, 120, 120);
+        pdf.text(`SKU: ${detail.partCode || '-'}`, col1 + 2, y + 4);
+
+        pdf.setFontSize(9);
+        pdf.setTextColor(60, 60, 60);
+        pdf.text(String(itemQty), col2, y);
+        pdf.text(`Rs. ${Number(unitPrice).toFixed(2)}`, col3, y);
+        pdf.text(`Rs. ${Number(lineTotal).toFixed(2)}`, col4, y);
+
+        y += 10;
+
+        if (index < details.length - 1) {
+          pdf.setDrawColor(240, 240, 240);
+          pdf.line(14, y - 4, 196, y - 4);
+        }
+
+        if (y > 270) {
+          pdf.addPage();
+          y = 20;
+        }
+      });
+
+      y += 5;
+      pdf.setDrawColor(200, 200, 200);
+      pdf.line(14, y, 196, y);
+      y += 8;
+      const rightAlignX = 175;
+      pdf.setFont("helvetica", "normal");
+      pdf.text("Subtotal:", 140, y);
+      pdf.text(`Rs. ${order.subtotal ? Number(order.subtotal).toFixed(2) : '0.00'}`, rightAlignX, y);
+      y += 6;
+      pdf.text("Shipping:", 140, y);
+      pdf.text(`Rs. ${order.shipping ? Number(order.shipping).toFixed(2) : '0.00'}`, rightAlignX, y);
+      y += 8;
+      pdf.setFont("helvetica", "bold");
+      pdf.setFontSize(11);
+      pdf.setTextColor(0, 0, 0);
+      pdf.text("Total:", 140, y);
+      pdf.text(`Rs. ${order.total ? Number(order.total).toFixed(2) : '0.00'}`, rightAlignX, y);
+
+      const pageHeight = pdf.internal.pageSize.height;
+      pdf.setFont("helvetica", "normal");
+      pdf.setFontSize(8);
+      pdf.setTextColor(150, 150, 150);
+      pdf.text("Thank you for your business!", 105, pageHeight - 15, { align: "center" });
+      pdf.text("Generated by Mitsuki India Online Store", 105, pageHeight - 10, { align: "center" });
+
+      pdf.save(`mitsuki-quote-${order.id}.pdf`);
+    } catch (err) {
+      console.error("Error downloading quote:", err);
+      alert("Failed to download quote.");
+    } finally {
+      setDownloadingId(null);
     }
   };
 
@@ -374,6 +620,14 @@ export default function Orders() {
                     {updatingId === order.id
                       ? "Processing Payment..."
                       : "Pay Now to Order"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => downloadQuote(order)}
+                    disabled={downloadingId === order.id}
+                    className="inline-flex items-center px-4 py-2 rounded text-sm font-semibold text-gray-900 bg-gray-100 hover:bg-gray-200 disabled:opacity-60 transition-colors"
+                  >
+                    {downloadingId === order.id ? "Preparing..." : "Download Quote"}
                   </button>
                 </div>
 

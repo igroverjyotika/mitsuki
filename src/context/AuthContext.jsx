@@ -71,12 +71,21 @@ export function AuthProvider({ children }) {
     return await signOut(auth);
   };
 
+  // Update user profile fields in Firestore and local state
+  const updateProfile = async (updates) => {
+    if (!auth.currentUser) throw new Error("No authenticated user");
+    const uid = auth.currentUser.uid;
+    await setDoc(doc(db, "users", uid), updates, { merge: true });
+    setCurrentUser((prev) => ({ ...(prev || {}), ...updates }));
+  };
+
   const value = {
     currentUser,
     signup,
     login,
     loginWithGoogle,
     logout,
+    updateProfile,
     loading,
   };
 
