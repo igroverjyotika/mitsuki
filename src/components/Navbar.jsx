@@ -126,10 +126,7 @@ const Navbar = () => {
                       "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
                   }}
                 >
-                  M
-                  <span style={{ fontVariantCaps: "small-caps" }}>i</span>
-                  TSUK
-                  <span style={{ fontVariantCaps: "small-caps" }}>i</span>
+                  MITSUKI
                 </span>
               </NavLink>
 
