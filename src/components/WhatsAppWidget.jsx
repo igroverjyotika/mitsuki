@@ -5,7 +5,7 @@ export default function WhatsAppWidget() {
   const widgetRef = useRef(null);
   
   // Sudhir Yadav's number
-  const phoneNumber = "917988050802"; 
+  const phoneNumber = "917988050803"; 
   const message = "Hello, I would like to inquire about your products.";
   
   // Format for direct link
@@ -65,7 +65,7 @@ export default function WhatsAppWidget() {
              {/* Phone Number Chip */}
              <div className="bg-white px-3 py-1 rounded shadow-sm">
                 <p className="text-xs font-bold text-gray-800 tracking-wider">
-                  +91-917988050802
+                  +91-917988050803
                 </p>
              </div>
           </div>

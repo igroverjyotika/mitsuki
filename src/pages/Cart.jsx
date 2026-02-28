@@ -138,7 +138,7 @@ export default function Cart() {
         pdf.setFont("helvetica", "normal");
         pdf.setTextColor(100, 100, 100);
         pdf.text("Email: sales@mitsukiindia.com", 14, 26);
-        pdf.text("Phone: +91 7988050802 / +91 9999810210", 14, 31);
+        pdf.text("Phone: +91 7988050803 / +91 9999810210", 14, 31);
 
         // Quote Details (Right)
         pdf.setFontSize(22);

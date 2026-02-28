@@ -63,7 +63,7 @@ export default function Contact() {
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href="tel:+917988050802"
+                  href="tel:+917988050803"
                   className="inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 text-sm font-semibold hover:bg-white/15 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
@@ -111,10 +111,10 @@ export default function Contact() {
                     <div className="space-y-1">
                       <p className="text-sm font-medium text-gray-900">Phone</p>
                       <a
-                        href="tel:+917988050802"
+                        href="tel:+917988050803"
                         className="text-sm text-blue-600 hover:underline block"
                       >
-                        Mr. Sudhir Yadav: +91 7988050802
+                        Mr. Sudhir Yadav: +91 7988050803
                       </a>
                       <a
                         href="tel:+919999810210"

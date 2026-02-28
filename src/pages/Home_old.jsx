@@ -1151,11 +1151,11 @@ export default function Home() {
                   </div>
                   <div>
                     <a
-                      href="tel:+917988050802"
+                      href="tel:+917988050803"
                       className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2 text-sm"
                     >
                       <span>📞</span>
-                      +91 7988050802
+                      +91 7988050803
                     </a>
                   </div>
 

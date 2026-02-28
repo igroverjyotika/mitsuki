@@ -84,14 +84,14 @@ export default function Footer() {
                 </div>
                 <div>
                   <a
-                    href="tel:+917988050802"
+                    href="tel:+917988050803"
                     className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2 text-sm"
                   >
                     <span>📞</span>
                     <span className="inline-flex items-center rounded-md bg-white/10 px-2 py-0.5 text-[11px] font-bold tracking-wide text-white whitespace-nowrap">
                       Mr. Sudhir Yadav
                     </span>
-                    +91 7988050802
+                    +91 7988050803
                   </a>
 
                   <a
