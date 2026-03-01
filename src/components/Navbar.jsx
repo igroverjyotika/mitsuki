@@ -11,6 +11,7 @@ import {
   User,
   LogOut,
   FileText,
+  ShieldCheck,
 } from "lucide-react";
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
@@ -400,12 +401,18 @@ const Navbar = () => {
         <PageWrapper className="py-2 sm:py-2.5 text-left text-xs sm:text-sm">
           <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-2 text-gray-700">
             <span className="inline-flex items-center gap-2">
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-white flex-none">
+                <ShieldCheck size={12} strokeWidth={3} />
+              </span>
+              <span className="font-semibold">Authorized Distributor</span>
+            </span>
+            <span className="inline-flex items-center gap-2">
               <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-900 text-[11px] font-semibold text-white flex-none">
                 ₹
               </span>
               <span>
                 <span className="font-semibold">Low Price Guarantee</span>
-                <span className="hidden sm:inline text-gray-500"> · Best value on industrial components</span>
+                {/* <span className="hidden sm:inline text-gray-500"> · Best value on industrial components</span> */}
               </span>
             </span>
           </div>

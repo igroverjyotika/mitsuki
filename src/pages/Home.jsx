@@ -144,14 +144,14 @@ export default function Home() {
               {/* Badges Container */}
               <div className="flex flex-col items-center lg:items-start gap-3">
                 {/* Authorized Distributor Badge */}
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-slate-200 shadow-sm rounded-full">
+                {/* <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-slate-200 shadow-sm rounded-full">
                   <ShieldCheck className="h-4 w-4 text-green-600" />
                   <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">Authorized Distributor</span>
-                </div>
+                </div> */}
 
                 {/* Yiheda Badge */}
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-slate-200 shadow-sm rounded-full">
-                  <img src="/yiheda-logo.svg" alt="Yiheda Logo" className="h-4 w-auto object-contain flex-shrink-0" />
+                  <img src="/yiheda_logo.jpeg" alt="Yiheda Logo" className="h-8 w-auto object-contain flex-shrink-0" />
                   <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">Yiheda - One stop solution of FA components</span>
                 </div>
               </div>
