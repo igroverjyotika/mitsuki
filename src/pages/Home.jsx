@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { ShieldCheck } from "lucide-react";
 import FeaturedProducts from "../components/FeaturedProducts";
 import FeaturedParts from "../components/FeaturedParts";
 import PageWrapper from "../components/PageWrapper";
@@ -140,13 +141,19 @@ export default function Home() {
             {/* Left Content Column (5 cols) */}
             <div className="lg:col-span-5 space-y-8 text-center lg:text-left">
               
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-slate-200 shadow-sm rounded-full mx-auto lg:mx-0">
-                <span className="flex h-2 w-2 relative">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">Authorized Distributor</span>
+              {/* Badges Container */}
+              <div className="flex flex-col items-center lg:items-start gap-3">
+                {/* Authorized Distributor Badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-slate-200 shadow-sm rounded-full">
+                  <ShieldCheck className="h-4 w-4 text-green-600" />
+                  <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">Authorized Distributor</span>
+                </div>
+
+                {/* Yiheda Badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-slate-200 shadow-sm rounded-full">
+                  <img src="/yiheda-logo.svg" alt="Yiheda Logo" className="h-4 w-auto object-contain flex-shrink-0" />
+                  <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">Yiheda - One stop solution of FA components</span>
+                </div>
               </div>
 
               {/* Headlines */}
