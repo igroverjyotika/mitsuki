@@ -2685,6 +2685,1167 @@
             "outerDiameter",
             "length"
           ]
+        },
+        {
+          "partName": "Shaft Support",
+          "products": [
+            {
+              "partCode": "SHF8",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "135"
+              }
+            },
+            {
+              "partCode": "SHF10",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "135"
+              }
+            },
+            {
+              "partCode": "SHF12",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "160"
+              }
+            },
+            {
+              "partCode": "SHF16",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "200"
+              }
+            },
+            {
+              "partCode": "SHF20",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "250"
+              }
+            },
+            {
+              "partCode": "SHF25",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "330"
+              }
+            },
+            {
+              "partCode": "SHF30",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "420"
+              }
+            },
+            {
+              "partCode": "SHF35",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "760"
+              }
+            },
+            {
+              "partCode": "SHF40",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1030"
+              }
+            },
+            {
+              "partCode": "SHF50",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Flanged",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1620"
+              }
+            },
+            {
+              "partCode": "SK8",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "125"
+              }
+            },
+            {
+              "partCode": "SK10",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "130"
+              }
+            },
+            {
+              "partCode": "SK12",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "135"
+              }
+            },
+            {
+              "partCode": "SK16",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "190"
+              }
+            },
+            {
+              "partCode": "SK20",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "230"
+              }
+            },
+            {
+              "partCode": "SK25",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "330"
+              }
+            },
+            {
+              "partCode": "SK30",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "460"
+              }
+            },
+            {
+              "partCode": "SK35",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "670"
+              }
+            },
+            {
+              "partCode": "SK40",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "970"
+              }
+            },
+            {
+              "partCode": "SK50",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "Straight",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1570"
+              }
+            }
+          ],
+          "selectionProperties": [
+            "type"
+          ],
+          "filterProperties": [
+            "innerDiameter"
+          ]
+        },
+        {
+          "partName": "Linear Housing",
+          "products": [
+            {
+              "partCode": "SC6UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "230"
+              }
+            },
+            {
+              "partCode": "SC8UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "235"
+              }
+            },
+            {
+              "partCode": "SC10UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "275"
+              }
+            },
+            {
+              "partCode": "SC12UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "300"
+              }
+            },
+            {
+              "partCode": "SC16UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "400"
+              }
+            },
+            {
+              "partCode": "SC20UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "460"
+              }
+            },
+            {
+              "partCode": "SC25UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "885"
+              }
+            },
+            {
+              "partCode": "SC30UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1080"
+              }
+            },
+            {
+              "partCode": "SC35UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1520"
+              }
+            },
+            {
+              "partCode": "SC40UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "2100"
+              }
+            },
+            {
+              "partCode": "SC50UU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Short",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "4700"
+              }
+            },
+            {
+              "partCode": "SC6LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "6",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "460"
+              }
+            },
+            {
+              "partCode": "SC8LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "8",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "470"
+              }
+            },
+            {
+              "partCode": "SC10LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "10",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "550"
+              }
+            },
+            {
+              "partCode": "SC12LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "12",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "600"
+              }
+            },
+            {
+              "partCode": "SC16LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "16",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "800"
+              }
+            },
+            {
+              "partCode": "SC20LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "920"
+              }
+            },
+            {
+              "partCode": "SC25LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1770"
+              }
+            },
+            {
+              "partCode": "SC30LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "2160"
+              }
+            },
+            {
+              "partCode": "SC35LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "3040"
+              }
+            },
+            {
+              "partCode": "SC40LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "40",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "4200"
+              }
+            },
+            {
+              "partCode": "SC50LUU",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "Long",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "innerDiameter",
+                  "value": "50",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "9400"
+              }
+            }
+          ],
+          "selectionProperties": [
+            "size"
+          ],
+          "filterProperties": [
+            "innerDiameter"
+          ]
+        },
+        {
+          "partName": "Rail Block",
+          "products": [
+            {
+              "partCode": "HGH15CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Standard",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "15",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "950"
+              }
+            },
+            {
+              "partCode": "HGH20CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Standard",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1000"
+              }
+            },
+            {
+              "partCode": "HGH25CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Standard",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1450"
+              }
+            },
+            {
+              "partCode": "HGH30CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Standard",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "2200"
+              }
+            },
+            {
+              "partCode": "HGH35CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Standard",
+                  "unit": ""
+                },
+                {
+                  "propertyName ": "nominal",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "3600"
+              }
+            },
+            {
+              "partCode": "HGH45CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Standard",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "45",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "5100"
+              }
+            },
+            {
+              "partCode": "HGW15CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Wide",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "15",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1100"
+              }
+            },
+            {
+              "partCode": "HGW20CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Wide",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1150"
+              }
+            },
+            {
+              "partCode": "HGW25CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Wide",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "1600"
+              }
+            },
+            {
+              "partCode": "HGW30CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Wide",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "2350"
+              }
+            },
+            {
+              "partCode": "HGW35CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Wide",
+                  "unit": ""
+                },
+                {
+                  "propertyName ": "nominal",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "3650"
+              }
+            },
+            {
+              "partCode": "HGW45CA",
+              "specifications": [
+                {
+                  "propertyName": "flange",
+                  "value": "Wide",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "nominal",
+                  "value": "45",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "5700"
+              }
+            }
+            
+          ],
+          "selectionProperties": [
+            "flange"
+          ],
+          "filterProperties": [
+            "nominal"
+          ]
+        },
+        {
+          "partName": "Rail Guide",
+          "description": [
+            {
+              "key": "Rust",
+              "value": "Anti Rust electroplating"
+            }
+          ],
+          "products": [
+            {
+              "partCode": "HGR15",
+              "specifications": [
+                {
+                  "propertyName": "nominal",
+                  "value": "15",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "3150"
+              }
+            },
+            {
+              "partCode": "HGR20",
+              "specifications": [
+                {
+                  "propertyName": "nominal",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "3400"
+              }
+            },
+            {
+              "partCode": "HGR25",
+              "specifications": [
+                {
+                  "propertyName": "nominal",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "4200"
+              }
+            },
+            {
+              "partCode": "HGR30",
+              "specifications": [
+                {
+                  "propertyName": "nominal",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "5300"
+              }
+            },
+            {
+              "partCode": "HGR35",
+              "specifications": [
+                {
+                  "propertyName": "nominal",
+                  "value": "35",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "6650"
+              }
+            },
+            {
+              "partCode": "HGR45",
+              "specifications": [
+                {
+                  "propertyName": "nominal",
+                  "value": "45",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "10900"
+              }
+            }
+          ],
+          "selectionProperties": [
+            ""
+          ],
+          "filterProperties": [
+            "nominal"
+          ]
         }
       ]
     },
