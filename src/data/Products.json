@@ -1,7 +1,7 @@
 {
-  "categories" : [
+  "categories": [
     {
-      "categoryName" : "Linear Motion",
+      "categoryName": "Linear Motion",
       "part": [
         {
           "partName": "Hard Chrome Linear Shaft",
@@ -52,8 +52,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "0.330",
+              "price": {
+                "value": "0.330",
                 "unit": "mm"
               }
             },
@@ -67,8 +67,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "0.350",
+              "price": {
+                "value": "0.350",
                 "unit": "mm"
               }
             },
@@ -82,8 +82,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "0.370",
+              "price": {
+                "value": "0.370",
                 "unit": "mm"
               }
             },
@@ -97,8 +97,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "0.450",
+              "price": {
+                "value": "0.450",
                 "unit": "mm"
               }
             },
@@ -112,8 +112,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "0.640",
+              "price": {
+                "value": "0.640",
                 "unit": "mm"
               }
             },
@@ -127,8 +127,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "0.980",
+              "price": {
+                "value": "0.980",
                 "unit": "mm"
               }
             },
@@ -142,8 +142,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "1.320",
+              "price": {
+                "value": "1.320",
                 "unit": "mm"
               }
             },
@@ -157,8 +157,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "1.810",
+              "price": {
+                "value": "1.810",
                 "unit": "mm"
               }
             },
@@ -172,8 +172,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "2.440",
+              "price": {
+                "value": "2.440",
                 "unit": "mm"
               }
             },
@@ -187,8 +187,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "3.010",
+              "price": {
+                "value": "3.010",
                 "unit": "mm"
               }
             },
@@ -202,8 +202,8 @@
                   "unit": "mm"
                 }
               ],
-              "price" : {
-                "value" : "3.870",
+              "price": {
+                "value": "3.870",
                 "unit": "mm"
               }
             }
@@ -2667,13 +2667,6 @@
                 "value": "5600"
               }
             }
-
-
-
-
-
-
-
           ],
           "selectionProperties": [
             "type",
@@ -3737,7 +3730,6 @@
                 "value": "5700"
               }
             }
-            
           ],
           "selectionProperties": [
             "flange"
@@ -3850,217 +3842,215 @@
       ]
     },
     {
-      "categoryName" : "Caster Leveling Mount",
+      "categoryName": "Caster Leveling Mount",
       "part": [
         {
           "partName": "Metal Pad For Heavy Load",
-           "products": [
-             {
-               "partCode": "LMHL-M10-T100",
-               "specifications": [
-                 {
-                   "propertyName": "baseDiameter",
-                   "value": "80",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "size",
-                   "value": "M10",
-                   "unit": ""
-                 },
-                 {
-                   "propertyName": "threadLength",
-                   "value": "100",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "loadCapacity",
-                   "value": "600",
-                   "unit": "Kg"
-                 }
-               ],
-               "price": {
-                 "static": "yes",
-                 "value": "250"
-               }
-             },
-             {
-               "partCode": "LMHL-M12-T100",
-               "specifications": [
-                 {
-                   "propertyName": "baseDiameter",
-                   "value": "80",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "size",
-                   "value": "M12",
-                   "unit": ""
-                 },
-                 {
-                   "propertyName": "threadLength",
-                   "value": "100",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "loadCapacity",
-                   "value": "650",
-                   "unit": "Kg"
-                 }
-               ],
-               "price": {
-                 "static": "yes",
-                 "value": "300"
-               }
-             },
-             {
-               "partCode": "LMHL-M12-T150",
-               "specifications": [
-                 {
-                   "propertyName": "baseDiameter",
-                   "value": "80",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "size",
-                   "value": "M12",
-                   "unit": ""
-                 },
-                 {
-                   "propertyName": "threadLength",
-                   "value": "150",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "loadCapacity",
-                   "value": "650",
-                   "unit": "Kg"
-                 }
-               ],
-               "price": {
-                 "static": "yes",
-                 "value": "350"
-               }
-             },
-             {
-               "partCode": "LMHL-M16-T100",
-               "specifications": [
-                 {
-                   "propertyName": "baseDiameter",
-                   "value": "80",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "size",
-                   "value": "M16",
-                   "unit": ""
-                 },
-                 {
-                   "propertyName": "threadLength",
-                   "value": "100",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "loadCapacity",
-                   "value": "700",
-                   "unit": "Kg"
-                 }
-               ],
-               "price": {
-                 "static": "yes",
-                 "value": "350"
-               }
-             },
-
-             {
-               "partCode": "LMHL-M16-T150",
-               "specifications": [
-                 {
-                   "propertyName": "baseDiameter",
-                   "value": "80",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "size",
-                   "value": "M16",
-                   "unit": ""
-                 },
-                 {
-                   "propertyName": "threadLength",
-                   "value": "150",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "loadCapacity",
-                   "value": "700",
-                   "unit": "Kg"
-                 }
-               ],
-               "price": {
-                 "static": "yes",
-                 "value": "450"
-               }
-             },
-
-             {
-               "partCode": "LMHL-M20-T100",
-               "specifications": [
-                 {
-                   "propertyName": "baseDiameter",
-                   "value": "80",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "size",
-                   "value": "M20",
-                   "unit": ""
-                 },
-                 {
-                   "propertyName": "threadLength",
-                   "value": "100",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "loadCapacity",
-                   "value": "800",
-                   "unit": "Kg"
-                 }
-               ],
-               "price": {
-                 "static": "yes",
-                 "value": "400"
-               }
-             },
-             {
-               "partCode": "LMHL-M20-T150",
-               "specifications": [
-                 {
-                   "propertyName": "baseDiameter",
-                   "value": "80",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "size",
-                   "value": "M20",
-                   "unit": ""
-                 },
-                 {
-                   "propertyName": "threadLength",
-                   "value": "150",
-                   "unit": "mm"
-                 },
-                 {
-                   "propertyName": "loadCapacity",
-                   "value": "800",
-                   "unit": "Kg"
-                 }
-               ],
-               "price": {
-                 "static": "yes",
-                 "value": "450"
-               }
-             }
-           ],
+          "products": [
+            {
+              "partCode": "LMHL-M10-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M10",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "600",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "250"
+              }
+            },
+            {
+              "partCode": "LMHL-M12-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M12",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "650",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "300"
+              }
+            },
+            {
+              "partCode": "LMHL-M12-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M12",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "650",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMHL-M16-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M16",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "700",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "350"
+              }
+            },
+            {
+              "partCode": "LMHL-M16-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M16",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "700",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "450"
+              }
+            },
+            {
+              "partCode": "LMHL-M20-T100",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M20",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "100",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "800",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "400"
+              }
+            },
+            {
+              "partCode": "LMHL-M20-T150",
+              "specifications": [
+                {
+                  "propertyName": "baseDiameter",
+                  "value": "80",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M20",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "threadLength",
+                  "value": "150",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "loadCapacity",
+                  "value": "800",
+                  "unit": "Kg"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "450"
+              }
+            }
+          ],
           "filterProperties": [
             "baseDiameter",
             "size",
@@ -4283,7 +4273,6 @@
                 "value": "235"
               }
             },
-
             {
               "partCode": "LMFM-M16-T150",
               "specifications": [
@@ -4313,7 +4302,6 @@
                 "value": "340"
               }
             },
-
             {
               "partCode": "LMFM-M20-T100",
               "specifications": [
@@ -4498,7 +4486,6 @@
                 "value": "320"
               }
             },
-
             {
               "partCode": "LMAVP-M16-T150",
               "specifications": [
@@ -4528,7 +4515,6 @@
                 "value": "390"
               }
             },
-
             {
               "partCode": "LMAVP-M20-T100",
               "specifications": [
@@ -4597,7 +4583,7 @@
       ]
     },
     {
-      "categoryName" : "Caster Wheel",
+      "categoryName": "Caster Wheel",
       "part": [
         {
           "partName": "Levelling Mount",
@@ -4680,7 +4666,7 @@
       ]
     },
     {
-      "categoryName" : "Door Hardware",
+      "categoryName": "Door Hardware",
       "part": [
         {
           "partName": "Aluminium handles round bar",
@@ -4864,8 +4850,7 @@
                 "static": "yes",
                 "value": "150"
               }
-            }
-          ,
+            },
             {
               "partCode": "DH-AHI-L30-B40",
               "specifications": [
@@ -4889,8 +4874,7 @@
                 "static": "yes",
                 "value": "185"
               }
-            }
-          ,
+            },
             {
               "partCode": "DH-AHI-L50-B62",
               "specifications": [
@@ -4914,8 +4898,7 @@
                 "static": "yes",
                 "value": "170"
               }
-            }
-          ,
+            },
             {
               "partCode": "DH-AHI-L50-B68",
               "specifications": [
@@ -4997,8 +4980,7 @@
                 "static": "yes",
                 "value": "44"
               }
-            }
-          ,
+            },
             {
               "partCode": "DH-PHI-L30-B40",
               "specifications": [
@@ -5022,8 +5004,7 @@
                 "static": "yes",
                 "value": "73"
               }
-            }
-          ,
+            },
             {
               "partCode": "DH-PHI-L50-B62",
               "specifications": [
@@ -5047,8 +5028,7 @@
                 "static": "yes",
                 "value": "73"
               }
-            }
-          ,
+            },
             {
               "partCode": "DH-PHI-L50-B68",
               "specifications": [
@@ -5081,7 +5061,1990 @@
           ]
         }
       ]
+    },
+    {
+      "categoryName": "Accessories",
+      "part": [
+        {
+          "partName": "3-way Connector",
+          "products": [
+            {
+              "partCode": "Vikas1",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "8 Grub Screw",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "225"
+              }
+            },
+            {
+              "partCode": "Vikas2",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "8 Grub Screw",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "360"
+              }
+            }
+          ],
+          "filterProperties": [
+            "type",
+            "profile"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "AI accessories",
+      "part": [
+        {
+          "partName": "Post Nut",
+          "products": [
+            {
+              "partCode": "Vikas3",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M4",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020/2040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "7"
+              }
+            },
+            {
+              "partCode": "Vikas4",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020/2040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "7"
+              }
+            },
+            {
+              "partCode": "Vikas5",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "30M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "8"
+              }
+            },
+            {
+              "partCode": "Vikas6",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "30M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "8"
+              }
+            },
+            {
+              "partCode": "Vikas7",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "40M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "8"
+              }
+            },
+            {
+              "partCode": "Vikas8",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "40M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "8"
+              }
+            },
+            {
+              "partCode": "Vikas9",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "45M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "9"
+              }
+            },
+            {
+              "partCode": "Vikas10",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "45M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "9"
+              }
+            }
+          ],
+          "filterProperties": [
+            "slot",
+            "size",
+            "profile"
+          ]
+        },
+        {
+          "partName": "Pre Nut",
+          "products": [
+            {
+              "partCode": "Vikas11",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "20M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020/2040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "10"
+              }
+            },
+            {
+              "partCode": "Vikas12",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "20M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020/2040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "10"
+              }
+            },
+            {
+              "partCode": "Vikas13",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "30M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "10"
+              }
+            },
+            {
+              "partCode": "Vikas14",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "30M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "10"
+              }
+            },
+            {
+              "partCode": "Vikas15",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "30M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "10"
+              }
+            },
+            {
+              "partCode": "Vikas16",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "40M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "13"
+              }
+            },
+            {
+              "partCode": "Vikas17",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "40M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "13"
+              }
+            },
+            {
+              "partCode": "Vikas18",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "40M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "13"
+              }
+            },
+            {
+              "partCode": "Vikas19",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "14"
+              }
+            },
+            {
+              "partCode": "Vikas20",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "14"
+              }
+            },
+            {
+              "partCode": "Vikas21",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "14"
+              }
+            }
+          ],
+          "filterProperties": [
+            "slot",
+            "size",
+            "profile"
+          ]
+        },
+        {
+          "partName": "Spring Nut",
+          "products": [
+            {
+              "partCode": "Vikas22",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020/2040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "11"
+              }
+            },
+            {
+              "partCode": "Vikas23",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "13"
+              }
+            },
+            {
+              "partCode": "Vikas24",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "13"
+              }
+            },
+            {
+              "partCode": "Vikas25",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "15"
+              }
+            },
+            {
+              "partCode": "Vikas26",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "15"
+              }
+            },
+            {
+              "partCode": "Vikas27",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "16"
+              }
+            },
+            {
+              "partCode": "Vikas28",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "16"
+              }
+            }
+          ],
+          "filterProperties": [
+            "slot",
+            "size",
+            "profile"
+          ]
+        },
+        {
+          "partName": "Flange Nut",
+          "products": [
+            {
+              "partCode": "Vikas29",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020/2030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "6"
+              }
+            },
+            {
+              "partCode": "Vikas30",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "7"
+              }
+            },
+            {
+              "partCode": "Vikas31",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "8"
+              }
+            }
+          ],
+          "filterProperties": [
+            "size",
+            "profile"
+          ]
+        },
+        {
+          "partName": "T-Bolt",
+          "products": [
+            {
+              "partCode": "Vikas38",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "16",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "13"
+              }
+            },
+            {
+              "partCode": "Vikas39",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M5",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "20",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "13"
+              }
+            },
+            {
+              "partCode": "Vikas40",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "20",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "16"
+              }
+            },
+            {
+              "partCode": "Vikas41",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "25",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "16"
+              }
+            },
+            {
+              "partCode": "Vikas42",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "20",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "17"
+              }
+            },
+            {
+              "partCode": "Vikas43",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "25",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "17"
+              }
+            },
+            {
+              "partCode": "Vikas32",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "20",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "18"
+              }
+            },
+            {
+              "partCode": "Vikas33",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "25",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "20"
+              }
+            },
+            {
+              "partCode": "Vikas34",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "30",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "20"
+              }
+            },
+            {
+              "partCode": "Vikas35",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "20",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "22"
+              }
+            },
+            {
+              "partCode": "Vikas36",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "25",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "23"
+              }
+            },
+            {
+              "partCode": "Vikas37",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "30",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "24"
+              }
+            }
+          ],
+          "filterProperties": [
+            "slot",
+            "size",
+            "length",
+            "profile"
+          ]
+        },
+        {
+          "partName": "Half Round Bolt/Socket Head Bolt",
+          "products": [
+            {
+              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "8"
+              }
+            },
+            {
+              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "M6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "9"
+              }
+            },
+            {
+              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "20",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "10"
+              }
+            },
+            {
+              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "25",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "11"
+              }
+            },
+            {
+              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "M8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "length",
+                  "value": "30",
+                  "unit": "mm"
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "12"
+              }
+            }
+          ],
+          "filterProperties": [
+            "size",
+            "length"
+          ]
+        },
+        {
+          "partName": "END Fastener/Blind Joint",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "IDM6",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "19"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "IDM8",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "22"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "IDM10",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "28"
+              }
+            }
+          ],
+          "filterProperties": [
+            "size",
+            "profile"
+          ]
+        },
+        {
+          "partName": "U-Bidding (Black Color)",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "100"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "120"
+              }
+            }
+          ],
+          "filterProperties": [
+            "slot",
+            "profile"
+          ]
+        },
+        {
+          "partName": "Slot Bidding (Black Color)",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "6",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "21"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "22"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "23"
+              }
+            }
+          ],
+          "filterProperties": [
+            "slot",
+            "profile"
+          ]
+        },
+        {
+          "partName": "Free Angle",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "30x30",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "385"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "size",
+                  "value": "40x40",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "730"
+              }
+            }
+          ],
+          "filterProperties": [
+            "size",
+            "profile"
+          ]
+        },
+        {
+          "partName": "Sliding Hanger",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "8",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "80"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "slot",
+                  "value": "10",
+                  "unit": "mm"
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "95"
+              }
+            }
+          ],
+          "filterProperties": [
+            "slot",
+            "profile"
+          ]
+        },
+        {
+          "partName": "END Cap",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "2020",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "11"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "2040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "18"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "18"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "32"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "22"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "40"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "30"
+              }
+            }
+          ],
+          "filterProperties": [
+            "profile"
+          ]
+        },
+        {
+          "partName": "Interval Block for PC Sheet",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "30"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "36"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "42"
+              }
+            }
+          ],
+          "filterProperties": [
+            "profile"
+          ]
+        },
+        {
+          "partName": "Blind Bracket/Hidden Bracket",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "2 Grub Screw",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "42"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "4 Grub Screw",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "130"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "4 Grub Screw",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "140"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "type",
+                  "value": "4 Grub Screw",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "160"
+              }
+            }
+          ],
+          "filterProperties": [
+            "type",
+            "profile"
+          ]
+        },
+        {
+          "partName": "45 Degree Corner Bracket",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "3030",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "130"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "4040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "155"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "profile",
+                  "value": "4545",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "225"
+              }
+            }
+          ],
+          "filterProperties": [
+            "profile"
+          ]
+        },
+        {
+          "partName": "Diecasting Bracket",
+          "products": [
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "2 sides",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "2020/2040",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "23"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "2 sides",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3030/3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "32"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "1 side",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "3060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "53"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "2 sides",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4040/4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "35"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "1 side",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "78"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "2 sides",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4545/4590",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "50"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "1 side",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "4590",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "130"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "2 sides",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "6060",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "90"
+              }
+            },
+            {
+              "partCode": "Vikas",
+              "specifications": [
+                {
+                  "propertyName": "sides",
+                  "value": "2 sides",
+                  "unit": ""
+                },
+                {
+                  "propertyName": "profile",
+                  "value": "8080",
+                  "unit": ""
+                }
+              ],
+              "price": {
+                "static": "yes",
+                "value": "195"
+              }
+            }
+          ],
+          "filterProperties": [
+            "sides",
+            "profile"
+          ]
+        }
+      ]
     }
-
   ]
 }
