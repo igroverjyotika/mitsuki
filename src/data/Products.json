@@ -5069,7 +5069,7 @@
           "partName": "3-way Connector",
           "products": [
             {
-              "partCode": "Vikas1",
+              "partCode": "MI-3WC-30",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -5088,7 +5088,7 @@
               }
             },
             {
-              "partCode": "Vikas2",
+              "partCode": "MI-3WC-40",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -5121,7 +5121,7 @@
           "partName": "Post Nut",
           "products": [
             {
-              "partCode": "Vikas3",
+              "partCode": "MI-TN-6-M4",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5145,7 +5145,7 @@
               }
             },
             {
-              "partCode": "Vikas4",
+              "partCode": "MI-TN-6-M5",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5169,7 +5169,7 @@
               }
             },
             {
-              "partCode": "Vikas5",
+              "partCode": "MI-TN-8-30M5",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5193,7 +5193,7 @@
               }
             },
             {
-              "partCode": "Vikas6",
+              "partCode": "MI-TN-8-30M6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5217,7 +5217,7 @@
               }
             },
             {
-              "partCode": "Vikas7",
+              "partCode": "MI-TN-8-40M5",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5241,7 +5241,7 @@
               }
             },
             {
-              "partCode": "Vikas8",
+              "partCode": "MI-TN-8-40M6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5265,7 +5265,7 @@
               }
             },
             {
-              "partCode": "Vikas9",
+              "partCode": "MI-TN-10-45M6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5289,7 +5289,7 @@
               }
             },
             {
-              "partCode": "Vikas10",
+              "partCode": "MI-TN-10-45M8",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5323,7 +5323,7 @@
           "partName": "Pre Nut",
           "products": [
             {
-              "partCode": "Vikas11",
+              "partCode": "MI-PRN-6-20M5",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5347,7 +5347,7 @@
               }
             },
             {
-              "partCode": "Vikas12",
+              "partCode": "MI-PRN-6-20M6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5371,7 +5371,7 @@
               }
             },
             {
-              "partCode": "Vikas13",
+              "partCode": "MI-PRN-8-30M5",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5395,7 +5395,7 @@
               }
             },
             {
-              "partCode": "Vikas14",
+              "partCode": "MI-PRN-8-30M6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5419,7 +5419,7 @@
               }
             },
             {
-              "partCode": "Vikas15",
+              "partCode": "MI-PRN-8-30M8",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5443,7 +5443,7 @@
               }
             },
             {
-              "partCode": "Vikas16",
+              "partCode": "MI-PRN-8-40M5",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5467,7 +5467,7 @@
               }
             },
             {
-              "partCode": "Vikas17",
+              "partCode": "MI-PRN-8-40M6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5491,7 +5491,7 @@
               }
             },
             {
-              "partCode": "Vikas18",
+              "partCode": "MI-PRN-8-40M8",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5515,7 +5515,7 @@
               }
             },
             {
-              "partCode": "Vikas19",
+              "partCode": "MI-PRN-10-M6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5539,7 +5539,7 @@
               }
             },
             {
-              "partCode": "Vikas20",
+              "partCode": "MI-PRN-10-M8",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5563,7 +5563,7 @@
               }
             },
             {
-              "partCode": "Vikas21",
+              "partCode": "MI-PRN-10-M10",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5597,7 +5597,7 @@
           "partName": "Spring Nut",
           "products": [
             {
-              "partCode": "Vikas22",
+              "partCode": "MI-SPN-6-M6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5621,7 +5621,7 @@
               }
             },
             {
-              "partCode": "Vikas23",
+              "partCode": "MI-SPN-8-M6-P30",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5645,7 +5645,7 @@
               }
             },
             {
-              "partCode": "Vikas24",
+              "partCode": "MI-SPN-8-M8-P30",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5669,7 +5669,7 @@
               }
             },
             {
-              "partCode": "Vikas25",
+              "partCode": "MI-SPN-8-M6-P40",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5693,7 +5693,7 @@
               }
             },
             {
-              "partCode": "Vikas26",
+              "partCode": "MI-SPN-8-M8-P40",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5717,7 +5717,7 @@
               }
             },
             {
-              "partCode": "Vikas27",
+              "partCode": "MI-SPN-10-M8",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5741,7 +5741,7 @@
               }
             },
             {
-              "partCode": "Vikas28",
+              "partCode": "MI-SPN-10-M10",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5775,7 +5775,7 @@
           "partName": "Flange Nut",
           "products": [
             {
-              "partCode": "Vikas29",
+              "partCode": "MI-FLN-M5",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -5794,7 +5794,7 @@
               }
             },
             {
-              "partCode": "Vikas30",
+              "partCode": "MI-FLN-M6",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -5813,7 +5813,7 @@
               }
             },
             {
-              "partCode": "Vikas31",
+              "partCode": "MI-FLN-M8",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -5841,7 +5841,7 @@
           "partName": "T-Bolt",
           "products": [
             {
-              "partCode": "Vikas38",
+              "partCode": "MI-TB-6-M5-L16",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5870,7 +5870,7 @@
               }
             },
             {
-              "partCode": "Vikas39",
+              "partCode": "MI-TB-6-M5-L20",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5899,7 +5899,7 @@
               }
             },
             {
-              "partCode": "Vikas40",
+              "partCode": "MI-TB-8-M6-L20",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5928,7 +5928,7 @@
               }
             },
             {
-              "partCode": "Vikas41",
+              "partCode": "MI-TB-8-M6-L25",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5957,7 +5957,7 @@
               }
             },
             {
-              "partCode": "Vikas42",
+              "partCode": " MI-TB-8-M8-L20",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5986,7 +5986,7 @@
               }
             },
             {
-              "partCode": "Vikas43",
+              "partCode": "MI-TB-8-M8-L25",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6015,7 +6015,7 @@
               }
             },
             {
-              "partCode": "Vikas32",
+              "partCode": "MI-TB-8-M8-L20",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6044,7 +6044,7 @@
               }
             },
             {
-              "partCode": "Vikas33",
+              "partCode": "MI-TB-8-M8-L25",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6073,7 +6073,7 @@
               }
             },
             {
-              "partCode": "Vikas34",
+              "partCode": "MI-TB-8-M8-L30",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6102,7 +6102,7 @@
               }
             },
             {
-              "partCode": "Vikas35",
+              "partCode": "MI-TB-10-M8-L20",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6131,7 +6131,7 @@
               }
             },
             {
-              "partCode": "Vikas36",
+              "partCode": "MI-TB-10-M8-L25",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6160,7 +6160,7 @@
               }
             },
             {
-              "partCode": "Vikas37",
+              "partCode": "MI-TB-10-M8-L30",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6200,7 +6200,7 @@
           "partName": "Half Round Bolt/Socket Head Bolt",
           "products": [
             {
-              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "partCode": "MI-HRB-M6L20",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6219,7 +6219,7 @@
               }
             },
             {
-              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "partCode": "MI-HRB-M6L25",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6238,7 +6238,7 @@
               }
             },
             {
-              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "partCode": "MI-HRB-M8L20",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6257,7 +6257,7 @@
               }
             },
             {
-              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "partCode": "MI-HRB-M8L25",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6276,7 +6276,7 @@
               }
             },
             {
-              "partCode": "Half Round Bolt/Socket Head Bolt",
+              "partCode": "MI-HRB-M8L30",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6304,7 +6304,7 @@
           "partName": "END Fastener/Blind Joint",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-EFAST-M6",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6323,7 +6323,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-EFAST-M8",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6342,7 +6342,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-EFAST-M10",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6370,7 +6370,7 @@
           "partName": "U-Bidding (Black Color)",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-U-BID-S8",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6389,7 +6389,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-U-BID-S10",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6417,7 +6417,7 @@
           "partName": "Slot Bidding (Black Color)",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-SC-6",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6436,7 +6436,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-SC-8",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6455,7 +6455,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-SC-10",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6483,7 +6483,7 @@
           "partName": "Free Angle",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-FA-P30",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6502,7 +6502,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-FA-P40",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6530,7 +6530,7 @@
           "partName": "Sliding Hanger",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-SL-HANGER-S8",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6549,7 +6549,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-SL-HANGER-S10",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6577,7 +6577,7 @@
           "partName": "END Cap",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-ECAP-2020",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6591,7 +6591,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-ECAP-2040",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6605,7 +6605,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-ECAP-3030",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6619,7 +6619,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-ECAP-3060",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6633,7 +6633,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-ECAP-4040",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6647,7 +6647,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-ECAP-4080",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6661,7 +6661,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-ECAP-4545",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6683,7 +6683,7 @@
           "partName": "Interval Block for PC Sheet",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-INT-BLK-30",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6697,7 +6697,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-INT-BLK-40",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6711,7 +6711,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-INT-BLK-45",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6733,7 +6733,7 @@
           "partName": "Blind Bracket/Hidden Bracket",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-HB-2G-20",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -6752,7 +6752,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-HB-4G-30",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -6771,7 +6771,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-HB-4G-40",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -6790,7 +6790,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-HB-4G-45",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -6818,7 +6818,7 @@
           "partName": "45 Degree Corner Bracket",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-45DB-30",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6832,7 +6832,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-45DB-40",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6846,7 +6846,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-45DB-45",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6868,7 +6868,7 @@
           "partName": "Diecasting Bracket",
           "products": [
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-2S-2020",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6887,7 +6887,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-2S-3030",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6906,7 +6906,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-1S-3060",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6925,7 +6925,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-2S-4040",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6944,7 +6944,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-1S-4080",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6963,7 +6963,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-2S-4545",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6982,7 +6982,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-1S-4590",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -7001,7 +7001,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-2S-6060",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -7020,7 +7020,7 @@
               }
             },
             {
-              "partCode": "Vikas",
+              "partCode": "MI-DCBT-2S-8080",
               "specifications": [
                 {
                   "propertyName": "sides",
