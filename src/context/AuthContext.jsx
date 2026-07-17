@@ -19,18 +19,24 @@ export function AuthProvider({ children }) {
   // Listen for auth state changes
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      if (user) {
-        // Fetch additional user data from Firestore
-        const userDoc = await getDoc(doc(db, "users", user.uid));
-        if (userDoc.exists()) {
-          setCurrentUser({ ...user, ...userDoc.data() });
+      try {
+        if (user) {
+          // Fetch additional user data from Firestore
+          const userDoc = await getDoc(doc(db, "users", user.uid));
+          if (userDoc.exists()) {
+            setCurrentUser({ ...user, ...userDoc.data() });
+          } else {
+            setCurrentUser(user);
+          }
         } else {
-          setCurrentUser(user);
+          setCurrentUser(null);
         }
-      } else {
-        setCurrentUser(null);
+      } catch (error) {
+        console.error("Failed to fetch user data during auth state change:", error);
+        setCurrentUser(user || null);
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     });
 
     return unsubscribe;

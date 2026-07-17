@@ -12,12 +12,35 @@ import product1 from "../assets/products/1.png";
 import logoSvg from "../assets/logo.svg";
 
 export default function Cart() {
-  const { cartItems, removeFromCart, updateQuantity, clearCart, getCartTotal } =
-    useCart();
+  const { cartItems, removeFromCart, updateQuantity, clearCart } = useCart();
   const { currentUser } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const [generatingQuote, setGeneratingQuote] = useState(false);
+
+  const safeCartItems = Array.isArray(cartItems) ? cartItems : [];
+
+  const normalizedCartItems = useMemo(
+    () =>
+      safeCartItems.map((item, index) => ({
+        ...item,
+        id: item.id ?? item.sku ?? item.partCode ?? `cart-item-${index}`,
+        name: item.name ?? "Product",
+        price: Number(item.price) || 0,
+        quantity: Number(item.quantity) || 1,
+        image: item?.image || product1,
+        sku: item.sku ?? item.partCode ?? item.id ?? "UNKNOWN",
+        brand: item.brand ?? "",
+        selectedLength: item.selectedLength ?? null,
+        lengthUnit: item.lengthUnit ?? "",
+        mutable_properties: Array.isArray(item.mutable_properties)
+          ? item.mutable_properties
+          : [],
+      })),
+    [safeCartItems],
+  );
+
+  const [showProfilePrompt, setShowProfilePrompt] = useState(false);
 
   const continueShoppingTo = useMemo(() => {
     const state = location.state;
@@ -26,7 +49,7 @@ export default function Cart() {
     return returnTo.startsWith("/") ? returnTo : "/shop";
   }, [location.state]);
 
-  if (cartItems.length === 0) {
+  if (normalizedCartItems.length === 0) {
     return (
       <div className="min-h-screen bg-white dark:bg-gray-950 flex items-center justify-center">
         <PageWrapper>
@@ -50,18 +73,19 @@ export default function Cart() {
     );
   }
 
-  const subtotal = getCartTotal();
+  const subtotal = normalizedCartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0,
+  );
   const shippingCost = 0;
   const total = subtotal + shippingCost;
-
-  const [showProfilePrompt, setShowProfilePrompt] = useState(false);
 
   const generateQuoteInternal = async (billing, shipping) => {
     // this contains the original logic that creates order, PDF and clears cart
     // We'll reuse the existing code by setting local variables before the main try block
     try {
       // Group items by partCode (fallback to id or sku)
-      const orderDetails = cartItems.reduce((acc, item) => {
+      const orderDetails = normalizedCartItems.reduce((acc, item) => {
         const partCode = item.partCode || item.id || item.sku;
         if (!partCode) {
           throw new Error(`Item ${item.name} is missing partCode/id/sku`);
@@ -305,7 +329,7 @@ export default function Cart() {
       pdf.setFont("helvetica", "normal");
       pdf.setTextColor(60, 60, 60);
 
-      cartItems.forEach((item, index) => {
+      normalizedCartItems.forEach((item, index) => {
         const itemName = item.name.length > 45 ? item.name.substring(0, 45) + "..." : item.name;
         const itemSku = item.sku || item.partCode || item.id;
         const unitPrice = item.price.toFixed(2);
@@ -324,7 +348,7 @@ export default function Cart() {
 
         y += 10;
 
-        if (index < cartItems.length - 1) {
+        if (index < normalizedCartItems.length - 1) {
           pdf.setDrawColor(240, 240, 240);
           pdf.line(14, y - 4, 196, y - 4);
         }
@@ -413,7 +437,7 @@ export default function Cart() {
             Shopping Cart
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            {cartItems.length} {cartItems.length === 1 ? "item" : "items"} in
+            {normalizedCartItems.length} {normalizedCartItems.length === 1 ? "item" : "items"} in
             your cart
           </p>
         </div>
@@ -421,8 +445,8 @@ export default function Cart() {
         <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Cart Items */}
           <div className="lg:col-span-2 space-y-4">
-            {cartItems.map((item) => {
-              const itemImage = item?.image || product1;
+            {normalizedCartItems.map((item, index) => {
+              const itemImage = item.image || product1;
 
               return (
                 <div
@@ -463,7 +487,9 @@ export default function Cart() {
                           </p>
                         </div>
                         <button
-                          onClick={() => removeFromCart(item.id)}
+                          onClick={() =>
+                            removeFromCart(item.id ?? item.sku ?? item.partCode)
+                          }
                           className="text-red-500 hover:text-red-600 transition-colors flex-shrink-0 self-start"
                           title="Remove item"
                         >
@@ -492,7 +518,10 @@ export default function Cart() {
                           <div className="flex items-center border-2 border-gray-300 dark:border-gray-700 rounded-lg">
                             <button
                               onClick={() =>
-                                updateQuantity(item.id, item.quantity - 1)
+                                updateQuantity(
+                                  item.id ?? item.sku ?? item.partCode,
+                                  item.quantity - 1,
+                                )
                               }
                               className="px-3 py-1 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                             >
@@ -503,7 +532,10 @@ export default function Cart() {
                             </span>
                             <button
                               onClick={() =>
-                                updateQuantity(item.id, item.quantity + 1)
+                                updateQuantity(
+                                  item.id ?? item.sku ?? item.partCode,
+                                  item.quantity + 1,
+                                )
                               }
                               className="px-3 py-1 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                             >

@@ -3,11 +3,14 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
 
+const getCartItemKey = (item) => item?.id || item?.sku || item?.partCode || "";
+
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState(() => {
     try {
       const raw = localStorage.getItem("mitsuki-cart");
-      return raw ? JSON.parse(raw) : [];
+      const stored = raw ? JSON.parse(raw) : [];
+      return Array.isArray(stored) ? stored : [];
     } catch {
       return [];
     }
@@ -21,13 +24,16 @@ export function CartProvider({ children }) {
   // Add item to cart
   const addToCart = (product) => {
     setCartItems((prevItems) => {
-      const existingItem = prevItems.find((item) => item.id === product.id);
+      const productKey = getCartItemKey(product);
+      const existingItem = prevItems.find(
+        (item) => getCartItemKey(item) === productKey,
+      );
 
       if (existingItem) {
         // Increase quantity if item exists
         return prevItems.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
+          getCartItemKey(item) === productKey
+            ? { ...item, quantity: (Number(item.quantity) || 0) + 1 }
             : item,
         );
       } else {
@@ -40,7 +46,7 @@ export function CartProvider({ children }) {
   // Remove item from cart
   const removeFromCart = (productId) => {
     setCartItems((prevItems) =>
-      prevItems.filter((item) => item.id !== productId),
+      prevItems.filter((item) => getCartItemKey(item) !== productId),
     );
   };
 
@@ -53,7 +59,9 @@ export function CartProvider({ children }) {
 
     setCartItems((prevItems) =>
       prevItems.map((item) =>
-        item.id === productId ? { ...item, quantity } : item,
+        getCartItemKey(item) === productId
+          ? { ...item, quantity }
+          : item,
       ),
     );
   };

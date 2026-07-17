@@ -658,7 +658,7 @@ export default function ShopNew() {
                   </button>
                 </div>
               ) : (
-                filteredProducts.map((product) => {
+                filteredProducts.map((product, i) => {
                   const ctx = contextByPartCode.get(product.partCode);
                   const productPart = selectedPart || ctx?.part || null;
                   const productCategory =
@@ -722,7 +722,7 @@ export default function ShopNew() {
 
                   return (
                     <div
-                      key={product.partCode}
+                      key={`${product.partCode}-${i}`}
                       onClick={() =>
                         handleProductClick(product, price, specs, ctx)
                       }
