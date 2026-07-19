@@ -10,12 +10,31 @@ import linearLMFLUU from "../assets/linear-motion/LMFLUU.jpg";
 import linearLMKUU from "../assets/linear-motion/LMKUU.jpg";
 import linearLMKLUU from "../assets/linear-motion/LMKLUU.webp";
 
+const catalogProductImages = Object.entries(
+  import.meta.glob(
+    "../assets/products/*.{png,jpg,jpeg,avif,webp,svg}",
+    { eager: true },
+  ),
+).reduce((acc, [path, module]) => {
+  const fileName = path.split("/").pop();
+  if (fileName) acc[fileName] = module.default;
+  return acc;
+}, {});
+
 function mediaPayload(imageUrl) {
   const safeUrl = imageUrl || defaultProductImage;
   return {
     image: safeUrl,
     images: [safeUrl],
   };
+}
+
+function resolveCustomImage(imageKey) {
+  if (!imageKey || typeof imageKey !== "string") return null;
+
+  const normalized = imageKey.trim().replace(/^\/+/, "");
+  const fileName = normalized.split("/").pop();
+  return fileName ? catalogProductImages[fileName] : null;
 }
 
 const LINEAR_IMAGE_ALIAS = {
@@ -61,6 +80,11 @@ function resolveLinearMotionImage(partCode = "") {
 
 export function getCatalogProductMedia(rawProduct = {}, context = {}) {
   const imageKey = rawProduct?.image;
+  const customImage = resolveCustomImage(imageKey);
+  if (customImage) {
+    return mediaPayload(customImage);
+  }
+
   if (imageKey && LINEAR_IMAGE_ALIAS[imageKey]) {
     return mediaPayload(LINEAR_IMAGE_ALIAS[imageKey]);
   }

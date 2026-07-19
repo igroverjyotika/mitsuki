@@ -29,7 +29,7 @@
           "products": [
             {
               "partCode": "MTK6",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -44,7 +44,7 @@
             },
             {
               "partCode": "MTK8",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -59,7 +59,7 @@
             },
             {
               "partCode": "MTK10",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -74,7 +74,7 @@
             },
             {
               "partCode": "MTK12",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -89,7 +89,7 @@
             },
             {
               "partCode": "MTK16",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -104,7 +104,7 @@
             },
             {
               "partCode": "MTK20",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -119,7 +119,7 @@
             },
             {
               "partCode": "MTK25",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -134,7 +134,7 @@
             },
             {
               "partCode": "MTK30",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -149,7 +149,7 @@
             },
             {
               "partCode": "MTK35",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -164,7 +164,7 @@
             },
             {
               "partCode": "MTK40",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -179,7 +179,7 @@
             },
             {
               "partCode": "MTK45",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -194,7 +194,7 @@
             },
             {
               "partCode": "MTK50",
-              "image": "Linear_motion_pdf_image_1",
+              "image": "MTK6.jpg",
               "specifications": [
                 {
                   "propertyName": "outerDiameter",
@@ -227,6 +227,7 @@
           "products": [
             {
               "partCode": "LM6UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -251,6 +252,7 @@
             },
             {
               "partCode": "LM8UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -275,6 +277,7 @@
             },
             {
               "partCode": "LM10UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -323,6 +326,7 @@
             },
             {
               "partCode": "LM16UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -347,6 +351,7 @@
             },
             {
               "partCode": "LM20UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -371,6 +376,7 @@
             },
             {
               "partCode": "LM25UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -395,6 +401,7 @@
             },
             {
               "partCode": "LM30UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -419,6 +426,7 @@
             },
             {
               "partCode": "LM35UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -443,6 +451,7 @@
             },
             {
               "partCode": "LM40UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -467,6 +476,7 @@
             },
             {
               "partCode": "LM50UU",
+              "image": "LM6UU.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -491,6 +501,7 @@
             },
             {
               "partCode": "LM6LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -515,6 +526,7 @@
             },
             {
               "partCode": "LM8LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -539,6 +551,7 @@
             },
             {
               "partCode": "LM10LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -563,6 +576,7 @@
             },
             {
               "partCode": "LM12LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -587,6 +601,7 @@
             },
             {
               "partCode": "LM16LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -611,6 +626,7 @@
             },
             {
               "partCode": "LM20LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -635,6 +651,7 @@
             },
             {
               "partCode": "LM25LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -659,6 +676,7 @@
             },
             {
               "partCode": "LM30LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -683,6 +701,7 @@
             },
             {
               "partCode": "LM35LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -707,6 +726,7 @@
             },
             {
               "partCode": "LM40LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -731,6 +751,7 @@
             },
             {
               "partCode": "LM50LUU",
+              "image": "LM6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -755,6 +776,7 @@
             },
             {
               "partCode": "LMH6UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -784,6 +806,7 @@
             },
             {
               "partCode": "LMH8UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -813,6 +836,7 @@
             },
             {
               "partCode": "LMH10UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -842,6 +866,7 @@
             },
             {
               "partCode": "LMH12UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -871,6 +896,7 @@
             },
             {
               "partCode": "LMH16UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -900,6 +926,7 @@
             },
             {
               "partCode": "LMH20UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -929,6 +956,7 @@
             },
             {
               "partCode": "LMH25UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -958,6 +986,7 @@
             },
             {
               "partCode": "LMH30UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -987,6 +1016,7 @@
             },
             {
               "partCode": "LMH35UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1016,6 +1046,7 @@
             },
             {
               "partCode": "LMH40UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1045,6 +1076,7 @@
             },
             {
               "partCode": "LMH50UU",
+              "image": "LMH6UU.avif",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1074,6 +1106,7 @@
             },
             {
               "partCode": "LMH6LUU",
+              "image": "LMH6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1103,6 +1136,7 @@
             },
             {
               "partCode": "LMH8LUU",
+              "image": "LMH6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1132,6 +1166,7 @@
             },
             {
               "partCode": "LMH10LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1161,6 +1196,7 @@
             },
             {
               "partCode": "LMH12LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1190,6 +1226,7 @@
             },
             {
               "partCode": "LMH16LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1219,6 +1256,7 @@
             },
             {
               "partCode": "LMH20LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1248,6 +1286,7 @@
             },
             {
               "partCode": "LMH25LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1277,6 +1316,7 @@
             },
             {
               "partCode": "LMH30LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1306,6 +1346,7 @@
             },
             {
               "partCode": "LMH35LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1335,6 +1376,7 @@
             },
             {
               "partCode": "LMH40LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1364,6 +1406,7 @@
             },
             {
               "partCode": "LMH50LUU",
+              "image": "LMH10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1393,6 +1436,7 @@
             },
             {
               "partCode": "LMF6UU",
+              "image": "LMF6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1422,6 +1466,7 @@
             },
             {
               "partCode": "LMF8UU",
+              "image": "LMF6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1451,6 +1496,7 @@
             },
             {
               "partCode": "LMF10UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1480,6 +1526,7 @@
             },
             {
               "partCode": "LMF12UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1509,6 +1556,7 @@
             },
             {
               "partCode": "LMF16UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1538,6 +1586,7 @@
             },
             {
               "partCode": "LMF20UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1567,6 +1616,7 @@
             },
             {
               "partCode": "LMF25UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1596,6 +1646,7 @@
             },
             {
               "partCode": "LMF30UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1625,6 +1676,7 @@
             },
             {
               "partCode": "LMF35UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1654,6 +1706,7 @@
             },
             {
               "partCode": "LMF40UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1683,6 +1736,7 @@
             },
             {
               "partCode": "LMF50UU",
+              "image": "LMF10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1712,6 +1766,7 @@
             },
             {
               "partCode": "LMF6LUU",
+              "image": "LMF6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1741,6 +1796,7 @@
             },
             {
               "partCode": "LMF8LUU",
+              "image": "LMF6LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1770,6 +1826,7 @@
             },
             {
               "partCode": "LMF10LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1799,6 +1856,7 @@
             },
             {
               "partCode": "LMF12LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1828,6 +1886,7 @@
             },
             {
               "partCode": "LMF16LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1857,6 +1916,7 @@
             },
             {
               "partCode": "LMF20LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1886,6 +1946,7 @@
             },
             {
               "partCode": "LMF25LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1915,6 +1976,7 @@
             },
             {
               "partCode": "LMF30LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1944,6 +2006,7 @@
             },
             {
               "partCode": "LMF35LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -1973,6 +2036,7 @@
             },
             {
               "partCode": "LMF40LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2002,6 +2066,7 @@
             },
             {
               "partCode": "LMF50LUU",
+              "image": "LMF10LUU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2031,6 +2096,7 @@
             },
             {
               "partCode": "LMK6UU",
+              "image": "LMK6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2060,6 +2126,7 @@
             },
             {
               "partCode": "LMK8UU",
+              "image": "LMK6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2089,6 +2156,7 @@
             },
             {
               "partCode": "LMK10UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2118,6 +2186,7 @@
             },
             {
               "partCode": "LMK12UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2147,6 +2216,7 @@
             },
             {
               "partCode": "LMK16UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2176,6 +2246,7 @@
             },
             {
               "partCode": "LMK20UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2205,6 +2276,7 @@
             },
             {
               "partCode": "LMK25UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2234,6 +2306,7 @@
             },
             {
               "partCode": "LMK30UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2263,6 +2336,7 @@
             },
             {
               "partCode": "LMK35UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2292,6 +2366,7 @@
             },
             {
               "partCode": "LMK40UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2321,6 +2396,7 @@
             },
             {
               "partCode": "LMK50UU",
+              "image": "LMK10UU.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2350,6 +2426,7 @@
             },
             {
               "partCode": "LMK6LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2379,6 +2456,7 @@
             },
             {
               "partCode": "LMK8LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2408,6 +2486,7 @@
             },
             {
               "partCode": "LMK10LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2437,6 +2516,7 @@
             },
             {
               "partCode": "LMK12LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2466,6 +2546,7 @@
             },
             {
               "partCode": "LMK16LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2495,6 +2576,7 @@
             },
             {
               "partCode": "LMK20LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2524,6 +2606,7 @@
             },
             {
               "partCode": "LMK25LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2553,6 +2636,7 @@
             },
             {
               "partCode": "LMK30LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2582,6 +2666,7 @@
             },
             {
               "partCode": "LMK35LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2611,6 +2696,7 @@
             },
             {
               "partCode": "LMK40LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2640,6 +2726,7 @@
             },
             {
               "partCode": "LMK50LUU",
+              "image": "LMK6LUU.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2684,6 +2771,7 @@
           "products": [
             {
               "partCode": "SHF8",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2703,6 +2791,7 @@
             },
             {
               "partCode": "SHF10",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2722,6 +2811,7 @@
             },
             {
               "partCode": "SHF12",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2741,6 +2831,7 @@
             },
             {
               "partCode": "SHF16",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2760,6 +2851,7 @@
             },
             {
               "partCode": "SHF20",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2779,6 +2871,7 @@
             },
             {
               "partCode": "SHF25",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2798,6 +2891,7 @@
             },
             {
               "partCode": "SHF30",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2817,6 +2911,7 @@
             },
             {
               "partCode": "SHF35",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2836,6 +2931,7 @@
             },
             {
               "partCode": "SHF40",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2855,6 +2951,7 @@
             },
             {
               "partCode": "SHF50",
+              "image": "SHF8.jpeg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2874,6 +2971,7 @@
             },
             {
               "partCode": "SK8",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2893,6 +2991,7 @@
             },
             {
               "partCode": "SK10",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2912,6 +3011,7 @@
             },
             {
               "partCode": "SK12",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2931,6 +3031,7 @@
             },
             {
               "partCode": "SK16",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2950,6 +3051,7 @@
             },
             {
               "partCode": "SK20",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2969,6 +3071,7 @@
             },
             {
               "partCode": "SK25",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -2988,6 +3091,7 @@
             },
             {
               "partCode": "SK30",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -3007,6 +3111,7 @@
             },
             {
               "partCode": "SK35",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -3026,6 +3131,7 @@
             },
             {
               "partCode": "SK40",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -3045,6 +3151,7 @@
             },
             {
               "partCode": "SK50",
+              "image": "SK8.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -3075,6 +3182,7 @@
           "products": [
             {
               "partCode": "SC6UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3094,6 +3202,7 @@
             },
             {
               "partCode": "SC8UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3113,6 +3222,7 @@
             },
             {
               "partCode": "SC10UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3132,6 +3242,7 @@
             },
             {
               "partCode": "SC12UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3151,6 +3262,7 @@
             },
             {
               "partCode": "SC16UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3170,6 +3282,7 @@
             },
             {
               "partCode": "SC20UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3189,6 +3302,7 @@
             },
             {
               "partCode": "SC25UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3208,6 +3322,7 @@
             },
             {
               "partCode": "SC30UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3227,6 +3342,7 @@
             },
             {
               "partCode": "SC35UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3246,6 +3362,7 @@
             },
             {
               "partCode": "SC40UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3265,6 +3382,7 @@
             },
             {
               "partCode": "SC50UU",
+              "image": "SC6UU.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -3504,6 +3622,7 @@
           "products": [
             {
               "partCode": "HGH15CA",
+              "image": "HGH15CA.jpg",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3523,6 +3642,7 @@
             },
             {
               "partCode": "HGH20CA",
+              "image": "HGH15CA.jpg",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3542,6 +3662,7 @@
             },
             {
               "partCode": "HGH25CA",
+              "image": "HGH15CA.jpg",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3561,6 +3682,7 @@
             },
             {
               "partCode": "HGH30CA",
+              "image": "HGH15CA.jpg",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3580,6 +3702,7 @@
             },
             {
               "partCode": "HGH35CA",
+              "image": "HGH15CA.jpg",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3599,6 +3722,7 @@
             },
             {
               "partCode": "HGH45CA",
+              "image": "HGH15CA.jpg",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3618,6 +3742,7 @@
             },
             {
               "partCode": "HGW15CA",
+              "image": "HGW15CA.avif",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3637,6 +3762,7 @@
             },
             {
               "partCode": "HGW20CA",
+              "image": "HGW15CA.avif",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3656,6 +3782,7 @@
             },
             {
               "partCode": "HGW25CA",
+              "image": "HGW15CA.avif",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3675,6 +3802,7 @@
             },
             {
               "partCode": "HGW30CA",
+              "image": "HGW15CA.avif",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3694,6 +3822,7 @@
             },
             {
               "partCode": "HGW35CA",
+              "image": "HGW15CA.avif",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3713,6 +3842,7 @@
             },
             {
               "partCode": "HGW45CA",
+              "image": "HGW15CA.avif",
               "specifications": [
                 {
                   "propertyName": "flange",
@@ -3749,6 +3879,7 @@
           "products": [
             {
               "partCode": "HGR15",
+              "image": "HGR15.jpg",
               "specifications": [
                 {
                   "propertyName": "nominal",
@@ -3763,6 +3894,7 @@
             },
             {
               "partCode": "HGR20",
+              "image": "HGR15.jpg",
               "specifications": [
                 {
                   "propertyName": "nominal",
@@ -3777,6 +3909,7 @@
             },
             {
               "partCode": "HGR25",
+              "image": "HGR15.jpg",
               "specifications": [
                 {
                   "propertyName": "nominal",
@@ -3791,6 +3924,7 @@
             },
             {
               "partCode": "HGR30",
+              "image": "HGR15.jpg",
               "specifications": [
                 {
                   "propertyName": "nominal",
@@ -3805,6 +3939,7 @@
             },
             {
               "partCode": "HGR35",
+              "image": "HGR15.jpg",
               "specifications": [
                 {
                   "propertyName": "nominal",
@@ -3819,6 +3954,7 @@
             },
             {
               "partCode": "HGR45",
+              "image": "HGR15.jpg",
               "specifications": [
                 {
                   "propertyName": "nominal",
@@ -3849,6 +3985,7 @@
           "products": [
             {
               "partCode": "LMHL-M10-T100",
+              "image": "LMHL-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -3878,6 +4015,7 @@
             },
             {
               "partCode": "LMHL-M12-T100",
+              "image": "LMHL-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -3907,6 +4045,7 @@
             },
             {
               "partCode": "LMHL-M12-T150",
+              "image": "LMHL-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -3936,6 +4075,7 @@
             },
             {
               "partCode": "LMHL-M16-T100",
+              "image": "LMHL-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -3965,6 +4105,7 @@
             },
             {
               "partCode": "LMHL-M16-T150",
+              "image": "LMHL-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -3994,6 +4135,7 @@
             },
             {
               "partCode": "LMHL-M20-T100",
+              "image": "LMHL-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4023,6 +4165,7 @@
             },
             {
               "partCode": "LMHL-M20-T150",
+              "image": "LMHL-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4062,6 +4205,7 @@
           "products": [
             {
               "partCode": "LMAV-M10-T100",
+              "image": "LMAV-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4091,6 +4235,7 @@
             },
             {
               "partCode": "LMAV-M12-T120",
+              "image": "LMAV-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4120,6 +4265,7 @@
             },
             {
               "partCode": "LMAV-M16-T150",
+              "image": "LMAV-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4159,6 +4305,7 @@
           "products": [
             {
               "partCode": "LMFM-M10-T100",
+              "image": "LMFM-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4188,6 +4335,7 @@
             },
             {
               "partCode": "LMFM-M12-T100",
+              "image": "LMFM-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4217,6 +4365,7 @@
             },
             {
               "partCode": "LMFM-M12-T150",
+              "image": "LMFM-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4246,6 +4395,7 @@
             },
             {
               "partCode": "LMFM-M16-T100",
+              "image": "LMFM-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4275,6 +4425,7 @@
             },
             {
               "partCode": "LMFM-M16-T150",
+              "image": "LMFM-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4304,6 +4455,7 @@
             },
             {
               "partCode": "LMFM-M20-T100",
+              "image": "LMFM-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4333,6 +4485,7 @@
             },
             {
               "partCode": "LMFM-M20-T150",
+              "image": "LMFM-M10-T100.jpg",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4372,6 +4525,7 @@
           "products": [
             {
               "partCode": "LMAVP-M10-T150",
+              "image": "LMAVP-M10-T150.webp",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4401,6 +4555,7 @@
             },
             {
               "partCode": "LMAVP-M12-T100",
+              "image": "LMAVP-M10-T150.webp",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4430,6 +4585,7 @@
             },
             {
               "partCode": "LMAVP-M12-T150",
+              "image": "LMAVP-M10-T150.webp",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4459,6 +4615,7 @@
             },
             {
               "partCode": "LMAVP-M16-T100",
+              "image": "LMAVP-M10-T150.webp",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4488,6 +4645,7 @@
             },
             {
               "partCode": "LMAVP-M16-T150",
+              "image": "LMAVP-M10-T150.webp",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4517,6 +4675,7 @@
             },
             {
               "partCode": "LMAVP-M20-T100",
+              "image": "LMAVP-M10-T150.webp",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4546,6 +4705,7 @@
             },
             {
               "partCode": "LMAVP-M20-T150",
+              "image": "LMAVP-M10-T150.webp",
               "specifications": [
                 {
                   "propertyName": "baseDiameter",
@@ -4590,6 +4750,7 @@
           "products": [
             {
               "partCode": "GD-40",
+              "image": "GD-40.jpg",
               "specifications": [
                 {
                   "propertyName": "loadCapacity",
@@ -4604,6 +4765,7 @@
             },
             {
               "partCode": "GD-60",
+              "image": "GD-40.jpg",
               "specifications": [
                 {
                   "propertyName": "loadCapacity",
@@ -4618,6 +4780,7 @@
             },
             {
               "partCode": "GD-80",
+              "image": "GD-40.jpg",
               "specifications": [
                 {
                   "propertyName": "loadCapacity",
@@ -4632,6 +4795,7 @@
             },
             {
               "partCode": "GD-100",
+              "image": "GD-40.jpg",
               "specifications": [
                 {
                   "propertyName": "loadCapacity",
@@ -4646,6 +4810,7 @@
             },
             {
               "partCode": "GD-120",
+              "image": "GD-40.jpg",
               "specifications": [
                 {
                   "propertyName": "loadCapacity",
@@ -4673,6 +4838,7 @@
           "products": [
             {
               "partCode": "DH-AH-L110-H38",
+              "image": "DH-AH-L110-H38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4692,6 +4858,7 @@
             },
             {
               "partCode": "DH-AH-L160-H51",
+              "image": "DH-AH-L110-H38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4711,6 +4878,7 @@
             },
             {
               "partCode": "DH-AH-L210-H51",
+              "image": "DH-AH-L110-H38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4739,6 +4907,7 @@
           "products": [
             {
               "partCode": "DH-PH-L140-H40",
+              "image": "DH-PH-L140-H40.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4758,6 +4927,7 @@
             },
             {
               "partCode": "DH-PH-L170-H45",
+              "image": "DH-PH-L140-H40.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4777,6 +4947,7 @@
             },
             {
               "partCode": "DH-PH-L200-H51",
+              "image": "DH-PH-L140-H40.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4805,6 +4976,7 @@
           "products": [
             {
               "partCode": "DH-AHI-L30-B38",
+              "image": "DH-AHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4829,6 +5001,7 @@
             },
             {
               "partCode": "DH-AHI-L50-B50",
+              "image": "DH-AHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4853,6 +5026,7 @@
             },
             {
               "partCode": "DH-AHI-L30-B40",
+              "image": "DH-AHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4877,6 +5051,7 @@
             },
             {
               "partCode": "DH-AHI-L50-B62",
+              "image": "DH-AHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4901,6 +5076,7 @@
             },
             {
               "partCode": "DH-AHI-L50-B68",
+              "image": "DH-AHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4935,6 +5111,7 @@
           "products": [
             {
               "partCode": "DH-PHI-L30-B38",
+              "image": "DH-PHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4959,6 +5136,7 @@
             },
             {
               "partCode": "DH-PHI-L50-B50",
+              "image": "DH-PHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -4983,6 +5161,7 @@
             },
             {
               "partCode": "DH-PHI-L30-B40",
+              "image": "DH-PHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -5007,6 +5186,7 @@
             },
             {
               "partCode": "DH-PHI-L50-B62",
+              "image": "DH-PHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -5031,6 +5211,7 @@
             },
             {
               "partCode": "DH-PHI-L50-B68",
+              "image": "DH-PHI-L30-B38.jpg",
               "specifications": [
                 {
                   "propertyName": "length",
@@ -5070,6 +5251,7 @@
           "products": [
             {
               "partCode": "MI-3WC-30",
+              "image": "MI-3WC-30.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -5089,6 +5271,7 @@
             },
             {
               "partCode": "MI-3WC-40",
+              "image": "MI-3WC-30.jpg",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -5111,17 +5294,13 @@
             "type",
             "profile"
           ]
-        }
-      ]
-    },
-    {
-      "categoryName": "AI accessories",
-      "part": [
+        },
         {
           "partName": "Post Nut",
           "products": [
             {
               "partCode": "MI-TN-6-M4",
+              "image": "MI-TN-6-M4.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5146,6 +5325,7 @@
             },
             {
               "partCode": "MI-TN-6-M5",
+              "image": "MI-TN-6-M4.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5170,6 +5350,7 @@
             },
             {
               "partCode": "MI-TN-8-30M5",
+              "image": "MI-TN-8-30M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5194,6 +5375,7 @@
             },
             {
               "partCode": "MI-TN-8-30M6",
+              "image": "MI-TN-8-30M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5218,6 +5400,7 @@
             },
             {
               "partCode": "MI-TN-8-40M5",
+              "image": "MI-TN-8-30M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5242,6 +5425,7 @@
             },
             {
               "partCode": "MI-TN-8-40M6",
+              "image": "MI-TN-8-30M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5266,6 +5450,7 @@
             },
             {
               "partCode": "MI-TN-10-45M6",
+              "image": "MI-TN-10-45M6.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5290,6 +5475,7 @@
             },
             {
               "partCode": "MI-TN-10-45M8",
+              "image": "MI-TN-10-45M6.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5324,6 +5510,7 @@
           "products": [
             {
               "partCode": "MI-PRN-6-20M5",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5348,6 +5535,7 @@
             },
             {
               "partCode": "MI-PRN-6-20M6",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5372,6 +5560,7 @@
             },
             {
               "partCode": "MI-PRN-8-30M5",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5396,6 +5585,7 @@
             },
             {
               "partCode": "MI-PRN-8-30M6",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5420,6 +5610,7 @@
             },
             {
               "partCode": "MI-PRN-8-30M8",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5444,6 +5635,7 @@
             },
             {
               "partCode": "MI-PRN-8-40M5",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5468,6 +5660,7 @@
             },
             {
               "partCode": "MI-PRN-8-40M6",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5492,6 +5685,7 @@
             },
             {
               "partCode": "MI-PRN-8-40M8",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5516,6 +5710,7 @@
             },
             {
               "partCode": "MI-PRN-10-M6",
+              "image": "MI-PRN-10-M6.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5540,6 +5735,7 @@
             },
             {
               "partCode": "MI-PRN-10-M8",
+              "image": "MI-PRN-10-M6.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5564,6 +5760,7 @@
             },
             {
               "partCode": "MI-PRN-10-M10",
+              "image": "MI-PRN-6-20M5.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5598,6 +5795,7 @@
           "products": [
             {
               "partCode": "MI-SPN-6-M6",
+              "image": "MI-SPN-6-M6.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5622,6 +5820,7 @@
             },
             {
               "partCode": "MI-SPN-8-M6-P30",
+              "image": "MI-SPN-8-M6-P30.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5646,6 +5845,7 @@
             },
             {
               "partCode": "MI-SPN-8-M8-P30",
+              "image": "MI-SPN-8-M6-P30.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5670,6 +5870,7 @@
             },
             {
               "partCode": "MI-SPN-8-M6-P40",
+              "image": "MI-SPN-8-M6-P30.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5694,6 +5895,7 @@
             },
             {
               "partCode": "MI-SPN-8-M8-P40",
+              "image": "MI-SPN-8-M6-P30.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5718,6 +5920,7 @@
             },
             {
               "partCode": "MI-SPN-10-M8",
+              "image": "MI-SPN-10-M8.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5742,6 +5945,7 @@
             },
             {
               "partCode": "MI-SPN-10-M10",
+              "image": "MI-SPN-8-M6-P30.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5776,6 +5980,7 @@
           "products": [
             {
               "partCode": "MI-FLN-M5",
+              "image": "MI-FLN-M5.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -5795,6 +6000,7 @@
             },
             {
               "partCode": "MI-FLN-M6",
+              "image": "MI-FLN-M5.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -5814,6 +6020,7 @@
             },
             {
               "partCode": "MI-FLN-M8",
+              "image": "MI-FLN-M5.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -5842,6 +6049,7 @@
           "products": [
             {
               "partCode": "MI-TB-6-M5-L16",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5871,6 +6079,7 @@
             },
             {
               "partCode": "MI-TB-6-M5-L20",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5900,6 +6109,7 @@
             },
             {
               "partCode": "MI-TB-8-M6-L20",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5929,6 +6139,7 @@
             },
             {
               "partCode": "MI-TB-8-M6-L25",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5958,6 +6169,7 @@
             },
             {
               "partCode": " MI-TB-8-M8-L20",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -5987,6 +6199,7 @@
             },
             {
               "partCode": "MI-TB-8-M8-L25",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6016,6 +6229,7 @@
             },
             {
               "partCode": "MI-TB-8-M8-L20",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6045,6 +6259,7 @@
             },
             {
               "partCode": "MI-TB-8-M8-L25",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6074,6 +6289,7 @@
             },
             {
               "partCode": "MI-TB-8-M8-L30",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6103,6 +6319,7 @@
             },
             {
               "partCode": "MI-TB-10-M8-L20",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6132,6 +6349,7 @@
             },
             {
               "partCode": "MI-TB-10-M8-L25",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6161,6 +6379,7 @@
             },
             {
               "partCode": "MI-TB-10-M8-L30",
+              "image": "MI-TB-6-M5-L16.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6201,6 +6420,7 @@
           "products": [
             {
               "partCode": "MI-HRB-M6L20",
+              "image": "MI-HRB-M6L20.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6220,6 +6440,7 @@
             },
             {
               "partCode": "MI-HRB-M6L25",
+              "image": "MI-HRB-M6L20.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6239,6 +6460,7 @@
             },
             {
               "partCode": "MI-HRB-M8L20",
+              "image": "MI-HRB-M6L20.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6258,6 +6480,7 @@
             },
             {
               "partCode": "MI-HRB-M8L25",
+              "image": "MI-HRB-M6L20.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6277,6 +6500,7 @@
             },
             {
               "partCode": "MI-HRB-M8L30",
+              "image": "MI-HRB-M6L20.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6305,6 +6529,7 @@
           "products": [
             {
               "partCode": "MI-EFAST-M6",
+              "image": "MI-EFAST-M6.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6324,6 +6549,7 @@
             },
             {
               "partCode": "MI-EFAST-M8",
+              "image": "MI-EFAST-M6.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6343,6 +6569,7 @@
             },
             {
               "partCode": "MI-EFAST-M10",
+              "image": "MI-EFAST-M10.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6371,6 +6598,7 @@
           "products": [
             {
               "partCode": "MI-U-BID-S8",
+              "image": "MI-U-BID-S8.avif",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6390,6 +6618,7 @@
             },
             {
               "partCode": "MI-U-BID-S10",
+              "image": "MI-U-BID-S8.avif",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6418,6 +6647,7 @@
           "products": [
             {
               "partCode": "MI-SC-6",
+              "image": "MI-SC-6.webp",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6437,6 +6667,7 @@
             },
             {
               "partCode": "MI-SC-8",
+              "image": "MI-SC-6.webp",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6456,6 +6687,7 @@
             },
             {
               "partCode": "MI-SC-10",
+              "image": "MI-SC-6.webp",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6484,6 +6716,7 @@
           "products": [
             {
               "partCode": "MI-FA-P30",
+              "image": "MI-FA-P30.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6503,6 +6736,7 @@
             },
             {
               "partCode": "MI-FA-P40",
+              "image": "MI-FA-P30.jpg",
               "specifications": [
                 {
                   "propertyName": "size",
@@ -6531,6 +6765,7 @@
           "products": [
             {
               "partCode": "MI-SL-HANGER-S8",
+              "image": "MI-SL-HANGER-S8.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6550,6 +6785,7 @@
             },
             {
               "partCode": "MI-SL-HANGER-S10",
+              "image": "MI-SL-HANGER-S8.jpg",
               "specifications": [
                 {
                   "propertyName": "slot",
@@ -6578,6 +6814,7 @@
           "products": [
             {
               "partCode": "MI-ECAP-2020",
+              "image": "MI-ECAP-2020.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6592,6 +6829,7 @@
             },
             {
               "partCode": "MI-ECAP-2040",
+              "image": "MI-ECAP-2020.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6606,6 +6844,7 @@
             },
             {
               "partCode": "MI-ECAP-3030",
+              "image": "MI-ECAP-2020.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6620,6 +6859,7 @@
             },
             {
               "partCode": "MI-ECAP-3060",
+              "image": "MI-ECAP-2020.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6634,6 +6874,7 @@
             },
             {
               "partCode": "MI-ECAP-4040",
+              "image": "MI-ECAP-2020.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6648,6 +6889,7 @@
             },
             {
               "partCode": "MI-ECAP-4080",
+              "image": "MI-ECAP-2020.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6662,6 +6904,7 @@
             },
             {
               "partCode": "MI-ECAP-4545",
+              "image": "MI-ECAP-2020.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6684,6 +6927,7 @@
           "products": [
             {
               "partCode": "MI-INT-BLK-30",
+              "image": "MI-INT-BLK-30.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6698,6 +6942,7 @@
             },
             {
               "partCode": "MI-INT-BLK-40",
+              "image": "MI-INT-BLK-30.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6712,6 +6957,7 @@
             },
             {
               "partCode": "MI-INT-BLK-45",
+              "image": "MI-INT-BLK-30.jpg",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6734,6 +6980,7 @@
           "products": [
             {
               "partCode": "MI-HB-2G-20",
+              "image": "MI-HB-2G-20.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -6753,6 +7000,7 @@
             },
             {
               "partCode": "MI-HB-4G-30",
+              "image": "MI-HB-2G-20.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -6772,6 +7020,7 @@
             },
             {
               "partCode": "MI-HB-4G-40",
+              "image": "MI-HB-2G-20.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -6791,6 +7040,7 @@
             },
             {
               "partCode": "MI-HB-4G-45",
+              "image": "MI-HB-2G-20.webp",
               "specifications": [
                 {
                   "propertyName": "type",
@@ -6819,6 +7069,7 @@
           "products": [
             {
               "partCode": "MI-45DB-30",
+              "image": "MI-45DB-30.webp",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6833,6 +7084,7 @@
             },
             {
               "partCode": "MI-45DB-40",
+              "image": "MI-45DB-30.webp",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6847,6 +7099,7 @@
             },
             {
               "partCode": "MI-45DB-45",
+              "image": "MI-45DB-30.webp",
               "specifications": [
                 {
                   "propertyName": "profile",
@@ -6869,6 +7122,7 @@
           "products": [
             {
               "partCode": "MI-DCBT-2S-2020",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6888,6 +7142,7 @@
             },
             {
               "partCode": "MI-DCBT-2S-3030",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6907,6 +7162,7 @@
             },
             {
               "partCode": "MI-DCBT-1S-3060",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6926,6 +7182,7 @@
             },
             {
               "partCode": "MI-DCBT-2S-4040",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6945,6 +7202,7 @@
             },
             {
               "partCode": "MI-DCBT-1S-4080",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6964,6 +7222,7 @@
             },
             {
               "partCode": "MI-DCBT-2S-4545",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -6983,6 +7242,7 @@
             },
             {
               "partCode": "MI-DCBT-1S-4590",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -7002,6 +7262,7 @@
             },
             {
               "partCode": "MI-DCBT-2S-6060",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
@@ -7021,6 +7282,7 @@
             },
             {
               "partCode": "MI-DCBT-2S-8080",
+              "image": "MI-DCBT-1S-3060.avif",
               "specifications": [
                 {
                   "propertyName": "sides",
