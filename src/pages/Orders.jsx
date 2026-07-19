@@ -13,6 +13,7 @@ import {
 import { db } from "../firebase";
 import { useAuth } from "../context/AuthContext";
 import PageWrapper from "../components/PageWrapper";
+import { loadRazorpay } from "../utils/razorpayLoader";
 import logoSvg from "../assets/logo.svg";
 
 const PAID_ORDER_STATUSES = [
@@ -82,32 +83,112 @@ export default function Orders() {
   }, [location.search]);
 
   const handlePayNow = async (order) => {
-    // For now, simulate payment success like Quotes page
-    alert(
-      "Demo: Payment successful! In production, this would open Razorpay gateway.",
-    );
+    if (!order || !order.total) {
+      alert("Cannot pay this quote because it is invalid.");
+      return;
+    }
+
+    setUpdatingId(order.id);
 
     try {
-      setUpdatingId(order.id);
-      await updateDoc(doc(db, "orders", order.id), {
-        status: "PAID",
-        paymentMode: "DEMO_UPI",
-        transactionId: `DEMO_${Date.now()}`,
-        transactionTime: Math.floor(Date.now() / 1000),
-        statusUpdatedAt: Math.floor(Date.now() / 1000),
+      await loadRazorpay();
+
+      const response = await fetch("/api/create-order", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          amount: Math.max(Math.round(order.total * 100), 100),
+          currency: "INR",
+          receipt: order.id,
+        }),
       });
 
-      setOrders((prev) =>
-        prev.map((o) =>
-          o.id === order.id
-            ? { ...o, status: "PAID", paymentMode: "DEMO_UPI" }
-            : o,
-        ),
-      );
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || "Failed to create payment order.");
+      }
+
+      const { order_id, amount, currency } = await response.json();
+
+      const options = {
+        key: import.meta.env.VITE_RAZORPAY_KEY_ID,
+        amount,
+        currency,
+        name: "Mitsuki India",
+        description: `Quote payment ${order.id.slice(-8)}`,
+        order_id,
+        handler: async (razorpayResponse) => {
+          try {
+            const verifyRes = await fetch("/api/verify-payment", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                razorpay_order_id: razorpayResponse.razorpay_order_id,
+                razorpay_payment_id: razorpayResponse.razorpay_payment_id,
+                razorpay_signature: razorpayResponse.razorpay_signature,
+              }),
+            });
+
+            if (!verifyRes.ok) {
+              const errorData = await verifyRes.json().catch(() => ({}));
+              throw new Error(errorData.error || "Payment verification failed.");
+            }
+
+            await updateDoc(doc(db, "orders", order.id), {
+              status: "PAID",
+              paymentMode: "RAZORPAY",
+              transactionId: razorpayResponse.razorpay_payment_id,
+              transactionTime: Math.floor(Date.now() / 1000),
+              statusUpdatedAt: Math.floor(Date.now() / 1000),
+              razorpayOrderId: razorpayResponse.razorpay_order_id,
+              razorpaySignature: razorpayResponse.razorpay_signature,
+            });
+
+            setOrders((prev) =>
+              prev.map((o) =>
+                o.id === order.id
+                  ? { ...o, status: "PAID", paymentMode: "RAZORPAY" }
+                  : o,
+              ),
+            );
+
+            alert("Payment completed successfully.");
+          } catch (verifyError) {
+            console.error("Payment verification error:", verifyError);
+            alert(
+              `Payment succeeded but verification failed: ${verifyError.message}`,
+            );
+          } finally {
+            setUpdatingId(null);
+          }
+        },
+        modal: {
+          ondismiss: () => {
+            setUpdatingId(null);
+            alert("Payment cancelled.");
+          },
+        },
+        theme: {
+          color: "#2563eb",
+        },
+      };
+
+      const rzp = new window.Razorpay(options);
+      rzp.on("payment.failed", (failureResponse) => {
+        console.error("Razorpay payment failed:", failureResponse.error);
+        alert(
+          failureResponse.error?.description ||
+            "Payment failed. Please try again or contact support.",
+        );
+      });
+      rzp.open();
     } catch (error) {
-      console.error("Error marking quote as paid:", error);
-      alert("Error converting quote to order.");
-    } finally {
+      console.error("Razorpay checkout error:", error);
+      alert(error.message || "Unable to start the payment flow.");
       setUpdatingId(null);
     }
   };
